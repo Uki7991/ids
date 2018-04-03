@@ -1,0 +1,37 @@
+.carousel-caption {
+	top: 50%;
+	background-color: #51c8d4a6;
+	border-radius: 5px;
+}
+
+.carousel {
+	height: 500px;
+	-webkit-box-shadow: 0px 0px 92px -22px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 92px -22px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 92px -22px rgba(0,0,0,0.75);
+}
+
+section {
+	-webkit-box-shadow: 0px 0px 92px -22px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 92px -22px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 92px -22px rgba(0,0,0,0.75);
+}
+
+.bg-light-tr {
+	background-color: #f8f9fae8!important;
+}
+
+.card {
+	-webkit-box-shadow: 0px 0px 92px -22px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 92px -22px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 92px -22px rgba(0,0,0,0.75);
+	transition: .5s;
+}
+
+.card:hover {
+	-webkit-box-shadow: 0px 0px 92px -22px rgba(13, 155, 197, 0.95);
+	-moz-box-shadow: 0px 0px 92px -22px rgba(13, 155, 197, 0.95);
+	box-shadow: 0px 0px 92px -22px rgba(13, 155, 197, 0.95);
+	transition: .5s;
+	transform: scale(1.06, 1.06);
+}
