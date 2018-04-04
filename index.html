@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body style="height: 1500px;">
+<body>
 
 	<!-- Header -->
 	<header class="fixed-top">
@@ -50,9 +50,6 @@
 		          			<a class="dropdown-item" href="#">Профилактика</a>
 		        		</div>
 		      		</li>
-		      		<li class="nav-item">
-		        		<a class="nav-link" href="#">Disabled</a>
-		      		</li>
 		    	</ul>
 		  		<a class="navbar-brand h1" href="#">Implant Dental Service</a>
 		    	<ul class="nav flex-column">
@@ -82,6 +79,7 @@
 					  	<img src="img/1.jpg" class="w-100" alt="...">
 					  	<div class="carousel-caption d-none d-md-block index-z-2">
 					    	<span class="h2">Лучшие специалисты</span>
+					    	<hr style="border-color: #fff;">
 					    	<p>Самые лучшие специалисты нашего города вылечат Ваши зубы безболезненно!</p>
 					  	</div>
 					</div>
@@ -89,6 +87,7 @@
 					  	<img src="img/2.jpg" class="w-100" alt="...">
 					  	<div class="carousel-caption d-none d-md-block index-z-2">
 					    	<span class="h2">Лучшие специалисты</span>
+					    	<hr style="border-color: #fff;">
 					    	<p>Самые лучшие специалисты нашего города вылечат Ваши зубы безболезненно!</p>
 					  	</div>
 					</div>
@@ -96,6 +95,7 @@
 					  	<img src="img/3.jpg" class="w-100" alt="...">
 					  	<div class="carousel-caption d-none d-md-block index-z-2">
 					    	<span class="h2">Лучшие специалисты</span>
+					    	<hr style="border-color: #fff;">
 					    	<p>Самые лучшие специалисты нашего города вылечат Ваши зубы безболезненно!</p>
 					  	</div>
 					</div>
@@ -112,7 +112,7 @@
 		</section>
 
 		<section class="container">
-			<div class="row justify-content-center py-4">
+			<div class="row justify-content-center py-5">
 				<h2>Услуги</h2>
 			</div>
 			<div class="row">
@@ -202,8 +202,49 @@
 			</div>
 		</section>
 
-		<section>
-			
+		<section class="container pb-5">
+			<div class="row justify-content-center py-5">
+				<h2>Блог</h2>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					<a href="#" class="card-spec" ontouchstart="this.classList.toggle('hover');">
+						<div class="container">
+							<div class="front" style="background-image: url(img/4.jpg)">
+								<div class="inner">
+									<p>Forbes</p>
+		              				<span>Лучший врач мира</span>
+								</div>
+							</div>
+							<div class="back">
+								<div class="inner">
+								  	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-6">
+					<a href="#" class="card-spec" ontouchstart="this.classList.toggle('hover');">
+						<div class="container">
+							<div class="front" style="background-image: url(img/5.jpg)">
+								<div class="inner">
+									<p>Дети</p>
+		              				<span>Лечим детские зубки</span>
+								</div>
+							</div>
+							<div class="back">
+								<div class="inner">
+								  	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="row justify-content-center mt-5 mb-3">
+				<a href="#" class="btn btn-outline-primary">Посмотреть еще новости...</a>
+			</div>
 		</section>
 	</main>
 	<!-- End Main -->
@@ -219,6 +260,19 @@
 	<script>
 		$('.carousel').carousel({
 			interval: 100000
+		});
+	</script>
+	<script>
+		var scroll;
+		$(window).scroll(function() {
+			scroll = $(window).scrollTop();
+			if (scroll > 400) {
+				$('nav.navbar').removeClass('bg-light-tr');
+				$('nav.navbar').addClass('bg-light');
+			}
+			else {
+				$('nav.navbar').addClass('bg-light-tr');
+			}
 		});
 	</script>
 	<!-- <script>
