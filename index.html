@@ -111,7 +111,7 @@
 			</div>
 		</section>
 
-		<section class="container">
+		<section class="container-fluid shadow">
 			<div class="row justify-content-center py-5">
 				<h2>Услуги</h2>
 			</div>
@@ -246,6 +246,25 @@
 				<a href="#" class="btn btn-outline-primary">Посмотреть еще новости...</a>
 			</div>
 		</section>
+
+		<section class="container-fluid border shadow mb-5">
+			<div class="row">
+				<div class="col-3">
+					<div class="my-progress-bar1"></div>
+				</div>
+				<div class="col-3">
+					<div class="my-progress-bar2"></div>
+				</div>
+				<div class="col-3">
+					<div class="my-progress-bar3"></div>
+				</div>
+				<div class="col-3">
+					<div class="my-progress-bar4"></div>
+				</div>
+			</div>
+		</section>
+
+
 	</main>
 	<!-- End Main -->
 
@@ -257,6 +276,8 @@
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> -->
+	<script src="js/plugin.js"></script>
+	<script src="js/script.js"></script>
 	<script>
 		$('.carousel').carousel({
 			interval: 100000
@@ -275,6 +296,12 @@
 			}
 		});
 	</script>
+	<!-- <script>
+		var progress_circle = $(".my-progress-bar").gmpc({
+		    // options here
+		});
+		progress_circle.gmpc('animate', 80, 3000);
+	</script> -->
 	<!-- <script>
 		var controller = new ScrollMagic.Controller();
 

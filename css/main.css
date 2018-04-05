@@ -19,6 +19,12 @@ header {
 	box-shadow: 0px 0px 92px -22px rgba(0,0,0,0.75);
 }
 
+.shadow {
+  -webkit-box-shadow: 0px 0px 92px -22px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 92px -22px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 92px -22px rgba(0,0,0,0.75);
+}
+
 .bg-light-tr {
 	background-color: #f8f9fae8!important;
 }
@@ -184,4 +190,34 @@ header {
   color: rgba(255,255,255,0.7);
   font-family: 'Montserrat';
   font-weight: 300;
+}
+
+
+/** Circle progress **/
+.circular-progress-bar {
+  position: relative;
+  margin: 0 auto;
+  transform: rotate(-90deg);
+}
+
+.progress-percentage, .progress-text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  text-align: center;
+  padding: 0px 60px;
+}
+
+.progress-percentage {
+  font-size: 60px;
+  left: 60%;
+  display: none;
+}
+
+.progress-text {
+  /*left: 35%;*/
+  color: #585858;
+  font-size: 21px;
 }
