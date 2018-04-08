@@ -19,10 +19,22 @@ header {
 	box-shadow: 0px 0px 92px -22px rgba(0, 0, 0,0.75);
 }
 
+.jumbotron-new {
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  top: 40%;
+  right: 10%;
+}
+
+.w-35 {
+  width: 35%!important;
+}
+
 .shadow {
-  -webkit-box-shadow: 0px 0px 92px -22px rgba(0, 0, 0,0.75);
-  -moz-box-shadow: 0px 0px 92px -22px rgba(0, 0, 0,0.75);
-  box-shadow: 0px 0px 92px -22px rgba(0, 0, 0,0.75);
+  -webkit-box-shadow: 0px 0px 92px -22px #05717ee8;
+  -moz-box-shadow: 0px 0px 92px -22px #05717ee8;
+  box-shadow: 0px 0px 92px -22px #05717ee8;
 }
 
 .bg-light-tr {
