@@ -40,6 +40,10 @@ header {
 .bg-light-tr {
 	background-color: #f8f9fae8!important;
 }
+
+.bg-light-tr2 {
+  background-color: #78e0db8a!important;
+}
 /*
 .card {
 	-webkit-box-shadow: 0px 0px 92px -22px rgba(0,0,0,0.75);
