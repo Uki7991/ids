@@ -25,12 +25,12 @@
 		  	<div class="collapse navbar-collapse row justify-content-around text-center" id="navbarSupportedContent">
 		    	<ul class="navbar-nav">
 		      		<li class="nav-item active">
-		        		<a class="nav-link" href="#">Главная</a>
+		        		<a class="nav-link" href="index.html">Главная</a>
 		      		</li>
 		      		<li class="nav-item">
 		        		<a class="nav-link" href="#">О нас</a>
 		      		</li>
-		      		<li class="nav-item dropdown">
+		      		<!-- <li class="nav-item dropdown">
 		        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          			Услуги
 		        		</a>
@@ -49,9 +49,12 @@
 		          			<a class="dropdown-item" href="#">Детская стоматология</a>
 		          			<a class="dropdown-item" href="#">Профилактика</a>
 		        		</div>
-		      		</li>		      		
+		      		</li>	 -->	
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#">Блог</a>
+		        		<a class="nav-link" href="#uslugi">Услуги</a>
+		      		</li>      		
+		      		<li class="nav-item">
+		        		<a class="nav-link" href="#blog">Блог</a>
 		      		</li>
 		      		<li class="nav-item">
 		        		<a class="nav-link" href="#">Контакты</a>
@@ -74,13 +77,13 @@
 	<!-- Main -->
 	<main>
 		<section>
-			<div class="jumbotron d-none d-lg-block jumbotron-fluid m-0 w-35 w-lg-50 jumbotron-new bg-light-tr2">
+			<div class="jumbotron d-none d-lg-block jumbotron-fluid m-0 w-35 w-lg-50 jumbotron-new bg-primary-transparent-20 border border-light text-light">
 			  	<div class="container">
 			    	<h1 class="display-4">Implant Dental</h1>
 			    	<p class="lead">ВЫ ЗНАЕТЕ, ЧТО ЛЕЧЕНИЕ ЗУБОВ МОЖЕТ ПРОХОДИТЬ БЕЗ БОЛИ И ДИСКОМФОРТА?</p>
 			  	</div>
 			</div>
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 100vh;">
 			  	<ol class="carousel-indicators">
 			    	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 			    	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -88,13 +91,16 @@
 			  	</ol>
 			  	<div class="carousel-inner h-100">
 			    	<div class="carousel-item active">
-					  	<img src="img/1.jpg" class="w-100" alt="...">
+					  	<img src="img/DSC_1800.jpg" class="w-100" alt="...">
 					</div>
 			    	<div class="carousel-item">
-					  	<img src="img/2.jpg" class="w-100" alt="...">
+					  	<img src="img/DSC_1738.jpg" class="w-100" alt="...">
 					</div>
 			    	<div class="carousel-item">
-					  	<img src="img/3.jpg" class="w-100" alt="...">
+					  	<img src="img/DSC_1804.jpg" class="w-100" alt="...">
+					</div>
+			    	<div class="carousel-item">
+					  	<img src="img/DSC_1757.jpg" class="w-100" alt="...">
 					</div>
 			  	</div>
 			  	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -108,7 +114,7 @@
 			</div>
 		</section>
 
-		<section class="container">
+		<section id="uslugi" class="container">
 			<div class="row justify-content-center py-5">
 				<h2>Услуги</h2>
 			</div>
@@ -199,7 +205,7 @@
 			</div>
 		</section>
 
-		<section class="container pb-5">
+		<section id="blog" class="container pb-5">
 			<div class="row justify-content-center py-5">
 				<h2>Блог</h2>
 			</div>
@@ -271,50 +277,53 @@
 			<div class="row">
 
 
-				<div class="col-12 mb-4 mb-md-0 col-md-3">
-					<div class="row mx-0 justify-content-center">
-						<img class=" rounded-circle shadow" style="width: 120px; height: 120px; margin-bottom: -35px; z-index: 2" src="img/avatar-default.png" alt="Card image cap">
-						<div class="card border-info" style="width: 18rem;">
-						  	<div class="card-body pt-5">
-						    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi laboriosam quae necessitatibus quibusdam tenetur omnis, quas veniam harum odit tempore nisi dolore molestias officia molestiae impedit architecto cumque perferendis officiis.</p>
+				<div class="col-12 mb-4 mb-md-0 col-md-4">
+					<div class="row mx-0 justify-content-center h-100">
+						
+						<div class="card border-info bg-primary-transparent-20">
+						  	<div class="card-body">
+						    	<blockquote class="blockquote mb-0">
+								  	<p class="mb-0 small">Последние два года пользуюсь услугами данной клиники, всем довольна, в кабинетах всегда чисто, профессионально лечат зубики. Что самое главное — приемелмая цена.</p>
+								</blockquote>
 						  	</div>
+						<div class="blockquote-footer mb-4 text-center align-self-center">Айдай</div>
+
 						</div>
+
 					</div>
 				</div>
 
 
-				<div class="col-12 mb-4 mb-md-0 col-md-3">
-					<div class="row mx-0 justify-content-center">
-						<img class=" rounded-circle shadow" style="width: 120px; height: 120px; margin-bottom: -35px; z-index: 2" src="img/avatar-default.png" alt="Card image cap">
-						<div class="card border-info" style="width: 18rem;">
-						  	<div class="card-body pt-5">
-						    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi laboriosam quae necessitatibus quibusdam tenetur omnis, quas veniam harum odit tempore nisi dolore molestias officia molestiae impedit architecto cumque perferendis officiis.</p>
+				<div class="col-12 mb-4 mb-md-0 col-md-4">
+					<div class="row mx-0 justify-content-center h-100">
+						
+						<div class="card border-info bg-primary-transparent-20">
+						  	<div class="card-body">
+						    	<blockquote class="blockquote mb-0">
+								  	<p class="mb-0 small">Я обратился в клинику IDS к доктору Мурзалиеву по поводу имплантации. Поменял 2 моста, поставил 2 имплантата. Всё сделали качественно и безболезненно. Рекомендую обращаться. Дмитрий.</p>
+								</blockquote>
 						  	</div>
+						<div class="blockquote-footer mb-4 text-center align-self-center">Дмитрий</div>
+
 						</div>
+
 					</div>
 				</div>
 
 
-				<div class="col-12 mb-4 mb-md-0 col-md-3">
-					<div class="row mx-0 justify-content-center">
-						<img class=" rounded-circle shadow" style="width: 120px; height: 120px; margin-bottom: -35px; z-index: 2" src="img/avatar-default.png" alt="Card image cap">
-						<div class="card border-info" style="width: 18rem;">
-						  	<div class="card-body pt-5">
-						    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi laboriosam quae necessitatibus quibusdam tenetur omnis, quas veniam harum odit tempore nisi dolore molestias officia molestiae impedit architecto cumque perferendis officiis.</p>
+				<div class="col-12 mb-4 mb-md-0 col-md-4">
+					<div class="row mx-0 justify-content-center h-100">
+						
+						<div class="card border-info bg-primary-transparent-20">
+						  	<div class="card-body">
+						    	<blockquote class="blockquote mb-0">
+								  	<p class="mb-0 small">Доктора Амантура Мурзалиева, я знаю очень давно, около30 лет, уже почти родственники</p>
+								</blockquote>
 						  	</div>
-						</div>
-					</div>
-				</div>
+						<div class="blockquote-footer mb-4 text-center align-self-center">Канат</div>
 
-
-				<div class="col-12 mb-4 mb-md-0 col-md-3">
-					<div class="row mx-0 justify-content-center">
-						<img class=" rounded-circle shadow" style="width: 120px; height: 120px; margin-bottom: -35px; z-index: 2" src="img/avatar-default.png" alt="Card image cap">
-						<div class="card border-info" style="width: 18rem;">
-						  	<div class="card-body pt-5">
-						    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi laboriosam quae necessitatibus quibusdam tenetur omnis, quas veniam harum odit tempore nisi dolore molestias officia molestiae impedit architecto cumque perferendis officiis.</p>
-						  	</div>
 						</div>
+
 					</div>
 				</div>
 
@@ -338,7 +347,7 @@
 				<div class="col-12 col-md-auto">
 					<ul class="nav flex-column">
 					  	<li class="nav-item active">
-					    	<a class="nav-link text-muted small p-1" href="#">Главная</a>
+					    	<a class="nav-link text-muted small p-1" href="index.html">Главная</a>
 					  	</li>
 					  	<li class="nav-item">
 					    	<a class="nav-link text-muted small p-1" href="#">О нас</a>
@@ -397,5 +406,6 @@
 			}
 		});
 	</script>
+	<script src="js/smoothscroll.js"></script>
 </body>
 </html>

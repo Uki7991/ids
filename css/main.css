@@ -42,7 +42,7 @@ header {
 }
 
 .bg-light-tr2 {
-  background-color: #78e0db8a!important;
+  background-color: #56cce1!important;
 }
 /*
 .card {
@@ -68,6 +68,13 @@ header {
 	background-color: #56cce1!important;
 }
 
+.bg-primary-transparent-20 {
+  background-color: #56cce133!important;
+}
+
+.bg-primary-transparent-50 {
+  background-color: #56cce180!important;
+}
 
 .col{
   width: calc(25% - 2rem);
