@@ -259,3 +259,7 @@ header {
   color: #585858;
   font-size: 21px;
 }
+
+.modal-open .container-fluid, .modal-open  .container, .modal-open .header {
+    -webkit-filter: blur(5px) grayscale(90%);
+}

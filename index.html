@@ -15,7 +15,7 @@
 <body>
 
 	<!-- Header -->
-	<header class="fixed-top">
+	<header class="fixed-top header">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light-tr">
 		  	
 		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,7 +121,7 @@
 			<div class="row">
 
 
-				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
 					<div class="card text-center">
 					  	<div class="card-header bg-primary-tr text-light">
 					    	<i class="fas fa-search"></i>
@@ -134,7 +134,7 @@
 				</div>
 
 
-				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
 					<div class="card text-center">
 					  	<div class="card-header bg-primary-tr text-light">
 					    	<i class="fas fa-syringe"></i>
@@ -147,7 +147,7 @@
 				</div>
 
 
-				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
 					<div class="card text-center">
 					  	<div class="card-header bg-primary-tr text-light">
 					    	<i class="fas fa-search"></i>
@@ -160,7 +160,7 @@
 				</div>
 
 
-				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
 					<div class="card text-center">
 					  	<div class="card-header bg-primary-tr text-light">
 					    	<i class="fas fa-search"></i>
@@ -173,7 +173,7 @@
 				</div>
 
 
-				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
 					<div class="card text-center">
 					  	<div class="card-header bg-primary-tr text-light">
 					    	<i class="fas fa-search"></i>
@@ -186,7 +186,7 @@
 				</div>
 
 
-				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
 					<div class="card text-center">
 					  	<div class="card-header bg-primary-tr text-light">
 					    	<i class="fas fa-search"></i>
@@ -194,9 +194,6 @@
 					  	</div>
 					  	<div class="card-body">
 					    	<p class="card-text small">Врачи стоматологической клиники «IDS» очень ответственно подходят к лечению своих пациентов. По-этому, первичная консультация – обязательная процедура перед началом любого вида лечения, имплантации или протезирования зубов.</p>
-					  	</div>
-					  	<div class="card-footer text-muted">
-					    	<a href="#" class="btn btn-outline-primary btn-sm">Go somewhere</a>
 					  	</div>
 					</div>
 				</div>
@@ -286,8 +283,9 @@
 								  	<p class="mb-0 small">Последние два года пользуюсь услугами данной клиники, всем довольна, в кабинетах всегда чисто, профессионально лечат зубики. Что самое главное — приемелмая цена.</p>
 								</blockquote>
 						  	</div>
-						<div class="blockquote-footer mb-4 text-center align-self-center">Айдай</div>
-
+							<div class="card-footer">
+								<div class="blockquote-footer text-center">Айдай</div>
+							</div>
 						</div>
 
 					</div>
@@ -303,8 +301,9 @@
 								  	<p class="mb-0 small">Я обратился в клинику IDS к доктору Мурзалиеву по поводу имплантации. Поменял 2 моста, поставил 2 имплантата. Всё сделали качественно и безболезненно. Рекомендую обращаться. Дмитрий.</p>
 								</blockquote>
 						  	</div>
-						<div class="blockquote-footer mb-4 text-center align-self-center">Дмитрий</div>
-
+							<div class="card-footer">
+								<div class="blockquote-footer text-center">Дмитрий</div>
+							</div>
 						</div>
 
 					</div>
@@ -320,7 +319,9 @@
 								  	<p class="mb-0 small">Доктора Амантура Мурзалиева, я знаю очень давно, около30 лет, уже почти родственники</p>
 								</blockquote>
 						  	</div>
-						<div class="blockquote-footer mb-4 text-center align-self-center">Канат</div>
+							<div class="card-footer">
+								<div class="blockquote-footer text-center">Канат</div>
+							</div>
 
 						</div>
 
@@ -380,6 +381,26 @@
 		</div>
 	</footer>
 	<!-- End Footer -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  	<div class="modal-dialog modal-dialog-centered" role="document">
+	    	<div class="modal-content">
+	      		<div class="modal-header text-center">
+	        		<h5 class="modal-title" id="exampleModalCenterTitle">Услуга</h5>
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          			<span aria-hidden="true">&times;</span>
+	        		</button>
+	      		</div>
+		      	<div class="modal-body">
+	       	 		Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+		      	</div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-outline-info" data-dismiss="modal">Закрыть</button>
+		      	</div>
+	    	</div>
+	  	</div>
+	</div>
 
 	<script src="js/jquery.js"></script>
 	<script src="js/popper.js"></script>
