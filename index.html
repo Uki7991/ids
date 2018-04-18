@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<title>IDS dentist</title>
 	<!-- Bootstrap4 -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 	<!-- End Bootstrap4 -->
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="css/web-fonts-with-css/css/fontawesome-all.min.css">
 	<!-- End Font Awesome -->
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -404,9 +405,9 @@
 
 	<script src="js/jquery.js"></script>
 	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
 	<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> -->
-	<script src="js/plugin.js"></script>
+	<script src="js/plugin/plugin.js"></script>
 	<script src="js/script.js"></script>
 
 	<script>
@@ -427,6 +428,18 @@
 			}
 		});
 	</script>
-	<script src="js/smoothscroll.js"></script>
+	<script src="js/plugins/smoothscroll.js"></script>
+	<script src="js/owlcarousel/owl.carousel.min.js"></script>
+	<script>
+		var owl = $('.owl-carousel');
+		owl.owlCarousel({
+		    items:3,
+		    loop:true,
+		    margin:10,
+		    autoplay:true,
+		    autoplayTimeout:1000,
+		    autoplayHoverPause:true
+		});
+	</script>
 </body>
 </html>
