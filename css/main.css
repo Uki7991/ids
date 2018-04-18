@@ -260,6 +260,15 @@ header {
   font-size: 21px;
 }
 
-.modal-open .container-fluid, .modal-open  .container, .modal-open .header {
+.modal-open .container-fluid, .modal-open  .container, .modal-open .header, .modal-open .carousel {
     -webkit-filter: blur(5px) grayscale(90%);
+}
+
+.owl-theme .card:hover {
+  transform: none;
+}
+
+.card-service:hover {
+  opacity: 0.9;
+  transition: opacity 1s ease-out 0s;
 }
