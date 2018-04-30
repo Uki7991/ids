@@ -17,57 +17,36 @@
 
 	<!-- Header -->
 	<header class="fixed-top header">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light-tr">
+		<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
 		  	
 		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    	<span class="navbar-toggler-icon"></span>
 		  	</button>
-
-		  	<div class="collapse navbar-collapse row justify-content-around text-center" id="navbarSupportedContent">
-		    	<ul class="navbar-nav">
+		  	<a class="navbar-brand h1 ml-5 mx-auto text-center text-light" href="#">Implant Dental Service</a>
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    	<ul class="navbar-nav mx-auto">
 		      		<li class="nav-item active">
-		        		<a class="nav-link" href="index.html">Главная</a>
+		        		<a class="nav-link text-light" href="index.html">Главная</a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#">О нас</a>
+		        		<a class="nav-link text-light" href="#">О нас</a>
 		      		</li>
-		      		<!-- <li class="nav-item dropdown">
-		        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          			Услуги
-		        		</a>
-		        		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          			<a class="dropdown-item" href="#">Осмотр и Консультация</a>
-		          			<a class="dropdown-item" href="#">Отбеливание зубов</a>
-		          			<a class="dropdown-item" href="#">Выравнивание зубов (Ортодонтия)</a>
-		          			<a class="dropdown-item" href="#">Пародонтология</a>
-		          			<div class="dropdown-divider"></div>
-		          			<a class="dropdown-item" href="#">Протезирование зубов</a>
-		          			<a class="dropdown-item" href="#">Имплантация зубов</a>
-		          			<a class="dropdown-item" href="#">Хирургическая стоматология</a>
-		          			<a class="dropdown-item" href="#">Лечение</a>
-		          			<div class="dropdown-divider"></div>
-		          			<a class="dropdown-item" href="#">Эстетическая стоматология</a>
-		          			<a class="dropdown-item" href="#">Детская стоматология</a>
-		          			<a class="dropdown-item" href="#">Профилактика</a>
-		        		</div>
-		      		</li>	 -->	
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#uslugi">Услуги</a>
+		        		<a class="nav-link text-light" href="#uslugi">Услуги</a>
 		      		</li>      		
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#blog">Блог</a>
+		        		<a class="nav-link text-light" href="#blog">Блог</a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#">Контакты</a>
+		        		<a class="nav-link text-light" href="#">Контакты</a>
 		      		</li>
 		    	</ul>
-		  		<a class="navbar-brand h1" href="#">Implant Dental Service</a>
-		    	<ul class="nav flex-column">
+		    	<ul class="nav flex-column mr-5">
 				  	<li class="nav-item row align-items-center justify-content-center small">
-				    	<b>Email:</b> <a class="nav-link text-muted" href="mailto:ids.com@gmail.com"><u>ids.com@gmail.com</u></a>
+				    	<a class="nav-link text-light" href="mailto:ids.com@gmail.com"><u>ids.com@gmail.com</u></a>
 				  	</li>
 				  	<li class="nav-item row align-items-center justify-content-center small">
-			   	 		<b>Tel:</b> <a class="nav-link text-muted" href="tel: +996 (700) 700 700"><u>+996 (700) 700 - 700</u></a>
+			   	 		<a class="nav-link text-light" href="tel: +996 (700) 700 700"><u>+996 (700) 700 - 700</u></a>
 				  	</li>
 				</ul>
 		  	</div>
@@ -79,8 +58,9 @@
 	<main>
 		<section>
 			<div class="jumbotron d-none d-lg-block jumbotron-fluid m-0 w-35 w-lg-50 jumbotron-new bg-primary-transparent-20 border border-light text-light">
-			  	<div class="container">
-			    	<h1 class="display-4">Implant Dental</h1>
+				<div class="backdrop-card"></div>
+			  	<div class="container" style="position: relative; z-index: 2;">
+			    	<h1 class="display-4 text-center">Implant Dental Service</h1>
 			    	<p class="lead">ВЫ ЗНАЕТЕ, ЧТО ЛЕЧЕНИЕ ЗУБОВ МОЖЕТ ПРОХОДИТЬ БЕЗ БОЛИ И ДИСКОМФОРТА?</p>
 			  	</div>
 			</div>
@@ -132,7 +112,8 @@
 
 
 				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
-					<div class="card text-center card-service text-light" style="background-color: #56cce1; background-image: url('img/4.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+					<div class="card text-center card-service text-light" style="background-color: #56cce1; background-image: url('img/1.2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+						<div class="backdrop-card"></div>
 					  	<div class="card-header border-0 h4">
 					    	Осмотр и Консультация
 					  	</div>
@@ -144,7 +125,8 @@
 
 
 				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
-					<div class="card text-center card-service text-light" style="background-color: #2cbfd9;">
+					<div class="card text-center card-service text-light" style="background-color: #56cce1; background-image: url('img/1.2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+						<div class="backdrop-card"></div>
 					  	<div class="card-header border-0 h4">
 					    	Осмотр и Консультация
 					  	</div>
@@ -156,7 +138,8 @@
 
 
 				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
-					<div class="card text-center card-service text-light" style="background-color: #2ca6d9;">
+					<div class="card text-center card-service text-light" style="background-color: #56cce1; background-image: url('img/1.2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+						<div class="backdrop-card"></div>
 					  	<div class="card-header border-0 h4">
 					    	Осмотр и Консультация
 					  	</div>
@@ -168,7 +151,8 @@
 
 
 				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
-					<div class="card text-center card-service text-light" style="background-color: #1b90da;">
+					<div class="card text-center card-service text-light" style="background-color: #56cce1; background-image: url('img/1.2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+						<div class="backdrop-card"></div>
 					  	<div class="card-header border-0 h4">
 					    	Осмотр и Консультация
 					  	</div>
@@ -255,8 +239,8 @@
 			<div class="row">
 
 
-						<div class="owl-carousel owl-1 owl-theme">
-							<div class="card border-info bg-primary-transparent-20">
+						<div class="owl-carousel owl-theme owl-1 owl-nav-outer owl-dot-round">
+							<div class="card bg-primary-transparent-20">
 							  	<div class="card-body">
 							    	<blockquote class="blockquote mb-0">
 									  	<p class="mb-0 small">Последние два года пользуюсь услугами данной клиники, всем довольна, в кабинетах всегда чисто, профессионально лечат зубики. Что самое главное — приемелмая цена.</p>
@@ -268,7 +252,7 @@
 							</div>
 
 
-							<div class="card border-info bg-primary-transparent-20">
+							<div class="card bg-primary-transparent-20">
 							  	<div class="card-body">
 							    	<blockquote class="blockquote mb-0">
 									  	<p class="mb-0 small">Я обратился в клинику IDS к доктору Мурзалиеву по поводу имплантации. Поменял 2 моста, поставил 2 имплантата. Всё сделали качественно и безболезненно. Рекомендую обращаться. Дмитрий.</p>
@@ -280,7 +264,43 @@
 							</div>
 
 
-							<div class="card border-info bg-primary-transparent-20">
+							<div class="card bg-primary-transparent-20">
+							  	<div class="card-body">
+							    	<blockquote class="blockquote mb-0">
+									  	<p class="mb-0 small">Доктора Амантура Мурзалиева, я знаю очень давно, около30 лет, уже почти родственники</p>
+									</blockquote>
+							  	</div>
+								<div class="card-footer">
+									<div class="blockquote-footer text-center">Канат</div>
+								</div>
+
+							</div>
+
+							<div class="card bg-primary-transparent-20">
+							  	<div class="card-body">
+							    	<blockquote class="blockquote mb-0">
+									  	<p class="mb-0 small">Последние два года пользуюсь услугами данной клиники, всем довольна, в кабинетах всегда чисто, профессионально лечат зубики. Что самое главное — приемелмая цена.</p>
+									</blockquote>
+							  	</div>
+								<div class="card-footer">
+									<div class="blockquote-footer text-center">Айдай</div>
+								</div>
+							</div>
+
+
+							<div class="card bg-primary-transparent-20">
+							  	<div class="card-body">
+							    	<blockquote class="blockquote mb-0">
+									  	<p class="mb-0 small">Я обратился в клинику IDS к доктору Мурзалиеву по поводу имплантации. Поменял 2 моста, поставил 2 имплантата. Всё сделали качественно и безболезненно. Рекомендую обращаться. Дмитрий.</p>
+									</blockquote>
+							  	</div>
+								<div class="card-footer">
+									<div class="blockquote-footer text-center">Дмитрий</div>
+								</div>
+							</div>
+
+
+							<div class="card bg-primary-transparent-20">
 							  	<div class="card-body">
 							    	<blockquote class="blockquote mb-0">
 									  	<p class="mb-0 small">Доктора Амантура Мурзалиева, я знаю очень давно, около30 лет, уже почти родственники</p>
@@ -293,6 +313,34 @@
 							</div>
 						</div>
 
+			</div>
+
+			<div class="row justify-content-center">
+				<a href="" class="btn btn-outline-primary">Еще отзывы</a>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="owl-carousel owl-theme owl-3">
+						<div class="card">
+							hellp
+						</div>
+						<div class="card">
+							hellp
+						</div>
+						<div class="card">
+							hellp
+						</div>
+						<div class="card">
+							hellp
+						</div>
+						<div class="card">
+							hellp
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -339,7 +387,7 @@
 				</div>
 			</div>
 		
-			<div class="row py-5 justify-content-center small text-muted">
+			<div class="row py-3 justify-content-center small text-muted">
 				<a href="http://mount.kg" target="_blank" class="text-muted">Made with&nbsp;<span class="text-danger">&hearts;</span> by&nbsp;Mount</a>
 			</div>
 		</div>
@@ -371,22 +419,33 @@
 	<script src="js/bootstrap/bootstrap.min.js"></script>
 	<script src="js/owlcarousel/owl.carousel.min.js"></script>
 	<script>
-		var owl = $('.owl-1');
-		owl.owlCarousel({
-		    items:3,
-		    loop:true,
-		    margin:20,
-		    autoplay:true,
-		    autoplayTimeout:10000,
-		    autoplayHoverPause:true
+		var owl1 = $('.owl-1');
+		owl1.owlCarousel({
+			items:3,
+			loop:true,
+			autoplay:true,
+			autoplayTimeout:10000,
+			autoplayHoverPause:true,
+			nav:true,
+			margin:10
 		});
 		var owl2 = $('.owl-2');
 		owl2.owlCarousel({
 			items:1,
 			loop:true,
 			autoplay:true,
-			autoplayTimeout:5000
-		})
+			autoplayTimeout:5000,
+		});
+		var owl3 = $('.owl-3');
+		owl3.owlCarousel({
+		    items:4,
+		    loop:true,
+			nav:true,
+		    margin:10,
+		    autoplay:true,
+		    autoplayTimeout:10000,
+		    autoplayHoverPause:true,
+		});
 	</script>
 	<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> -->
 	<script src="js/plugins/plugin.js"></script>
@@ -402,11 +461,12 @@
 		$(window).scroll(function() {
 			scroll = $(window).scrollTop();
 			if (scroll > 400) {
-				$('nav.navbar').removeClass('bg-light-tr');
-				$('nav.navbar').addClass('bg-light');
+				$('nav.navbar').removeClass('bg-transparent');
+				$('nav.navbar').addClass('bg-dramatic');
 			}
 			else {
-				$('nav.navbar').addClass('bg-light-tr');
+				$('nav.navbar').addClass('bg-transparent');
+				$('nav.navbar').removeClass('bg-dramatic');
 			}
 		});
 	</script>

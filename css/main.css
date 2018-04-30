@@ -13,17 +13,17 @@
 	box-shadow: 0px 0px 92px -22px rgba(0, 0, 0,0.75);
 }
 
-header {
+/*header {
 	-webkit-box-shadow: 0px 0px 92px -22px rgba(0, 0, 0,0.75);
 	-moz-box-shadow: 0px 0px 92px -22px rgba(0, 0, 0,0.75);
 	box-shadow: 0px 0px 92px -22px rgba(0, 0, 0,0.75);
-}
+}*/
 
 .jumbotron-new {
   position: absolute;
   z-index: 1;
   background-color: transparent;
-  top: 40%;
+  top: 35%;
   right: 10%;
 }
 
@@ -57,13 +57,21 @@ header {
 	transition: .5s;
 }
 
-.card:hover {
+.card-service:hover {
 	-webkit-box-shadow: 0px 0px 92px -22px rgba(13, 155, 197, 0.95);
 	-moz-box-shadow: 0px 0px 92px -22px rgba(13, 155, 197, 0.95);
 	box-shadow: 0px 0px 92px -22px rgba(13, 155, 197, 0.95);
 	transition: .5s;
 	transform: scale(1.06, 1.06);
 }
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 92px -22px rgba(13, 155, 197, 0.95);
+  -moz-box-shadow: 0px 0px 92px -22px rgba(13, 155, 197, 0.95);
+  box-shadow: 0px 0px 92px -22px rgba(13, 155, 197, 0.95);
+  transition: .5s;
+}
+
 .bg-primary-tr {
 	background-color: #56cce1!important;
 }
@@ -271,4 +279,34 @@ header {
 .card-service:hover {
   opacity: 0.9;
   transition: opacity 1s ease-out 0s;
+}
+
+.backdrop-card {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.card-header, .card-body {
+  z-index: 2;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+  transition: all .5s ease;
+}
+
+.bg-dramatic {
+  background-color: #14C7FF !important;
+  transition: all 0.5s ease;
+}
+
+.text-dramatic {
+  background-color: #14C7FF;
 }
