@@ -2,8 +2,11 @@
 
 @section('content')
     
-    <div class="container">
-        <div class="row">
+    <div class="container py-4">
+
+        <h1 class="text-center">Create post</h1>
+
+        <div class="row justify-content-center mt-5">
 
             <form action="/post/store" method="POST" enctype="multipart/form-data">
                 {{ csrf_field() }}

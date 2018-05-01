@@ -54,7 +54,7 @@ class PostController extends Controller
 
         $post->save();
 
-        return redirect('/post/show/'.$post->id);
+        return redirect('/post/show/' . $post->id);
     }
 
     /**
@@ -115,12 +115,20 @@ class PostController extends Controller
         }
 
         if ($request->is_active) {
-            $post->is_active = $request->is_active;
+            $post->is_active = true;
+            $flag = true;
+        }
+        else {
+            $post->is_active = false;
             $flag = true;
         }
 
         if ($request->on_main) {
-            $post->on_main = $request->on_main;
+            $post->on_main = true;
+            $flag = true;
+        }
+        else {
+            $post->on_main = false;
             $flag = true;
         }
 
@@ -128,7 +136,7 @@ class PostController extends Controller
             $post->save();
         }
 
-        return redirect()->back();
+        return redirect('/post/show/' . $post->id);
     }
 
     /**

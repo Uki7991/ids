@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/posts');
 });
 
 Auth::routes();
@@ -37,3 +37,6 @@ Route::get('/post/show/{post}', 'PostController@show');
 Route::get('/posts', 'PostController@index');
 Route::get('/post/create', 'PostController@create');
 Route::post('/post/store', 'PostController@store');
+Route::get('/post/edit/{post}', 'PostController@edit');
+Route::post('/post/update/{post}', 'PostController@update');
+
