@@ -17,23 +17,24 @@
             @foreach($posts as $post)
 
                 <div class="col-4 text-dark">
-                    <a href="/post/show/{{ $post->id }}" class="text-dark">
-                        <div class="card">
+                    <div class="card">
+                        <a href="/post/show/{{ $post->id }}" class="text-dark">
+
                             <img class="card-img-top" src="/upload/4.jpg" alt="Card image cap">
                             <div class="card-body text-center">
                                 <h3 class="card-title">{{ $post->title }}</h3>
                                 <p class="card-text">{{ $post->post_desc }}</p>
                             </div>
-                            @if(Auth::user() && Auth::user()->admin == 1)
+                        </a>
+                    @if(Auth::user() && Auth::user()->admin == 1)
 
-                                <div class="card-body text-center">
-                                    <a href="/post/edit/{{ $post->id }}" class="card-link text-warning">Редактировать</a>
-                                    <a href="/post/delete/{{ $post->id }}" class="card-link text-danger">Удалить</a>
-                                </div>
+                            <div class="card-body text-center">
+                                <a href="/post/edit/{{ $post->id }}" class="card-link text-warning">Редактировать</a>
+                                <a href="/post/delete/{{ $post->id }}" class="card-link text-danger">Удалить</a>
+                            </div>
 
-                            @endif
-                        </div>
-                    </a>
+                        @endif
+                    </div>
                 </div>
 
             @endforeach
