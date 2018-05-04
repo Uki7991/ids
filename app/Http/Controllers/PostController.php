@@ -14,16 +14,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        $postsOnMainCount = Post::all()
-            ->filter(function ($value, $key) {
-                return $value->on_main;
-            })->count();
-
-//        dd($postsOnMainCount);
-
         $postsOnMain = Post::all()
             ->where('is_active', '=', true)
-            ->where('on_main', '=', true)
             ->sortByDesc('created_at');
 
         return view('post/index', [
@@ -49,6 +41,11 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        $postsOnMainCount = Post::all()
+            ->filter(function ($value, $key) {
+                return $value->on_main;
+            })->count();
+
         $post = new Post();
         $post->title = $request->title;
         $post->image = $request->image;
@@ -60,6 +57,12 @@ class PostController extends Controller
         }
         if ($request->on_main) {
             $post->on_main = true;
+        }
+
+        if ($postsOnMainCount == 2) {
+            if ($request->on_main) {
+                $post->on_main = false;
+            }
         }
 
         $post->save();
@@ -88,8 +91,14 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
+        $postsOnMainCount = Post::all()
+            ->filter(function ($value, $key) {
+                return $value->on_main;
+            })->count();
+
         return view('post/edit', [
             'post' => $post,
+            'countOnMain' => $postsOnMainCount,
         ]);
     }
 
