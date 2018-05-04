@@ -14,10 +14,20 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+        $postsOnMainCount = Post::all()
+            ->filter(function ($value, $key) {
+                return $value->on_main;
+            })->count();
+
+//        dd($postsOnMainCount);
+
+        $postsOnMain = Post::all()
+            ->where('is_active', '=', true)
+            ->where('on_main', '=', true)
+            ->sortByDesc('created_at');
 
         return view('post/index', [
-            'posts' => $posts,
+            'posts' => $postsOnMain,
         ]);
     }
 
