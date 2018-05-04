@@ -30,7 +30,14 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('post/create');
+        $postsOnMainCount = Post::all()
+            ->filter(function ($value, $key) {
+                return $value->on_main;
+            })->count();
+
+        return view('post/create', [
+            'countOnMain' => $postsOnMainCount,
+        ]);
     }
 
     /**

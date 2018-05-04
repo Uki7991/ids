@@ -32,7 +32,9 @@
                 </div>
                 <div class="form-group">
                     <label for="post_on-main">On main?</label>
-                    <input id="post_on-main" name="on_main" type="checkbox" class="form-control">
+                    <input id="post_on-main" name="on_main" type="checkbox" class="form-control"
+                        @if($countOnMain == 2) disabled @endif
+                    >
                 </div>
                 <button type="submit" class="btn btn-success">Create</button>
             </form>
