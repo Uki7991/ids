@@ -303,12 +303,12 @@
 }
 
 .bg-dramatic {
-  background-color: #14C7FF !important;
+  background-color: #0083A6 !important;
   transition: all 0.5s ease;
 }
 
 .text-dramatic {
-  background-color: #14C7FF;
+  background-color: #0083A6;
 }
 
 .owl-nav {
@@ -349,4 +349,12 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.min-benefit-height {
+  min-height: 200px;
+}
+
+.max-benefit-height {
+  max-height: 400px;
 }
