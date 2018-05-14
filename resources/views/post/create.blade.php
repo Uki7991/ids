@@ -8,7 +8,7 @@
 
         <div class="row justify-content-center mt-5">
 
-            <form action="/post/store" method="POST" enctype="multipart/form-data">
+            <form action="/post" method="POST" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="post_title">Title</label>

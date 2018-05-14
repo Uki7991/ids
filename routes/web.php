@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return redirect('/posts');
+    return redirect('/post');
 });
 
 Auth::routes();
@@ -33,10 +33,5 @@ Route::group(['middleware' => ['admin']], function () {
     Route::post('/admin/post/update/{id}', 'PostController@update');
 });
 
-Route::get('/post/show/{post}', 'PostController@show');
-Route::get('/posts', 'PostController@index');
-Route::get('/post/create', 'PostController@create');
-Route::post('/post/store', 'PostController@store');
-Route::get('/post/edit/{post}', 'PostController@edit');
-Route::post('/post/update/{post}', 'PostController@update');
+Route::resource('post', 'PostController');
 

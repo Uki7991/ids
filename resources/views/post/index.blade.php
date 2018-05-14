@@ -16,9 +16,9 @@
 
             @foreach($posts as $post)
 
-                <div class="col-4 text-dark">
+                <div class="col-4 text-dark py-3">
                     <div class="card">
-                        <a href="/post/show/{{ $post->id }}" class="text-dark">
+                        <a href="/post/{{ $post->id }}" class="text-dark">
 
                             <img class="card-img-top" src="/upload/4.jpg" alt="Card image cap">
                             <div class="card-body text-center">
@@ -29,8 +29,16 @@
                     @if(Auth::user() && Auth::user()->admin == 1)
 
                             <div class="card-body text-center">
-                                <a href="/post/edit/{{ $post->id }}" class="card-link text-warning">Редактировать</a>
-                                <a href="/post/delete/{{ $post->id }}" class="card-link text-danger">Удалить</a>
+                                <a href="/post/{{ $post->id }}/edit" class="card-link text-warning">Редактировать</a>
+                                <a class="card-link text-danger" href="/post/{{ $post->id }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('post-delete').submit();">Удалить
+                                </a>
+
+                                <form id="post-delete" action="/post/{{ $post->id }}" method="POST" style="display: none;">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    @csrf
+                                </form>
                             </div>
 
                         @endif

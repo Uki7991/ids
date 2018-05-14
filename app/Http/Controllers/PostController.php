@@ -67,14 +67,12 @@ class PostController extends Controller
         }
 
         if ($postsOnMainCount == 2) {
-            if ($request->on_main) {
-                $post->on_main = false;
-            }
+            $post->on_main = false;
         }
 
         $post->save();
 
-        return redirect('/post/show/' . $post->id);
+        return redirect('/post/' . $post->id);
     }
 
     /**
@@ -162,7 +160,7 @@ class PostController extends Controller
             $post->save();
         }
 
-        return redirect('/post/show/' . $post->id);
+        return redirect('/post/' . $post->id);
     }
 
     /**
