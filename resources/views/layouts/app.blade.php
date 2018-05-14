@@ -36,7 +36,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto text-center">
                     <li class="nav-item active">
-                        <a class="nav-link text-light" href="index.html">Главная</a>
+                        <a class="nav-link text-light" href="/">Главная</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="#">О нас</a>
@@ -76,16 +76,16 @@
                 <div class="col-12 col-md-auto">
                     <ul class="nav flex-column">
                         <li class="nav-item active">
-                            <a class="nav-link text-muted small p-1" href="index.html">Главная</a>
+                            <a class="nav-link text-muted small p-1" href="/">Главная</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-muted small p-1" href="#">О нас</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-muted small p-1" href="#">Услуги</a>
+                            <a class="nav-link text-muted small p-1" href="#uslugi">Услуги</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-muted small p-1" href="#">Блог</a>
+                            <a class="nav-link text-muted small p-1" href="#blog">Блог</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-muted small p-1" href="#">Контакты</a>

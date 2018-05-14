@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return redirect('/post');
-});
+Route::get('/', 'HomeController@index');
 
 Auth::routes();
 
