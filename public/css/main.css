@@ -381,7 +381,7 @@
     position:absolute;
     left:0;
     right:0;
-    height:100vh;
+    height:100%;
     background: #72f5fb;
     -webkit-transform:skew(0,5deg);
     transform:skew(0,5deg);
@@ -390,4 +390,22 @@
 section, footer {
     position: relative;
     z-index: 1;
+}
+
+@media (min-width:576px) {
+    .carousel.slide {
+        height: 25vh;
+    }
+}
+
+@media (min-width:768px) {
+    .carousel.slide {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 1300px) {
+    .carousel.slide {
+        height: 100vh;
+    }
 }

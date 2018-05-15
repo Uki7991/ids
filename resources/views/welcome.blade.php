@@ -5,14 +5,14 @@
 @section('content')
 
     <section>
-        <div class="jumbotron d-none d-lg-block jumbotron-fluid m-0 w-35 w-lg-50 jumbotron-new bg-primary-transparent-20 border border-light text-light">
+        <div class="jumbotron d-none d-lg-block jumbotron-fluid m-0 w-35 w-lg-75 w-xl-100 jumbotron-new bg-primary-transparent-20 border border-light text-light">
             <div class="backdrop-card"></div>
             <div class="container" style="position: relative; z-index: 2;">
                 <h1 class="display-4 text-center">Implant Dental Service</h1>
                 <p class="lead">ВЫ ЗНАЕТЕ, ЧТО ЛЕЧЕНИЕ ЗУБОВ МОЖЕТ ПРОХОДИТЬ БЕЗ БОЛИ И ДИСКОМФОРТА?</p>
             </div>
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 100vh;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -188,7 +188,7 @@
         </div>
     </section>
 
-    <section class="d-none d-lg-block" style="background-image: url('img/1.jpg'); background-attachment: fixed;">
+    <section class="d-none d-xl-block" style="background-image: url('img/1.jpg'); background-attachment: fixed;">
         <div style="content: ' '; width: 100%; height: 300px; position: absolute; left: 0px; background-color: #00000085;"></div>
         <div class="container mb-5 text-light">
             <div class="row">
