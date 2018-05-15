@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'index')
+
 @section('content')
 
     <div class="container">
@@ -7,7 +9,7 @@
         @if(Auth::user() && Auth::user()->admin == 1)
 
             <div class="row justify-content-end my-4">
-                <a href="/post/create" class="btn btn-outline-success">Создать пост</a>
+                <a href="{{ route('post.create') }}" class="btn btn-outline-success">Создать пост</a>
             </div>
 
         @endif
@@ -51,3 +53,4 @@
     </div>
 
 @endsection
+

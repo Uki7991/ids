@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title')</title>
 
 
 
@@ -26,7 +26,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="fixed-top header">
+    <header class="sticky-top header">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -133,55 +133,9 @@
     <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/popper.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/owlcarousel/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('js/plugins/plugin.js') }}"></script>
-    <script src="{{ asset('js/script.js') }}"></script>
 
-    <script src="{{ asset('js/plugins/smoothscroll.js') }}"></script>
-    <script>
-        var owl1 = $('.owl-1');
-        owl1.owlCarousel({
-            items:3,
-            loop:true,
-            autoplay:true,
-            autoplayTimeout:10000,
-            autoplayHoverPause:true,
-            nav:true,
-            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
-            margin:10
-        });
-        var owl2 = $('.owl-2');
-        owl2.owlCarousel({
-            items:1,
-            loop:true,
-            autoplay:true,
-            autoplayTimeout:5000,
-        });
-        var owl3 = $('.owl-3');
-        owl3.owlCarousel({
-            items:4,
-            loop:true,
-            nav:true,
-            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
-            margin:10,
-            autoplay:true,
-            autoplayTimeout:10000,
-            autoplayHoverPause:true,
-        });
-    </script>
-    <script>
-        var scroll;
-        $(window).scroll(function() {
-            scroll = $(window).scrollTop();
-            if (scroll > 400) {
-                $('nav.navbar').removeClass('bg-transparent');
-                $('nav.navbar').addClass('bg-dramatic');
-            }
-            else {
-                $('nav.navbar').addClass('bg-transparent');
-                $('nav.navbar').removeClass('bg-dramatic');
-            }
-        });
-    </script>
+    <script src="{{ asset('js/owlcarousel/owl.carousel.min.js') }}"></script>
+    @yield('javascripts')
+
 </body>
 </html>
