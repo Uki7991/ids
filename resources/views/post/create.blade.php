@@ -3,6 +3,17 @@
 @section('title', 'Create')
 
 @section('content')
+
+    <div class="py-5 position-relative post-show">
+        <div class="backdrop-post"></div>
+        <div class="container">
+            <div class="row py-5 align-items-end justify-content-center">
+
+                <div class="h1 my-5 text-light text-center">Blog</div>
+
+            </div>
+        </div>
+    </div>
     
     <div class="container py-4">
 
@@ -53,13 +64,14 @@
     <script src="{{ asset('js/tinymce/js/tinymce/jquery.tinymce.min.js') }}"></script>
     <script>
         tinymce.init({
-            selector:'#post_desc'
+            selector:'#post_desc',
+            height: 300
         });
     </script>
     <script>
         tinymce.init({
             selector:'#post_content',
-            height: 500,
+            height: 800,
             plugins: [
                 "advlist autolink lists link image imagetools charmap print preview anchor paste",
                 "searchreplace visualblocks code fullscreen",
@@ -72,7 +84,7 @@
             automatic_uploads: true,
             paste_data_images: true,
             // URL of our upload handler (for more details check: https://www.tinymce.com/docs/configure/file-image-upload/#images_upload_url)
-            images_upload_url: '{{ app.request.getBaseUrl() }}' + '/upload-image-tiny',
+            images_upload_url: '/upload-image-tiny',
             // here we add custom filepicker only to Image dialog
             relative_urls: false,
             remove_script_host: false,
@@ -110,6 +122,21 @@
                 };
 
                 input.click();
+            }
+        });
+    </script>
+
+    <script>
+        var scroll;
+        $(window).scroll(function() {
+            scroll = $(window).scrollTop();
+            if (scroll > 400) {
+                $('nav.navbar').removeClass('bg-transparent');
+                $('nav.navbar').addClass('bg-dramatic');
+            }
+            else {
+                $('nav.navbar').addClass('bg-transparent');
+                $('nav.navbar').removeClass('bg-dramatic');
             }
         });
     </script>

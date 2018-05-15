@@ -26,7 +26,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="sticky-top header">
+    <header class="fixed-top header">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,15 +42,28 @@
                         <a class="nav-link text-light" href="#">О нас</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#uslugi">Услуги</a>
+                        <a class="nav-link text-light" href="/#uslugi">Услуги</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#blog">Блог</a>
+                        <a class="nav-link text-light" href="/#blog">Блог</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="#">Контакты</a>
                     </li>
                 </ul>
+                @if(Auth::user() && Auth::user()->admin)
+
+                    <ul class="navbar-nav text-center mr-auto">
+                        <li class="nav-item">
+                            <a href="{{ route('logout') }}" class="nav-link text-light" onclick="event.preventDefault();
+                                                     document.getElementById('logout').submit();">Logout</a>
+                            <form action="{{ route('logout') }}" id="logout" method="POST" style="display:none;">
+                                @csrf
+                            </form>
+                        </li>
+                    </ul>
+
+                @endif
                 <ul class="nav flex-column mr-0 mr-lg-5">
                     <li class="nav-item row align-items-center justify-content-center small">
                         <a class="nav-link text-light" href="mailto:ids.com@gmail.com"><u>ids.com@gmail.com</u></a>

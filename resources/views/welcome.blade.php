@@ -164,7 +164,7 @@
             @foreach($posts as $post)
 
                 <div class="col-12 mb-3 mb-md-0 col-md-6">
-                    <a href="#" class="card-spec" ontouchstart="this.classList.toggle('hover');">
+                    <a href="/post/{{ $post->id }}" class="card-spec" ontouchstart="this.classList.toggle('hover');">
                         <div class="container">
                             <div class="front" style="background-image: url(img/4.jpg)">
                                 <div class="inner">
@@ -174,7 +174,7 @@
                             </div>
                             <div class="back">
                                 <div class="inner">
-                                    <p>{{ $post->post_desc }}</p>
+                                    <p class="text-light">{!! $post->post_desc !!}</p>
                                 </div>
                             </div>
                         </div>
