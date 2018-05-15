@@ -374,3 +374,20 @@
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+.card-director:before{
+    content:"";
+    z-index: 0;
+    position:absolute;
+    left:0;
+    right:0;
+    height:100vh;
+    background: #72f5fb;
+    -webkit-transform:skew(0,5deg);
+    transform:skew(0,5deg);
+}
+
+section, footer {
+    position: relative;
+    z-index: 1;
+}

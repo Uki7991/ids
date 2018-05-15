@@ -358,36 +358,38 @@
     </section>
 
     <section>
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-4 col-12 pl-0">
-                    <img class="img-fluid mx-auto" src="img/DSC_1846.jpg" alt="Card image cap">
-                </div>
-                <div class="col-lg-8 col-12 py-3">
-                    <h3 class="text-center mb-3">Мурзалиев Амантур Джолдошбекович</h3>
-                    <span class="text-muted"> - ведущий специалист по имплантологии в Кыргызстане.</span>
-                    <div class="mt-5">
-                        <p class="">
-                            Генеральный директор стоматологической клиники «IDS»
-                        </p>
-                        <p class="">
-                            Кандидат медицинских наук
-                        </p>
-                        <p class="">
-                            Доцент кафедры стоматологии и челюстно-лицевой хирургии КГМИП  и ПК
-                        </p>
-                        <p class="">
-                            Врач-стоматолог, ортопед-имплантолог, хирург-имплантолог
-                        </p>
-                        <p class="">
-                            Стаж работы 31 год
-                        </p>
-                        <p class="">
-                            Дентальной имплантацией занимается 20 лет
-                        </p>
-                        <p class="">
-                            Было написано – 20 научных работ, рационализаторских предложений – 14 и 1 патент на щипцы
-                        </p>
+        <div class="card-director">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-4 col-12 pl-0">
+                        <img class="img-fluid mx-auto" src="img/DSC_1846.jpg" alt="Card image cap">
+                    </div>
+                    <div class="col-lg-8 col-12 py-3">
+                        <h3 class="text-center mb-3">Мурзалиев Амантур Джолдошбекович</h3>
+                        <span class="text-dark"> - ведущий специалист по имплантологии в Кыргызстане.</span>
+                        <div class="mt-5">
+                            <p class="">
+                                Генеральный директор стоматологической клиники «IDS»
+                            </p>
+                            <p class="">
+                                Кандидат медицинских наук
+                            </p>
+                            <p class="">
+                                Доцент кафедры стоматологии и челюстно-лицевой хирургии КГМИП  и ПК
+                            </p>
+                            <p class="">
+                                Врач-стоматолог, ортопед-имплантолог, хирург-имплантолог
+                            </p>
+                            <p class="">
+                                Стаж работы 31 год
+                            </p>
+                            <p class="">
+                                Дентальной имплантацией занимается 20 лет
+                            </p>
+                            <p class="">
+                                Было написано – 20 научных работ, рационализаторских предложений – 14 и 1 патент на щипцы
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -416,7 +418,28 @@
             autoplayHoverPause:true,
             nav:true,
             navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
-            margin:10
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:false
+                },
+                1000:{
+                    items:3,
+                    nav:false,
+                    loop:true
+                },
+                1300:{
+                    items:4,
+                    nav:true,
+                    loop:true
+                }
+            }
         });
         var owl2 = $('.owl-2');
         owl2.owlCarousel({
@@ -424,6 +447,27 @@
             loop:true,
             autoplay:true,
             autoplayTimeout:5000,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:false
+                },
+                1000:{
+                    items:3,
+                    nav:false,
+                    loop:true
+                },
+                1300:{
+                    items:4,
+                    nav:true,
+                    loop:true
+                }
+            }
         });
         var owl3 = $('.owl-3');
         owl3.owlCarousel({
@@ -435,6 +479,27 @@
             autoplay:true,
             autoplayTimeout:10000,
             autoplayHoverPause:true,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:false
+                },
+                1000:{
+                    items:3,
+                    nav:false,
+                    loop:true
+                },
+                1300:{
+                    items:4,
+                    nav:true,
+                    loop:true
+                }
+            }
         });
     </script>
     <script>
