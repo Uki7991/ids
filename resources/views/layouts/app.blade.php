@@ -29,8 +29,8 @@
     <header class="fixed-top header">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler text-light border-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars fa-lg"></i>
                 </button>
                 <a class="navbar-brand ml-5 mx-auto text-center text-light" href="#">Implant Dental Service</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -110,9 +110,19 @@
                     <div class="row justify-content-center">
                         <h3 class="text-light">Контакты</h3>
                     </div>
+                    <div class="">
+                        <a href="" target="_blank" class="text-light mr-3"><i class="fab fa-lg fa-facebook"></i> fb.com/implantdentalservice</a>
+                        <a href="" target="_blank" class="text-light mr-3"><i class="fab fa-lg fa-instagram"></i> instagram.com/implantdentalservice</a>
+                    </div>
                     <div class="row justify-content-center">
-                        <a href="" target="_blank" class="text-light mr-3"><i class="fab fa-lg fa-facebook"></i></a>
-                        <a href="" target="_blank" class="text-light mr-3"><i class="fab fa-lg fa-instagram"></i></a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item row align-items-center justify-content-center">
+                                <a class="nav-link text-light" href="mailto:ids.com@gmail.com"><u>ids.com@gmail.com</u></a>
+                            </li>
+                            <li class="nav-item row align-items-center justify-content-center">
+                                <a class="nav-link text-light" href="tel: +996 (700) 700 700"><u>+996 (700) 700 - 700</u></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -80,6 +80,9 @@
             toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
             imagetools_toolbar: "rotateleft rotateright | flipv fliph | editimage imageoptions",
             image_title: true,
+            image_class_list: [
+                {title: 'image-fluid', value: 'img-fluid'}
+            ],
             // enable automatic uploads of images represented by blob or data URIs
             automatic_uploads: true,
             paste_data_images: true,

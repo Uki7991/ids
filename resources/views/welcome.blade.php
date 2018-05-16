@@ -115,10 +115,10 @@
         </div>
     </section>
 
-    <section id="benefits" class="py-4 d-flex align-items-center" style="background-image: url('img/1.jpg'); background-attachment: fixed; z-index: 2; height: 100vh;">
-        <div class="container">
-            <div class="row justify-content-center my-5">
-                <h2 class="text-center h1">Чем мы отличаемся от других?</h2>
+    <section id="benefits" class="py-5 d-flex align-items-center" style="background-image: url('img/1.jpg'); background-attachment: fixed; z-index: 2;">
+        <div class="container my-5">
+            <div class="row justify-content-center bg-dramatic py-4">
+                <h2 class="text-center h1 text-light">Чем мы отличаемся от других?</h2>
             </div>
             <div class="row align-items-center">
                 <div class="col-12">
