@@ -68,28 +68,3 @@
     </div>
 
 @endsection
-
-@section('javascripts')
-
-    <script>
-        var scroll;
-        if ($(window).width() > 1000) {
-            $(window).scroll(function() {
-                scroll = $(window).scrollTop();
-                if (scroll > 300) {
-                    $('nav.navbar').removeClass('bg-transparent');
-                    $('nav.navbar').addClass('bg-dramatic');
-                }
-                else {
-                    $('nav.navbar').addClass('bg-transparent');
-                    $('nav.navbar').removeClass('bg-dramatic');
-                }
-            });
-        }
-        else {
-            $('nav.navbar').removeClass('bg-transparent');
-            $('nav.navbar').addClass('bg-dramatic');
-        }
-    </script>
-
-@endsection

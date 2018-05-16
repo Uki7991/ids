@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title')</title>
+    <title>Implant Dental Service - @yield('title')</title>
 
 
 
@@ -32,7 +32,7 @@
                 <button class="navbar-toggler text-light border-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars fa-lg"></i>
                 </button>
-                <a class="navbar-brand ml-5 mx-auto text-center text-light" href="#">Implant Dental Service</a>
+                <a class="navbar-brand ml-5 mx-auto text-center text-light" href="/">Implant Dental Service</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto text-center">
                         <li class="nav-item active">
@@ -45,7 +45,7 @@
                             <a class="nav-link text-light" href="/#uslugi">Услуги</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="/#blog">Блог</a>
+                            <a class="nav-link text-light" href="{{ Request::is('/') ? '/#blog' : '/post' }}">Блог</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#">Контакты</a>
@@ -99,7 +99,7 @@
                             <a class="nav-link text-light small p-1" href="#uslugi">Услуги</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light small p-1" href="#blog">Блог</a>
+                            <a class="nav-link text-light small p-1" href="{{ Request::is('/') ? '/#blog' : '/post' }}">Блог</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light small p-1" href="#">Контакты</a>
@@ -161,6 +161,26 @@
     <script src="{{ asset('js/app.js') }}"></script>
 
     <script src="{{ asset('js/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script>
+        var scroll;
+        if ($(window).width() > 1000) {
+            $(window).scroll(function() {
+                scroll = $(window).scrollTop();
+                if (scroll > 300) {
+                    $('nav.navbar').removeClass('bg-transparent');
+                    $('nav.navbar').addClass('bg-dramatic');
+                }
+                else {
+                    $('nav.navbar').addClass('bg-transparent');
+                    $('nav.navbar').removeClass('bg-dramatic');
+                }
+            });
+        }
+        else {
+            $('nav.navbar').removeClass('bg-transparent');
+            $('nav.navbar').addClass('bg-dramatic');
+        }
+    </script>
     @yield('javascripts')
 
 </body>

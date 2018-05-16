@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+@section('title')
+
+    {{ $post->title }}
+
+@endsection
+
 @section('content')
     <div class="py-5 position-relative post-show">
         <div class="backdrop-post"></div>
@@ -16,36 +22,11 @@
         <div class="row">
 
             <div class="col-12">
-                <h2>{{ $post->title }}</h2>
+                <h2 class="text-center mb-5">{{ $post->title }}</h2>
                 <p>{!! $post->post_content !!}</p>
             </div>
 
         </div>
     </div>
-
-@endsection
-
-@section('javascripts')
-
-    <script>
-        var scroll;
-        if (window.width > 1000) {
-            $(window).scroll(function() {
-                scroll = $(window).scrollTop();
-                if (scroll > 400) {
-                    $('nav.navbar').removeClass('bg-transparent');
-                    $('nav.navbar').addClass('bg-dramatic');
-                }
-                else {
-                    $('nav.navbar').addClass('bg-transparent');
-                    $('nav.navbar').removeClass('bg-dramatic');
-                }
-            });
-        }
-        else {
-            $('nav.navbar').removeClass('bg-transparent');
-            $('nav.navbar').addClass('bg-dramatic');
-        }
-    </script>
 
 @endsection
