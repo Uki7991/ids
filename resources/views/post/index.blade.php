@@ -76,7 +76,7 @@
         if ($(window).width() > 1000) {
             $(window).scroll(function() {
                 scroll = $(window).scrollTop();
-                if (scroll > 400) {
+                if (scroll > 300) {
                     $('nav.navbar').removeClass('bg-transparent');
                     $('nav.navbar').addClass('bg-dramatic');
                 }
