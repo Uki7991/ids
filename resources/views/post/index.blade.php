@@ -73,7 +73,7 @@
 
     <script>
         var scroll;
-        if (window.width > 1000) {
+        if ($(window).width() > 1000) {
             $(window).scroll(function() {
                 scroll = $(window).scrollTop();
                 if (scroll > 400) {
