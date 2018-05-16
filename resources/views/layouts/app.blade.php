@@ -65,10 +65,10 @@
 
                     @endif
                     <ul class="nav flex-column mr-0 mr-lg-5">
-                        <li class="nav-item row align-items-center justify-content-center small">
+                        <li class="nav-item row align-items-center justify-content-center">
                             <a class="nav-link text-light" href="mailto:ids.com@gmail.com"><u>ids.com@gmail.com</u></a>
                         </li>
-                        <li class="nav-item row align-items-center justify-content-center small">
+                        <li class="nav-item row align-items-center justify-content-center">
                             <a class="nav-link text-light" href="tel: +996 (700) 700 700"><u>+996 (700) 700 - 700</u></a>
                         </li>
                     </ul>
@@ -110,9 +110,11 @@
                     <div class="row justify-content-center">
                         <h3 class="text-light">Контакты</h3>
                     </div>
-                    <div class="">
-                        <a href="" target="_blank" class="text-light mr-3"><i class="fab fa-lg fa-facebook"></i> fb.com/implantdentalservice</a>
-                        <a href="" target="_blank" class="text-light mr-3"><i class="fab fa-lg fa-instagram"></i> instagram.com/implantdentalservice</a>
+                    <div class="row justify-content-center">
+                        <a href="" target="_blank" class="text-light mr-3 text-center"><i class="fab fa-lg fa-facebook"></i> fb.com/implantdentalservice</a>
+                    </div>
+                    <div class="row justify-content-center">
+                        <a href="" target="_blank" class="text-light mr-3 text-center"><i class="fab fa-lg fa-instagram"></i> instagram.com/implantdentalservice</a>
                     </div>
                     <div class="row justify-content-center">
                         <ul class="nav flex-column">

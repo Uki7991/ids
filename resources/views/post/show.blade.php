@@ -29,17 +29,23 @@
 
     <script>
         var scroll;
-        $(window).scroll(function() {
-            scroll = $(window).scrollTop();
-            if (scroll > 400) {
-                $('nav.navbar').removeClass('bg-transparent');
-                $('nav.navbar').addClass('bg-dramatic');
-            }
-            else {
-                $('nav.navbar').addClass('bg-transparent');
-                $('nav.navbar').removeClass('bg-dramatic');
-            }
-        });
+        if (window.width > 1000) {
+            $(window).scroll(function() {
+                scroll = $(window).scrollTop();
+                if (scroll > 400) {
+                    $('nav.navbar').removeClass('bg-transparent');
+                    $('nav.navbar').addClass('bg-dramatic');
+                }
+                else {
+                    $('nav.navbar').addClass('bg-transparent');
+                    $('nav.navbar').removeClass('bg-dramatic');
+                }
+            });
+        }
+        else {
+            $('nav.navbar').removeClass('bg-transparent');
+            $('nav.navbar').addClass('bg-dramatic');
+        }
     </script>
 
 @endsection
