@@ -28,50 +28,51 @@
     <!-- Header -->
     <header class="fixed-top header">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand ml-5 mx-auto text-center text-light" href="#">Implant Dental Service</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto text-center">
-                    <li class="nav-item active">
-                        <a class="nav-link text-light" href="/">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">О нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="/#uslugi">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="/#blog">Блог</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Контакты</a>
-                    </li>
-                </ul>
-                @if(Auth::user() && Auth::user()->admin)
-
-                    <ul class="navbar-nav text-center mr-auto">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand ml-5 mx-auto text-center text-light" href="#">Implant Dental Service</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="/">Главная</a>
+                        </li>
                         <li class="nav-item">
-                            <a href="{{ route('logout') }}" class="nav-link text-light" onclick="event.preventDefault();
-                                                     document.getElementById('logout').submit();">Logout</a>
-                            <form action="{{ route('logout') }}" id="logout" method="POST" style="display:none;">
-                                @csrf
-                            </form>
+                            <a class="nav-link text-light" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/#uslugi">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/#blog">Блог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Контакты</a>
                         </li>
                     </ul>
+                    @if(Auth::user() && Auth::user()->admin)
 
-                @endif
-                <ul class="nav flex-column mr-0 mr-lg-5">
-                    <li class="nav-item row align-items-center justify-content-center small">
-                        <a class="nav-link text-light" href="mailto:ids.com@gmail.com"><u>ids.com@gmail.com</u></a>
-                    </li>
-                    <li class="nav-item row align-items-center justify-content-center small">
-                        <a class="nav-link text-light" href="tel: +996 (700) 700 700"><u>+996 (700) 700 - 700</u></a>
-                    </li>
-                </ul>
+                        <ul class="navbar-nav text-center mr-auto">
+                            <li class="nav-item">
+                                <a href="{{ route('logout') }}" class="nav-link text-light" onclick="event.preventDefault();
+                                                     document.getElementById('logout').submit();">Logout</a>
+                                <form action="{{ route('logout') }}" id="logout" method="POST" style="display:none;">
+                                    @csrf
+                                </form>
+                            </li>
+                        </ul>
+
+                    @endif
+                    <ul class="nav flex-column mr-0 mr-lg-5">
+                        <li class="nav-item row align-items-center justify-content-center small">
+                            <a class="nav-link text-light" href="mailto:ids.com@gmail.com"><u>ids.com@gmail.com</u></a>
+                        </li>
+                        <li class="nav-item row align-items-center justify-content-center small">
+                            <a class="nav-link text-light" href="tel: +996 (700) 700 700"><u>+996 (700) 700 - 700</u></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -81,7 +82,7 @@
         @yield('content')
     </main>
 
-    <footer class="bg-dark">
+    <footer class="bg-dramatic">
 
         <div class="container">
             <div class="row py-5 justify-content-between justify-content-center text-center">
@@ -89,19 +90,19 @@
                 <div class="col-12 col-md-auto">
                     <ul class="nav flex-column">
                         <li class="nav-item active">
-                            <a class="nav-link text-muted small p-1" href="/">Главная</a>
+                            <a class="nav-link text-light small p-1" href="/">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-muted small p-1" href="#">О нас</a>
+                            <a class="nav-link text-light small p-1" href="#">О нас</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-muted small p-1" href="#uslugi">Услуги</a>
+                            <a class="nav-link text-light small p-1" href="#uslugi">Услуги</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-muted small p-1" href="#blog">Блог</a>
+                            <a class="nav-link text-light small p-1" href="#blog">Блог</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-muted small p-1" href="#">Контакты</a>
+                            <a class="nav-link text-light small p-1" href="#">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -117,7 +118,7 @@
             </div>
 
             <div class="row py-3 justify-content-center small text-muted">
-                <a href="http://mount.kg" target="_blank" class="text-muted">Made with&nbsp;<span class="text-danger">&hearts;</span> by&nbsp;Mount</a>
+                <a href="http://mount.kg" target="_blank" class="text-light">Made with&nbsp;<span class="text-danger">&hearts;</span> by&nbsp;Mount</a>
             </div>
         </div>
     </footer>

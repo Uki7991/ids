@@ -409,3 +409,7 @@ section, footer {
         height: 100vh;
     }
 }
+
+.bg-light-dramatic {
+    background-color: #72f5fb !important;
+}
