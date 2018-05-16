@@ -52,7 +52,7 @@
         </div> -->
     </section>
 
-    <section id="uslugi" class="container">
+    <section id="uslugi" class="container my-5">
         <div class="row justify-content-center py-5">
             <h2 class="h1">Услуги</h2>
         </div>
@@ -115,12 +115,12 @@
         </div>
     </section>
 
-    <section id="benefits" class="py-4">
+    <section id="benefits" class="py-4 d-flex align-items-center" style="background-image: url('img/1.jpg'); background-attachment: fixed; z-index: 2; height: 100vh;">
         <div class="container">
             <div class="row justify-content-center my-5">
                 <h2 class="text-center h1">Чем мы отличаемся от других?</h2>
             </div>
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12 col-md-6 p-3 min-benefit-height" style="background-color: #28ABCA;">
@@ -184,11 +184,11 @@
             @endforeach
         </div>
         <div class="row justify-content-center mt-5 mb-3">
-            <a href="/post" class="btn btn-outline-primary">Посмотреть еще новости...</a>
+            <a href="{{ route('post.index') }}" class="btn btn-primary">Посмотреть еще новости...</a>
         </div>
     </section>
 
-    <section class="d-none d-xl-block" style="background-image: url('img/1.jpg'); background-attachment: fixed;">
+    <section class="d-none d-xl-block position-relative" style="background-image: url('img/1.jpg'); background-attachment: fixed; z-index: 2;">
         <div style="content: ' '; width: 100%; height: 300px; position: absolute; left: 0px; background-color: #00000085;"></div>
         <div class="container text-light">
             <div class="row">
@@ -208,92 +208,94 @@
         </div>
     </section>
 
-    <section class="bg-light-dramatic">
-        <div class="container py-5">
-            <div class="row justify-content-center mb-3">
-                <h2 class="h1">Отзывы</h2>
-            </div>
-            <div class="row">
+    <section class="">
+        <div class="card-director">
+            <div class="container py-5">
+                <div class="row justify-content-center mb-3">
+                    <h2 class="h1">Отзывы</h2>
+                </div>
+                <div class="row">
 
 
-                <div class="owl-carousel owl-theme owl-1 owl-nav-outer owl-dot-round">
-                    <div class="card bg-primary-transparent-20">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                                <p class="mb-0 small text-dark">Последние два года пользуюсь услугами данной клиники, всем довольна, в кабинетах всегда чисто, профессионально лечат зубики. Что самое главное — приемелмая цена.</p>
-                            </blockquote>
+                    <div class="owl-carousel owl-theme owl-1 owl-nav-outer owl-dot-round">
+                        <div class="card bg-light-dramatic">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="mb-0 small text-dark">Последние два года пользуюсь услугами данной клиники, всем довольна, в кабинетах всегда чисто, профессионально лечат зубики. Что самое главное — приемелмая цена.</p>
+                                </blockquote>
+                            </div>
+                            <div class="card-footer">
+                                <div class="blockquote-footer text-center text-dark">Айдай</div>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <div class="blockquote-footer text-center text-dark">Айдай</div>
+
+
+                        <div class="card bg-light-dramatic">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="mb-0 small text-dark">Я обратился в клинику IDS к доктору Мурзалиеву по поводу имплантации. Поменял 2 моста, поставил 2 имплантата. Всё сделали качественно и безболезненно. Рекомендую обращаться. Дмитрий.</p>
+                                </blockquote>
+                            </div>
+                            <div class="card-footer">
+                                <div class="blockquote-footer text-center text-dark">Дмитрий</div>
+                            </div>
+                        </div>
+
+
+                        <div class="card bg-light-dramatic">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="mb-0 small text-dark">Доктора Амантура Мурзалиева, я знаю очень давно, около30 лет, уже почти родственники</p>
+                                </blockquote>
+                            </div>
+                            <div class="card-footer">
+                                <div class="blockquote-footer text-center text-dark">Канат</div>
+                            </div>
+
+                        </div>
+
+                        <div class="card bg-light-dramatic">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="mb-0 small text-dark">Последние два года пользуюсь услугами данной клиники, всем довольна, в кабинетах всегда чисто, профессионально лечат зубики. Что самое главное — приемелмая цена.</p>
+                                </blockquote>
+                            </div>
+                            <div class="card-footer">
+                                <div class="blockquote-footer text-center text-dark">Айдай</div>
+                            </div>
+                        </div>
+
+
+                        <div class="card bg-light-dramatic">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="mb-0 small text-dark">Я обратился в клинику IDS к доктору Мурзалиеву по поводу имплантации. Поменял 2 моста, поставил 2 имплантата. Всё сделали качественно и безболезненно. Рекомендую обращаться. Дмитрий.</p>
+                                </blockquote>
+                            </div>
+                            <div class="card-footer">
+                                <div class="blockquote-footer text-center text-dark">Дмитрий</div>
+                            </div>
+                        </div>
+
+
+                        <div class="card bg-light-dramatic">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="mb-0 small text-dark">Доктора Амантура Мурзалиева, я знаю очень давно, около30 лет, уже почти родственники</p>
+                                </blockquote>
+                            </div>
+                            <div class="card-footer">
+                                <div class="blockquote-footer text-center text-dark">Канат</div>
+                            </div>
+
                         </div>
                     </div>
 
-
-                    <div class="card bg-primary-transparent-20">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                                <p class="mb-0 small text-dark">Я обратился в клинику IDS к доктору Мурзалиеву по поводу имплантации. Поменял 2 моста, поставил 2 имплантата. Всё сделали качественно и безболезненно. Рекомендую обращаться. Дмитрий.</p>
-                            </blockquote>
-                        </div>
-                        <div class="card-footer">
-                            <div class="blockquote-footer text-center text-dark">Дмитрий</div>
-                        </div>
-                    </div>
-
-
-                    <div class="card bg-primary-transparent-20">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                                <p class="mb-0 small text-dark">Доктора Амантура Мурзалиева, я знаю очень давно, около30 лет, уже почти родственники</p>
-                            </blockquote>
-                        </div>
-                        <div class="card-footer">
-                            <div class="blockquote-footer text-center text-dark">Канат</div>
-                        </div>
-
-                    </div>
-
-                    <div class="card bg-primary-transparent-20">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                                <p class="mb-0 small text-dark">Последние два года пользуюсь услугами данной клиники, всем довольна, в кабинетах всегда чисто, профессионально лечат зубики. Что самое главное — приемелмая цена.</p>
-                            </blockquote>
-                        </div>
-                        <div class="card-footer">
-                            <div class="blockquote-footer text-center text-dark">Айдай</div>
-                        </div>
-                    </div>
-
-
-                    <div class="card bg-primary-transparent-20">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                                <p class="mb-0 small text-dark">Я обратился в клинику IDS к доктору Мурзалиеву по поводу имплантации. Поменял 2 моста, поставил 2 имплантата. Всё сделали качественно и безболезненно. Рекомендую обращаться. Дмитрий.</p>
-                            </blockquote>
-                        </div>
-                        <div class="card-footer">
-                            <div class="blockquote-footer text-center text-dark">Дмитрий</div>
-                        </div>
-                    </div>
-
-
-                    <div class="card bg-primary-transparent-20">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                                <p class="mb-0 small text-dark">Доктора Амантура Мурзалиева, я знаю очень давно, около30 лет, уже почти родственники</p>
-                            </blockquote>
-                        </div>
-                        <div class="card-footer">
-                            <div class="blockquote-footer text-center text-dark">Канат</div>
-                        </div>
-
-                    </div>
                 </div>
 
-            </div>
-
-            <div class="row justify-content-center mt-3">
-                <a href="" class="btn btn-primary">Еще отзывы</a>
+                <div class="row justify-content-center mt-3">
+                    <a href="" class="btn btn-outline-primary">Еще отзывы</a>
+                </div>
             </div>
         </div>
     </section>
@@ -425,21 +427,25 @@
             responsive:{
                 0:{
                     items:1,
-                    nav:true
+                    nav:true,
+                    dots: true
                 },
                 600:{
                     items:2,
-                    nav:false
+                    nav:false,
+                    dots: true
                 },
                 1000:{
                     items:3,
                     nav:false,
-                    loop:true
+                    loop:true,
+                    dots:true
                 },
                 1300:{
                     items:4,
                     nav:true,
-                    loop:true
+                    loop:true,
+                    dots:false
                 }
             }
         });
@@ -453,21 +459,25 @@
             responsive:{
                 0:{
                     items:1,
-                    nav:true
+                    nav:true,
+                    dots: true
                 },
                 600:{
                     items:2,
-                    nav:false
+                    nav:false,
+                    dots: true
                 },
                 1000:{
                     items:3,
                     nav:false,
-                    loop:true
+                    loop:true,
+                    dots:true
                 },
                 1300:{
                     items:4,
                     nav:true,
-                    loop:true
+                    loop:true,
+                    dots:false
                 }
             }
         });
@@ -485,21 +495,25 @@
             responsive:{
                 0:{
                     items:1,
-                    nav:true
+                    nav:true,
+                    dots: true
                 },
                 600:{
                     items:2,
-                    nav:false
+                    nav:false,
+                    dots: true
                 },
                 1000:{
                     items:3,
                     nav:false,
-                    loop:true
+                    loop:true,
+                    dots:true
                 },
                 1300:{
                     items:4,
                     nav:true,
-                    loop:true
+                    loop:true,
+                    dots:false
                 }
             }
         });
