@@ -22,14 +22,20 @@ Route::group(['middleware' => ['admin']], function () {
         echo 'You have access!';
     });
 
-    Route::get('/admin/post/create', 'PostController@create');
-    Route::get('/admin/post/edit/{id}', 'PostController@edit');
-    Route::get('/admin/post/show/{id}', 'PostController@show');
-    Route::get('/admin/posts', 'PostController@index');
-    Route::post('/admin/post/store', 'PostController@store');
-    Route::post('/admin/post/delete/{id}', 'PostController@delete');
-    Route::post('/admin/post/update/{id}', 'PostController@update');
+
+    Route::resource('post', 'PostController')->except([
+        'index', 'show'
+    ]);
+
+    Route::resource('comment', 'CommentController')->only([
+        'destroy', 'update', 'edit'
+    ]);
 });
 
-Route::resource('post', 'PostController');
+Route::resource('post', 'PostController')->only([
+    'index', 'show'
+]);
 
+Route::resource('comment', 'CommentController')->except([
+    'destroy', 'update', 'edit'
+]);

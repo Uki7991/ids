@@ -19,7 +19,7 @@
         <div class="row mt-5 justify-content-center">
 
             <form action="/post/{{ $post->id }}" method="POST" enctype="multipart/form-data">
-                <input type="hidden" name="_method" value="PUT" />
+                @method('PUT')
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="post_title">Title</label>

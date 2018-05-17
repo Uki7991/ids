@@ -52,7 +52,7 @@
         </div> -->
     </section>
 
-    <section id="uslugi" class="container my-5">
+    <section id="uslugi" class="container mb-4">
         <div class="row justify-content-center py-5">
             <h2 class="h1">Услуги</h2>
         </div>
