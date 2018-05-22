@@ -14,9 +14,11 @@ class CommentController extends Controller
      */
     public function index()
     {
-        $comments = Comment::all()
-            ->where('is_active', '=', true)
-            ->sortByDesc('created_at');
+        $comments = Comment::all()->sortByDesc('created_at');
+
+        if (\Auth::guest()) {
+            $comments = $comments->where('is_active', '=', true);
+        }
 
         return view('comment.index', [
             'comments' => $comments,
@@ -41,7 +43,12 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        $comment = Comment::create($request->all());
+        $comment = new Comment();
+
+        $comment->user_info = $request->user_info;
+        $comment->comment = $request->comment;
+
+        $comment->save();
 
         return redirect('/comment');
     }
