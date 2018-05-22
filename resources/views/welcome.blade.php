@@ -294,7 +294,7 @@
                 </div>
 
                 <div class="row justify-content-center mt-3">
-                    <a href="" class="btn btn-primary">Еще отзывы</a>
+                    <a href="/comment" class="btn btn-primary">Еще отзывы</a>
                 </div>
             </div>
         </div>
