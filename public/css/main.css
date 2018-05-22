@@ -382,9 +382,11 @@
     left:0;
     right:0;
     height:100%;
-    background: #72f5fb;
+    background: #c3ebff;
     -webkit-transform:skew(0,5deg);
     transform:skew(0,5deg);
+    -webkit-filter: blur(25px);
+    filter: blur(25px);
 }
 
 section, footer {
@@ -412,4 +414,8 @@ section, footer {
 
 .bg-light-dramatic {
     background-color: #72f5fb !important;
+}
+
+.bg-light-gray-blue {
+    background-color: #f2fcff !important;
 }
