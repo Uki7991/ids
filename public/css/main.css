@@ -344,12 +344,12 @@
     width: 1px;
 }
 
-* {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+/** {*/
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*user-select: none;*/
+/*}*/
 
 .min-benefit-height {
   min-height: 200px;
@@ -422,4 +422,34 @@ section, footer {
 
 .bg-light-dramatic-transparent {
     background-color: #72f5fb54 !important;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'El Messiri', sans-serif;
+}
+
+/*p, span {*/
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+    /*font-weight: 500;*/
+/*}*/
+
+
+.bottom {
+    bottom: 0px;
+}
+
+.top {
+    top: 0px;
+}
+
+.left {
+    left: 0px;
+}
+
+.right {
+    right: 0px;
+}
+
+.user-select {
+    user-select: all;
 }

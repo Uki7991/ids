@@ -45,87 +45,51 @@
 
             <div class="card-columns">
 
-                <div class="text-dark">
-                    <div class="card">
-                        <div style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" class="text-dark">
-
-                            <img class="card-img-top" src="img/1.2.jpg" alt="Card image cap">
-                            <div class="card-body bg-light-dramatic-transparent text-center">
-                                <h5 class="card-title">
-                                    Отбеливание зубов
-                                </h5>
-                            </div>
-                        </div>
+                <div class="card bg-dark text-white" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter">
+                    <img class="card-img" src="img/4.jpg" alt="Card image">
+                    <div class="card-img-overlay text-center" style="background-color: #397bb330">
+                        <i class="fas fa-bolt fa-7x text-light"></i>
+                        <h4 class="card-title position-absolute bottom">Card title</h4>
                     </div>
                 </div>
 
-                <div class="text-dark">
-                    <div class="card">
-                        <div style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" class="text-dark">
-
-                            <img class="card-img-top" src="img/1.2.jpg" alt="Card image cap">
-                            <div class="card-body bg-light-dramatic-transparent text-center">
-                                <h5 class="card-title">
-                                    Осмотр и Консультация
-                                </h5>
-                            </div>
-                        </div>
+                <div class="card bg-dark text-white" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter">
+                    <img class="card-img" src="img/4.jpg" alt="Card image">
+                    <div class="card-img-overlay text-center" style="background-color: #397bb330">
+                        <i class="fas fa-bolt fa-7x text-light"></i>
+                        <h4 class="card-title position-absolute bottom">Card title</h4>
                     </div>
                 </div>
 
-                <div class="text-dark">
-                    <div class="card">
-                        <div style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" class="text-dark">
-
-                            <img class="card-img-top" src="img/1.2.jpg" alt="Card image cap">
-                            <div class="card-body bg-light-dramatic-transparent text-center">
-                                <h5 class="card-title">
-                                    Выравнивание зубов (Ортодонтия)
-                                </h5>
-                            </div>
-                        </div>
+                <div class="card bg-dark text-white" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter">
+                    <img class="card-img" src="img/4.jpg" alt="Card image">
+                    <div class="card-img-overlay text-center" style="background-color: #397bb330">
+                        <i class="fas fa-bolt fa-7x text-light"></i>
+                        <h4 class="card-title position-absolute bottom">Card title</h4>
                     </div>
                 </div>
 
-                <div class="text-dark">
-                    <div class="card">
-                        <div style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" class="text-dark">
-
-                            <img class="card-img-top" src="img/1.2.jpg" alt="Card image cap">
-                            <div class="card-body bg-light-dramatic-transparent text-center">
-                                <h5 class="card-title">
-                                    Имплантация зубов
-                                </h5>
-                            </div>
-                        </div>
+                <div class="card bg-dark text-white" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter">
+                    <img class="card-img" src="img/4.jpg" alt="Card image">
+                    <div class="card-img-overlay text-center" style="background-color: #397bb330">
+                        <i class="fas fa-bolt fa-7x text-light"></i>
+                        <h4 class="card-title position-absolute bottom">Card title</h4>
                     </div>
                 </div>
 
-                <div class="text-dark">
-                    <div class="card">
-                        <div style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" class="text-dark">
-
-                            <img class="card-img-top" src="img/1.2.jpg" alt="Card image cap">
-                            <div class="card-body bg-light-dramatic-transparent text-center">
-                                <h5 class="card-title">
-                                    Пародонтология
-                                </h5>
-                            </div>
-                        </div>
+                <div class="card bg-dark text-white" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter">
+                    <img class="card-img" src="img/4.jpg" alt="Card image">
+                    <div class="card-img-overlay text-center" style="background-color: #397bb330">
+                        <i class="fas fa-bolt fa-7x text-light"></i>
+                        <h4 class="card-title position-absolute bottom">Card title</h4>
                     </div>
                 </div>
 
-                <div class="text-dark">
-                    <div class="card">
-                        <div style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" class="text-dark">
-
-                            <img class="card-img-top" src="img/1.2.jpg" alt="Card image cap">
-                            <div class="card-body bg-light-dramatic-transparent text-center">
-                                <h5 class="card-title">
-                                    Лечение
-                                </h5>
-                            </div>
-                        </div>
+                <div class="card bg-dark text-white" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter">
+                    <img class="card-img" src="img/4.jpg" alt="Card image">
+                    <div class="card-img-overlay text-center" style="background-color: #397bb330">
+                        <i class="fas fa-bolt fa-7x text-light"></i>
+                        <h4 class="card-title position-absolute bottom">Card title</h4>
                     </div>
                 </div>
 
@@ -331,7 +295,7 @@
                     <div class="card">
                         <img class="card-img-top" src="img/DSC_1846.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Card title</h5>
+                            <h5 class="card-title text-center">Мурзалиев Амантур Джолдошбекович</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -339,7 +303,7 @@
                     <div class="card">
                         <img class="card-img-top" src="img/DSC_1846.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Card title</h5>
+                            <h5 class="card-title text-center">Мурзалиев Амантур Джолдошбекович</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -347,7 +311,7 @@
                     <div class="card">
                         <img class="card-img-top" src="img/DSC_1846.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Card title</h5>
+                            <h5 class="card-title text-center">Мурзалиев Амантур Джолдошбекович</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -355,7 +319,7 @@
                     <div class="card">
                         <img class="card-img-top" src="img/DSC_1846.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Card title</h5>
+                            <h5 class="card-title text-center">Мурзалиев Амантур Джолдошбекович</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -363,7 +327,7 @@
                     <div class="card">
                         <img class="card-img-top" src="img/DSC_1846.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Card title</h5>
+                            <h5 class="card-title text-center">Мурзалиев Амантур Джолдошбекович</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -371,7 +335,7 @@
                     <div class="card">
                         <img class="card-img-top" src="img/DSC_1846.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Card title</h5>
+                            <h5 class="card-title text-center">Мурзалиев Амантур Джолдошбекович</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>

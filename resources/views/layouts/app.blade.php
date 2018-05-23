@@ -15,6 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri:400,500|Open+Sans+Condensed:300&amp;subset=cyrillic" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -120,10 +121,10 @@
                         <h3 class="text-light">Контакты</h3>
                     </div>
                     <div class="row justify-content-center">
-                        <a href="" target="_blank" class="text-light mr-3 text-center"><i class="fab fa-lg fa-facebook"></i> fb.com/implantdentalservice</a>
+                        <a href="" target="_blank" class="text-light mr-3 p-2 text-center contacts-link"><i class="fab fa-lg fa-facebook"></i> fb.com/implantdentalservice</a>
                     </div>
                     <div class="row justify-content-center">
-                        <a href="" target="_blank" class="text-light mr-3 text-center"><i class="fab fa-lg fa-instagram"></i> instagram.com/implantdentalservice</a>
+                        <a href="" target="_blank" class="text-light mr-3 p-2 text-center contacts-link"><i class="fab fa-lg fa-instagram"></i> instagram.com/implantdentalservice</a>
                     </div>
                     <div class="row justify-content-center">
                         <ul class="nav flex-column">
@@ -138,8 +139,8 @@
                 </div>
             </div>
 
-            <div class="row py-3 justify-content-center small text-muted">
-                <a href="http://mount.kg" target="_blank" class="text-light">Made with&nbsp;<span class="text-danger">&hearts;</span> by&nbsp;Mount</a>
+            <div class="row justify-content-center small text-muted">
+                <a href="http://mount.kg" target="_blank" class="text-danger p-2 bg-light">Made with&nbsp;<span class="text-danger">&hearts;</span> by&nbsp;Mount</a>
             </div>
         </div>
     </footer>
