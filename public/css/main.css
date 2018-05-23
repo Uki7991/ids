@@ -419,3 +419,7 @@ section, footer {
 .bg-light-gray-blue {
     background-color: #f2fcff !important;
 }
+
+.bg-light-dramatic-transparent {
+    background-color: #72f5fb54 !important;
+}

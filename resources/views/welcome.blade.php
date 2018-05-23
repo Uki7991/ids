@@ -35,21 +35,6 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-        <!-- <div class="owl-carousel owl-2 owl-theme" style="height: 100vh;">
-            <div class="item">
-                  <img src="img/DSC_1800.jpg" class="w-100" alt="...">
-            </div>
-            <div class="item">
-                  <img src="img/DSC_1738.jpg" class="w-100" alt="...">
-            </div>
-            <div class="item">
-                  <img src="img/DSC_1804.jpg" class="w-100" alt="...">
-            </div>
-            <div class="item">
-                  <img src="img/DSC_1757.jpg" class="w-100" alt="...">
-            </div>
-        </div> -->
     </section>
 
     <section id="uslugi" class="container mb-4">
@@ -58,58 +43,93 @@
         </div>
         <div class="row">
 
+            <div class="card-columns">
 
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
-                <div class="card text-center card-service text-light" style="background-color: #56cce1; background-image: url('img/1.2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
-                    <div class="backdrop-card"></div>
-                    <div class="card-header border-0 h4">
-                        Осмотр и Консультация
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text small">Врачи стоматологической клиники «IDS» очень ответственно подходят к лечению своих пациентов. По-этому, первичная консультация – обязательная процедура перед началом любого вида лечения, имплантации или протезирования зубов.</p>
-                    </div>
-                </div>
-            </div>
+                <div class="text-dark">
+                    <div class="card">
+                        <div style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" class="text-dark">
 
-
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
-                <div class="card text-center card-service text-light" style="background-color: #56cce1; background-image: url('img/1.2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
-                    <div class="backdrop-card"></div>
-                    <div class="card-header border-0 h4">
-                        Осмотр и Консультация
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text small">Врачи стоматологической клиники «IDS» очень ответственно подходят к лечению своих пациентов. По-этому, первичная консультация – обязательная процедура перед началом любого вида лечения, имплантации или протезирования зубов.</p>
+                            <img class="card-img-top" src="img/1.2.jpg" alt="Card image cap">
+                            <div class="card-body bg-light-dramatic-transparent text-center">
+                                <h5 class="card-title">
+                                    Отбеливание зубов
+                                </h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+                <div class="text-dark">
+                    <div class="card">
+                        <div style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" class="text-dark">
 
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
-                <div class="card text-center card-service text-light" style="background-color: #56cce1; background-image: url('img/1.2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
-                    <div class="backdrop-card"></div>
-                    <div class="card-header border-0 h4">
-                        Осмотр и Консультация
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text small">Врачи стоматологической клиники «IDS» очень ответственно подходят к лечению своих пациентов. По-этому, первичная консультация – обязательная процедура перед началом любого вида лечения, имплантации или протезирования зубов.</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
-                <div class="card text-center card-service text-light" style="background-color: #56cce1; background-image: url('img/1.2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
-                    <div class="backdrop-card"></div>
-                    <div class="card-header border-0 h4">
-                        Осмотр и Консультация
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text small">Врачи стоматологической клиники «IDS» очень ответственно подходят к лечению своих пациентов. По-этому, первичная консультация – обязательная процедура перед началом любого вида лечения, имплантации или протезирования зубов.</p>
+                            <img class="card-img-top" src="img/1.2.jpg" alt="Card image cap">
+                            <div class="card-body bg-light-dramatic-transparent text-center">
+                                <h5 class="card-title">
+                                    Осмотр и Консультация
+                                </h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+                <div class="text-dark">
+                    <div class="card">
+                        <div style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" class="text-dark">
+
+                            <img class="card-img-top" src="img/1.2.jpg" alt="Card image cap">
+                            <div class="card-body bg-light-dramatic-transparent text-center">
+                                <h5 class="card-title">
+                                    Выравнивание зубов (Ортодонтия)
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-dark">
+                    <div class="card">
+                        <div style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" class="text-dark">
+
+                            <img class="card-img-top" src="img/1.2.jpg" alt="Card image cap">
+                            <div class="card-body bg-light-dramatic-transparent text-center">
+                                <h5 class="card-title">
+                                    Имплантация зубов
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-dark">
+                    <div class="card">
+                        <div style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" class="text-dark">
+
+                            <img class="card-img-top" src="img/1.2.jpg" alt="Card image cap">
+                            <div class="card-body bg-light-dramatic-transparent text-center">
+                                <h5 class="card-title">
+                                    Пародонтология
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-dark">
+                    <div class="card">
+                        <div style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" class="text-dark">
+
+                            <img class="card-img-top" src="img/1.2.jpg" alt="Card image cap">
+                            <div class="card-body bg-light-dramatic-transparent text-center">
+                                <h5 class="card-title">
+                                    Лечение
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
 
         </div>

@@ -16,7 +16,7 @@ class CommentController extends Controller
     {
         $comments = Comment::all()->sortByDesc('created_at');
 
-        if (\Auth::guest()) {
+        if (\Auth::guest() || !\Auth::user()->admin) {
             $comments = $comments->where('is_active', '=', true);
         }
 

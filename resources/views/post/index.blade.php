@@ -27,18 +27,18 @@
 
         <div class="row">
 
-            <div class="card-columns">
+            <div class="card-columns my-3">
 
                 @foreach($posts as $post)
 
-                    <div class="text-dark py-2">
+                    <div class="text-dark">
                         <div class="card">
                             <a href="/post/{{ $post->id }}" class="text-dark">
 
                                 <img class="card-img-top" src="/upload/4.jpg" alt="Card image cap">
                                 <div class="card-body text-center">
                                     <h3 class="card-title">{{ $post->title }}</h3>
-                                    <p class="card-text">{!! $post->post_desc !!}</p>
+                                    {!! $post->post_desc !!}
                                 </div>
                             </a>
                             @if(Auth::user() && Auth::user()->admin == 1)

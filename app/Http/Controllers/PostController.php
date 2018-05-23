@@ -14,12 +14,14 @@ class PostController extends Controller
      */
     public function index()
     {
-        $postsOnMain = Post::all()
-            ->where('is_active', '=', true)
-            ->sortByDesc('created_at');
+        $posts = Post::all()->sortByDesc('created_at');
+
+        if (\Auth::guest() || !\Auth::user()->admin) {
+            $posts = $posts->where('is_active', '=', true);
+        }
 
         return view('post/index', [
-            'posts' => $postsOnMain,
+            'posts' => $posts,
         ]);
     }
 
@@ -59,11 +61,14 @@ class PostController extends Controller
         $post->post_desc = $request->post_desc;
         $post->post_content = $request->post_content;
 
+        if ($request->on_main) {
+            $post->on_main = true;
+        }
         if ($request->is_active) {
             $post->is_active = true;
         }
-        if ($request->on_main) {
-            $post->on_main = true;
+        else {
+            $post->on_main = false;
         }
 
         if ($postsOnMainCount == 2) {
@@ -138,20 +143,21 @@ class PostController extends Controller
             $flag = true;
         }
 
+        if ($request->on_main) {
+            $post->on_main = true;
+            $flag = true;
+        }
+        else {
+            $post->on_main = false;
+            $flag = true;
+        }
+
         if ($request->is_active) {
             $post->is_active = true;
             $flag = true;
         }
         else {
             $post->is_active = false;
-            $flag = true;
-        }
-
-        if ($request->on_main) {
-            $post->on_main = true;
-            $flag = true;
-        }
-        else {
             $post->on_main = false;
             $flag = true;
         }
