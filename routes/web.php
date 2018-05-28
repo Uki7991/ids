@@ -23,17 +23,11 @@ Route::group(['middleware' => ['admin']], function () {
     });
 
 
-    Route::resource('post', 'PostController')->only([
-        'destroy', 'update', 'edit'
-    ]);
+    Route::resource('post', 'PostController');
 
-    Route::resource('comment', 'CommentController')->only([
-        'destroy', 'update', 'edit'
-    ]);
+    Route::resource('comment', 'CommentController');
 
-    Route::resource('service', 'ServiceController')->only([
-        'destroy', 'update', 'edit'
-    ]);
+    Route::resource('service', 'ServiceController');
 });
 
 Route::resource('post', 'PostController')->only([
