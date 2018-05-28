@@ -28,13 +28,27 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">{{ $comment->comment }}</p>
-                            @if(Auth::user() && Auth::user()->admin == 1)
+                        </div>
 
+                        @if(Auth::user() && Auth::user()->admin == 1)
+
+                            <div class="card-body text-center">
+                                <div>
+                                    <input type="checkbox" {{ $comment->is_active ? 'checked' : '' }} disabled>
+                                    <span>Active</span>
+                                </div>
+                                <div>
+                                    <input type="checkbox" {{ $comment->on_main ? 'checked' : '' }} disabled>
+                                    <span>On main</span>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
                                 <a href="/comment/{{ $comment->id }}/edit" class="card-link text-warning">Редатировать</a>
                                 <a href="" class="card-link text-danger">Удалить</a>
+                            </div>
 
-                            @endif
-                        </div>
+                        @endif
+
                     </div>
                 </div>
 
