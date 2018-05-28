@@ -72,6 +72,7 @@ class ServiceController extends Controller
             $service->on_main = false;
         }
         $service->service_content = $request->service_content;
+        $service->service_desc = $request->service_desc;
 
         $service->save();
 
@@ -121,6 +122,8 @@ class ServiceController extends Controller
     {
         $service->name = $request->name;
         $service->service_content = $request->service_content;
+        $service->service_desc = $request->service_desc;
+
         if ($request->on_main) {
             $service->on_main = true;
         }

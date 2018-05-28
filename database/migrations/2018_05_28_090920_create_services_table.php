@@ -17,6 +17,7 @@ class CreateServicesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->text('service_content');
+            $table->text('service_desc');
             $table->boolean('is_active')->default(true);
             $table->boolean('on_main')->default(false);
             $table->timestamps();
