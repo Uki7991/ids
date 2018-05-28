@@ -60,6 +60,7 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="/service">Services</a>
                                 <a class="dropdown-item" href="/post">Blog</a>
                                 <a class="dropdown-item" href="/comment">Comments</a>
 
