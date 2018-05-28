@@ -271,8 +271,23 @@
                             <div class="card-footer">
                                 <div class="blockquote-footer text-center text-dark">Канат</div>
                             </div>
-
                         </div>
+
+                        @foreach($comments as $comment)
+
+                            <div class="card bg-light-gray-blue">
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                        <p class="mb-0 small text-dark">{{ $comment->comment }}</p>
+                                    </blockquote>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="blockquote-footer text-center text-dark">{{ $comment->user_info }}</div>
+                                </div>
+                            </div>
+
+                        @endforeach
+
                     </div>
 
                 </div>

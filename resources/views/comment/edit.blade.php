@@ -16,14 +16,14 @@
     <div class="container">
         <div class="row py-5 justify-content-center">
 
-            <form method="POST" class="col-10" action="{{ route('comment.store') }}">
+            <form method="POST" class="col-10" action="{{ route('comment.update') }}">
                 @csrf
 
                 <div class="form-group row">
                     <label for="user_info" class="col-sm-4 col-form-label text-md-right">Фамилия Имя</label>
 
                     <div class="col-md-6">
-                        <input id="user_info" value="{{ $comment->user_info }}" type="text" class="form-control" disabled name="user_info" value="{{ old('user_info') }}" required>
+                        <input id="user_info" type="text" class="form-control" disabled name="user_info" value="{{ old('user_info') }}" required>
 
                         @if ($errors->has('user_info'))
                             <span class="invalid-feedback">

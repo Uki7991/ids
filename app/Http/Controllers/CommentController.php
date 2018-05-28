@@ -86,6 +86,7 @@ class CommentController extends Controller
      */
     public function update(Request $request, Comment $comment)
     {
+        dd($request);
         $comment = Comment::update($request->all());
 
         return redirect('/comment');
