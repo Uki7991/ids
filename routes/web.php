@@ -35,7 +35,7 @@ Route::resource('post', 'PostController')->only([
 ]);
 
 Route::resource('comment', 'CommentController')->only([
-    'index', 'show'
+    'index', 'show', 'store'
 ]);
 
 Route::resource('service', 'ServiceController')->only([
