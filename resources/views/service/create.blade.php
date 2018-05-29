@@ -16,7 +16,7 @@
 
     <div class="container py-4">
 
-        <h1 class="text-center">Create post</h1>
+        <h1 class="text-center">Create Service</h1>
 
         <div class="row justify-content-center mt-5">
 
@@ -28,7 +28,7 @@
                 </div>
                 <div class="form-group">
                     <label for="post_desc">Description</label>
-                    <input type="text" class="form-control" id="post_desc" name="post_desc">
+                    <textarea name="post_desc" class="col-12" maxlength="160" id="post_desc" rows="10"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="post_image">Image</label>
@@ -61,12 +61,12 @@
     <script src="{{ asset('js/tinymce/js/tinymce/tinymce.min.js') }}"></script>
 
     <script src="{{ asset('js/tinymce/js/tinymce/jquery.tinymce.min.js') }}"></script>
-    <script>
-        tinymce.init({
-            selector:'#post_desc',
-            height: 300
-        });
-    </script>
+    {{--<script>--}}
+        {{--tinymce.init({--}}
+            {{--selector:'#post_desc',--}}
+            {{--height: 300--}}
+        {{--});--}}
+    {{--</script>--}}
     <script>
         tinymce.init({
             selector:'#post_content',

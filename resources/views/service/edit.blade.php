@@ -14,7 +14,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="container py-4">
 
         <h1 class="text-center">Create post</h1>
@@ -47,12 +47,12 @@
                 <div class="form-group">
                     <label for="post_on-main">On main?</label>
                     <input id="post_on-main" name="on_main" type="checkbox" class="form-control"
-                        @if($countOnMain == 2) disabled @endif
+                           @if($countOnMain == 2) disabled @endif
                     >
                 </div>
                 <button type="submit" class="btn btn-success">Create</button>
             </form>
-            
+
         </div>
     </div>
 
@@ -64,10 +64,10 @@
 
     <script src="{{ asset('js/tinymce/js/tinymce/jquery.tinymce.min.js') }}"></script>
     {{--<script>--}}
-        {{--tinymce.init({--}}
-            {{--selector:'#post_desc',--}}
-            {{--height: 300--}}
-        {{--});--}}
+    {{--tinymce.init({--}}
+    {{--selector:'#post_desc',--}}
+    {{--height: 300--}}
+    {{--});--}}
     {{--</script>--}}
     <script>
         tinymce.init({
