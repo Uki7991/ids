@@ -16,8 +16,9 @@
     <div class="container">
         <div class="row py-5 justify-content-center">
 
-            <form method="POST" class="col-10" action="{{ route('comment.update') }}">
+            <form method="POST" class="col-10" action="/comment/{{ $comment->id }}">
                 @csrf
+                @method('PUT')
 
                 <div class="form-group row">
                     <label for="user_info" class="col-sm-4 col-form-label text-md-right">Фамилия Имя</label>
@@ -37,7 +38,7 @@
                     <label for="comment" class="col-md-4 col-form-label text-md-right">Ваш комментарий</label>
 
                     <div class="col-md-6">
-                        <textarea id="comment" class="form-control" disabled name="comment" required>{{ $comment->comment }}</textarea>
+                        <textarea id="comment" class="form-control" disabled name="comment" rows="10" required>{{ $comment->comment }}</textarea>
 
                         @if ($errors->has('comment'))
                             <span class="invalid-feedback">

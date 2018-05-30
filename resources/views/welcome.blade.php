@@ -65,6 +65,45 @@
         </div>
     </section>
 
+    <section>
+        <div class="card-director">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-4 col-12 pl-0">
+                        <img class="img-fluid mx-auto" src="img/DSC_1846.jpg" alt="Card image cap">
+                    </div>
+                    <div class="col-lg-8 col-12 py-3">
+                        <h3 class="text-center mb-3">Мурзалиев Амантур Джолдошбекович</h3>
+                        <span class="text-dark"> - ведущий специалист по имплантологии в Кыргызстане.</span>
+                        <div class="mt-5">
+                            <p class="">
+                                Генеральный директор стоматологической клиники «IDS»
+                            </p>
+                            <p class="">
+                                Кандидат медицинских наук
+                            </p>
+                            <p class="">
+                                Доцент кафедры стоматологии и челюстно-лицевой хирургии КГМИП  и ПК
+                            </p>
+                            <p class="">
+                                Врач-стоматолог, ортопед-имплантолог, хирург-имплантолог
+                            </p>
+                            <p class="">
+                                Стаж работы 31 год
+                            </p>
+                            <p class="">
+                                Дентальной имплантацией занимается 20 лет
+                            </p>
+                            <p class="">
+                                Было написано – 20 научных работ, рационализаторских предложений – 14 и 1 патент на щипцы
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="benefits" class="py-5 d-flex align-items-center" style="background-image: url('img/1.jpg'); background-attachment: fixed; z-index: 2;">
         <div class="container my-5">
             <div class="row justify-content-center bg-dramatic py-4">
@@ -251,45 +290,6 @@
                         </div>
                     </div>
 
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="card-director">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-lg-4 col-12 pl-0">
-                        <img class="img-fluid mx-auto" src="img/DSC_1846.jpg" alt="Card image cap">
-                    </div>
-                    <div class="col-lg-8 col-12 py-3">
-                        <h3 class="text-center mb-3">Мурзалиев Амантур Джолдошбекович</h3>
-                        <span class="text-dark"> - ведущий специалист по имплантологии в Кыргызстане.</span>
-                        <div class="mt-5">
-                            <p class="">
-                                Генеральный директор стоматологической клиники «IDS»
-                            </p>
-                            <p class="">
-                                Кандидат медицинских наук
-                            </p>
-                            <p class="">
-                                Доцент кафедры стоматологии и челюстно-лицевой хирургии КГМИП  и ПК
-                            </p>
-                            <p class="">
-                                Врач-стоматолог, ортопед-имплантолог, хирург-имплантолог
-                            </p>
-                            <p class="">
-                                Стаж работы 31 год
-                            </p>
-                            <p class="">
-                                Дентальной имплантацией занимается 20 лет
-                            </p>
-                            <p class="">
-                                Было написано – 20 научных работ, рационализаторских предложений – 14 и 1 патент на щипцы
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
