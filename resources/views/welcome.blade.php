@@ -168,83 +168,13 @@
 
 
                     <div class="owl-carousel owl-theme owl-1 owl-nav-outer owl-dot-round">
-                        <div class="card bg-light-gray-blue">
-                            <div class="card-body">
-                                <blockquote class="blockquote mb-0">
-                                    <p class="mb-0 small text-dark">Последние два года пользуюсь услугами данной клиники, всем довольна, в кабинетах всегда чисто, профессионально лечат зубики. Что самое главное — приемелмая цена.</p>
-                                </blockquote>
-                            </div>
-                            <div class="card-footer">
-                                <div class="blockquote-footer text-center text-dark">Айдай</div>
-                            </div>
-                        </div>
-
-
-                        <div class="card bg-light-gray-blue">
-                            <div class="card-body">
-                                <blockquote class="blockquote mb-0">
-                                    <p class="mb-0 small text-dark">Я обратился в клинику IDS к доктору Мурзалиеву по поводу имплантации. Поменял 2 моста, поставил 2 имплантата. Всё сделали качественно и безболезненно. Рекомендую обращаться. Дмитрий.</p>
-                                </blockquote>
-                            </div>
-                            <div class="card-footer">
-                                <div class="blockquote-footer text-center text-dark">Дмитрий</div>
-                            </div>
-                        </div>
-
-
-                        <div class="card bg-light-gray-blue">
-                            <div class="card-body">
-                                <blockquote class="blockquote mb-0">
-                                    <p class="mb-0 small text-dark">Доктора Амантура Мурзалиева, я знаю очень давно, около30 лет, уже почти родственники</p>
-                                </blockquote>
-                            </div>
-                            <div class="card-footer">
-                                <div class="blockquote-footer text-center text-dark">Канат</div>
-                            </div>
-
-                        </div>
-
-                        <div class="card bg-light-gray-blue">
-                            <div class="card-body">
-                                <blockquote class="blockquote mb-0">
-                                    <p class="mb-0 small text-dark">Последние два года пользуюсь услугами данной клиники, всем довольна, в кабинетах всегда чисто, профессионально лечат зубики. Что самое главное — приемелмая цена.</p>
-                                </blockquote>
-                            </div>
-                            <div class="card-footer">
-                                <div class="blockquote-footer text-center text-dark">Айдай</div>
-                            </div>
-                        </div>
-
-
-                        <div class="card bg-light-gray-blue">
-                            <div class="card-body">
-                                <blockquote class="blockquote mb-0">
-                                    <p class="mb-0 small text-dark">Я обратился в клинику IDS к доктору Мурзалиеву по поводу имплантации. Поменял 2 моста, поставил 2 имплантата. Всё сделали качественно и безболезненно. Рекомендую обращаться. Дмитрий.</p>
-                                </blockquote>
-                            </div>
-                            <div class="card-footer">
-                                <div class="blockquote-footer text-center text-dark">Дмитрий</div>
-                            </div>
-                        </div>
-
-
-                        <div class="card bg-light-gray-blue">
-                            <div class="card-body">
-                                <blockquote class="blockquote mb-0">
-                                    <p class="mb-0 small text-dark">Доктора Амантура Мурзалиева, я знаю очень давно, около30 лет, уже почти родственники</p>
-                                </blockquote>
-                            </div>
-                            <div class="card-footer">
-                                <div class="blockquote-footer text-center text-dark">Канат</div>
-                            </div>
-                        </div>
 
                         @foreach($comments as $comment)
 
                             <div class="card bg-light-gray-blue">
                                 <div class="card-body">
                                     <blockquote class="blockquote mb-0">
-                                        <p class="mb-0 small text-dark">{{ $comment->comment }}</p>
+                                        <p class="mb-0 small text-dark comment-comment">{{ $comment->comment }}</p>
                                     </blockquote>
                                 </div>
                                 <div class="card-footer">
