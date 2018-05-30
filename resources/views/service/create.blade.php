@@ -23,28 +23,32 @@
             <form action="/service" method="POST" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <label for="post_title">Title</label>
-                    <input type="text" class="form-control" id="post_title" name="title">
+                    <label for="name">Title</label>
+                    <input type="text" class="form-control" id="name" name="name">
                 </div>
                 <div class="form-group">
-                    <label for="post_desc">Description</label>
-                    <textarea name="post_desc" class="col-12" maxlength="160" id="post_desc" rows="10"></textarea>
+                    <label for="service_desc">Description</label>
+                    <textarea name="service_desc" class="col-12" maxlength="160" id="service_desc" rows="10"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="post_image">Image</label>
-                    <input id="post_image" name="image" type="file" class="form-control">
+                    <label for="service_image">Image</label>
+                    <input id="service_image" name="image" type="file" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="post_content">Content</label>
-                    <input id="post_content" name="post_content" type="text" class="form-control">
+                    <label for="service_icon">Icon</label>
+                    <input id="service_icon" name="icon" type="file" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="post_is-active">Is active?</label>
-                    <input id="post_is-active" name="is_active" type="checkbox" class="form-control">
+                    <label for="service_content">Content</label>
+                    <input id="service_content" name="service_content" type="text" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="post_on-main">On main?</label>
-                    <input id="post_on-main" name="on_main" type="checkbox" class="form-control"
+                    <label for="service_is-active">Is active?</label>
+                    <input id="service_is-active" name="is_active" type="checkbox" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="service_on-main">On main?</label>
+                    <input id="service_on-main" name="on_main" type="checkbox" class="form-control"
                            @if($countOnMain == 6) disabled @endif
                     >
                 </div>
@@ -69,7 +73,7 @@
     {{--</script>--}}
     <script>
         tinymce.init({
-            selector:'#post_content',
+            selector:'#service_content',
             height: 800,
             plugins: [
                 "advlist autolink lists link image imagetools charmap print preview anchor paste",

@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'Create')
-
 @section('content')
 
     <div class="py-5 position-relative post-show">
@@ -9,48 +7,52 @@
         <div class="container">
             <div class="row py-5 align-items-end justify-content-center">
 
-                <div class="h1 my-5 text-light text-center">Blog</div>
+                <div class="h1 my-5 text-light text-center">Update service {{ $service->id }}</div>
 
             </div>
         </div>
     </div>
 
     <div class="container py-4">
+        <h1 class="text-center">Update service {{ $service->id }}</h1>
 
-        <h1 class="text-center">Create post</h1>
+        <div class="row mt-5 justify-content-center">
 
-        <div class="row justify-content-center mt-5">
-
-            <form action="/post" method="POST" enctype="multipart/form-data">
+            <form action="/service/{{ $service->id }}" method="POST" enctype="multipart/form-data">
+                @method('PUT')
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <label for="post_title">Title</label>
-                    <input type="text" class="form-control" id="post_title" name="title">
+                    <label for="service_title">Title</label>
+                    <input type="text" class="form-control" id="service_title" name="name" value="{{ $service->name }}">
                 </div>
                 <div class="form-group">
-                    <label for="post_desc">Description</label>
-                    {{--<input type="text" class="form-control" id="post_desc" name="post_desc">--}}
-                    <textarea name="post_desc" maxlength="160" id="post_desc" class="col-12" rows="10"></textarea>
+                    <label for="service_desc">Description</label>
+                    <input type="text" class="form-control" id="service_desc" name="service_desc" value="{{ $service->service_desc }}">
                 </div>
                 <div class="form-group">
-                    <label for="post_image">Image</label>
-                    <input id="post_image" name="image" type="file" class="form-control">
+                    <label for="service_image">Image</label>
+                    <input id="service_image" name="image" type="file" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="post_content">Content</label>
-                    <input id="post_content" name="post_content" type="text" class="form-control">
+                    <label for="service_icon">Icon</label>
+                    <input id="service_icon" name="icon" type="file" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="post_is-active">Is active?</label>
-                    <input id="post_is-active" name="is_active" type="checkbox" class="form-control">
+                    <label for="service_content">Content</label>
+                    <input id="service_content" name="service_content" type="text" class="form-control" value="{{ $service->service_content }}">
                 </div>
                 <div class="form-group">
-                    <label for="post_on-main">On main?</label>
-                    <input id="post_on-main" name="on_main" type="checkbox" class="form-control"
-                           @if($countOnMain == 2) disabled @endif
+                    <label for="service_is-active">Is active?</label>
+                    <input id="service_is-active" name="is_active" type="checkbox" class="form-control" @if($service->is_active) checked @endif>
+                </div>
+                <div class="form-group">
+                    <label for="service_on-main">On main?</label>
+                    <input id="service_on-main" name="on_main" type="checkbox" class="form-control"
+                           @if($service->on_main) checked @endif
+                           @if(!($countOnMain < 2 || $service->on_main)) disabled @endif
                     >
                 </div>
-                <button type="submit" class="btn btn-success">Create</button>
+                <button type="submit" class="btn btn-success">Update</button>
             </form>
 
         </div>
@@ -63,15 +65,15 @@
     <script src="{{ asset('js/tinymce/js/tinymce/tinymce.min.js') }}"></script>
 
     <script src="{{ asset('js/tinymce/js/tinymce/jquery.tinymce.min.js') }}"></script>
-    {{--<script>--}}
-    {{--tinymce.init({--}}
-    {{--selector:'#post_desc',--}}
-    {{--height: 300--}}
-    {{--});--}}
-    {{--</script>--}}
     <script>
         tinymce.init({
-            selector:'#post_content',
+            selector:'#service_desc',
+            height: 300
+        });
+    </script>
+    <script>
+        tinymce.init({
+            selector:'#service_content',
             height: 800,
             plugins: [
                 "advlist autolink lists link image imagetools charmap print preview anchor paste",
@@ -80,15 +82,15 @@
             ],
             toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
             imagetools_toolbar: "rotateleft rotateright | flipv fliph | editimage imageoptions",
-            image_title: true,
             image_class_list: [
                 {title: 'image-fluid', value: 'img-fluid'}
             ],
+            image_title: true,
             // enable automatic uploads of images represented by blob or data URIs
             automatic_uploads: true,
             paste_data_images: true,
             // URL of our upload handler (for more details check: https://www.tinymce.com/docs/configure/file-image-upload/#images_upload_url)
-            images_upload_url: '/upload-image-tiny',
+            images_upload_url:'/upload-image-tiny',
             // here we add custom filepicker only to Image dialog
             relative_urls: false,
             remove_script_host: false,
@@ -126,6 +128,21 @@
                 };
 
                 input.click();
+            }
+        });
+    </script>
+
+    <script>
+        var scroll;
+        $(window).scroll(function() {
+            scroll = $(window).scrollTop();
+            if (scroll > 400) {
+                $('nav.navbar').removeClass('bg-transparent');
+                $('nav.navbar').addClass('bg-dramatic');
+            }
+            else {
+                $('nav.navbar').addClass('bg-transparent');
+                $('nav.navbar').removeClass('bg-dramatic');
             }
         });
     </script>

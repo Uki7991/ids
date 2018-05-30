@@ -18,6 +18,8 @@ class CreateServicesTable extends Migration
             $table->string('name');
             $table->text('service_content');
             $table->text('service_desc');
+            $table->string('image')->nullable();
+            $table->string('icon')->nullable();
             $table->boolean('is_active')->default(true);
             $table->boolean('on_main')->default(false);
             $table->timestamps();

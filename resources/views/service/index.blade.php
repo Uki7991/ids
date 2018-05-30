@@ -23,54 +23,67 @@
 
         @endif
 
-        <div class="row">
+        <div class="row my-5">
 
-            <div class="card-columns my-3">
 
                 @foreach($services as $service)
 
-                    <div class="text-dark">
-                        <div class="card">
-                            <a href="/post/{{ $service->id }}" class="text-dark">
+                    <div class="col-4 my-2">
+                        <div class="card bg-dark text-white">
+                            <a href="/service/{{ $service->id }}" class="text-dark">
 
-                                <img class="card-img-top" src="/upload/4.jpg" alt="Card image cap">
-                                <div class="card-body text-center">
-                                    <h3 class="card-title">{{ $service->title }}</h3>
-                                    {!! $service->post_desc !!}
+                                <img class="card-img" src="/images/small/{{ $service->image }}" alt="Card image">
+                                <div class="card-img-overlay text-center" style="background-color: #397bb35c">
+                                    {{--<i class="fas fa-bolt fa-7x text-light"></i>--}}
+                                    <img src="/images/small/{{ $service->icon }}" alt="">
+                                    <h4 class="card-title position-absolute bottom text-light">{{ $service->name }}</h4>
                                 </div>
                             </a>
-                            @if(Auth::user() && Auth::user()->admin == 1)
-
-                                <div class="card-body text-center">
-                                    <div>
-                                        <input type="checkbox" {{ $service->is_active ? 'checked' : '' }} disabled>
-                                        <span>Active</span>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" {{ $service->on_main ? 'checked' : '' }} disabled>
-                                        <span>On main</span>
-                                    </div>
-                                </div>
-                                <div class="card-body text-center">
-                                    <a href="/post/{{ $service->id }}/edit" class="card-link text-warning">Редактировать</a>
-                                    <a class="card-link text-danger" href="/post/{{ $service->id }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('post-delete').submit();">Удалить
-                                    </a>
-
-                                    <form id="post-delete" action="/post/{{ $service->id }}" method="POST" style="display: none;">
-                                        @method('DELETE')
-                                        @csrf
-                                    </form>
-                                </div>
-
-                            @endif
                         </div>
+                        @if(Auth::user() && Auth::user()->admin == 1)
+
+                            <div class="card-body border text-center">
+                                <div>
+                                    <input type="checkbox" {{ $service->is_active ? 'checked' : '' }} disabled>
+                                    <span>Active</span>
+                                </div>
+                                <div>
+                                    <input type="checkbox" {{ $service->on_main ? 'checked' : '' }} disabled>
+                                    <span>On main</span>
+                                </div>
+                            </div>
+                            <div class="card-body border text-center">
+                                <a href="/service/{{ $service->id }}/edit" class="card-link text-warning">Редактировать</a>
+                                <a class="card-link text-danger" href="/service/{{ $service->id }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('post-delete').submit();">Удалить
+                                </a>
+
+                                <form id="post-delete" action="/service/{{ $service->id }}" method="POST" style="display: none;">
+                                    @method('DELETE')
+                                    @csrf
+                                </form>
+                            </div>
+
+                        @endif
                     </div>
 
                 @endforeach
 
-            </div>
+                {{--@foreach($services as $service)--}}
+
+                    {{--<div class="card bg-dark text-white" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter">--}}
+                    {{--<div class="card bg-dark text-white">--}}
+                        {{--<img class="card-img" src="/images/small/{{ $service->image }}" alt="Card image">--}}
+                        {{--<div class="card-img-overlay text-center" style="background-color: #397bb35c">--}}
+                            {{--<i class="fas fa-bolt fa-7x text-light"></i>--}}
+                            {{--<img src="/images/small/{{ $service->icon }}" alt="">--}}
+                            {{--<h4 class="card-title position-absolute bottom">{{ $service->name }}</h4>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+
+                {{--@endforeach--}}
+
 
         </div>
     </div>

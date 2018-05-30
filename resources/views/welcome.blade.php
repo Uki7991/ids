@@ -8,8 +8,8 @@
         <div class="jumbotron d-none d-lg-block jumbotron-fluid m-0 w-35 w-lg-75 w-xl-100 jumbotron-new bg-primary-transparent-20 border border-light text-light">
             <div class="backdrop-card"></div>
             <div class="container" style="position: relative; z-index: 2;">
-                <h1 class="display-4 text-center">Implant Dental Service</h1>
-                <p class="lead">ВЫ ЗНАЕТЕ, ЧТО ЛЕЧЕНИЕ ЗУБОВ МОЖЕТ ПРОХОДИТЬ БЕЗ БОЛИ И ДИСКОМФОРТА?</p>
+                <h1 class="display-3 text-center">Implant Dental Service</h1>
+                <p class="lead text-uppercase text-center">Красивая улыбка – визитная карточка успешного и уверенного в себе человека!</p>
             </div>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="">
@@ -43,59 +43,25 @@
         </div>
         <div class="row">
 
-            <div class="card-columns">
+                @foreach($services as $service)
 
-                <div class="card bg-dark text-white" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter">
-                    <img class="card-img" src="img/4.jpg" alt="Card image">
-                    <div class="card-img-overlay text-center" style="background-color: #397bb330">
-                        <i class="fas fa-bolt fa-7x text-light"></i>
-                        <h4 class="card-title position-absolute bottom">Card title</h4>
+                    <div class="col-4 my-2">
+                        <div class="card bg-dark text-white">
+                            <img class="card-img" src="/images/large/{{ $service->image }}" alt="Card image">
+                            <div class="card-img-overlay text-center" style="background-color: #397bb35c">
+                                {{--<i class="fas fa-bolt fa-7x text-light"></i>--}}
+                                <img src="/images/small/{{ $service->icon }}" alt="">
+                                <h4 class="card-title position-absolute bottom">{{ $service->name }}</h4>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card bg-dark text-white" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter">
-                    <img class="card-img" src="img/4.jpg" alt="Card image">
-                    <div class="card-img-overlay text-center" style="background-color: #397bb330">
-                        <i class="fas fa-bolt fa-7x text-light"></i>
-                        <h4 class="card-title position-absolute bottom">Card title</h4>
-                    </div>
-                </div>
+                @endforeach
 
-                <div class="card bg-dark text-white" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter">
-                    <img class="card-img" src="img/4.jpg" alt="Card image">
-                    <div class="card-img-overlay text-center" style="background-color: #397bb330">
-                        <i class="fas fa-bolt fa-7x text-light"></i>
-                        <h4 class="card-title position-absolute bottom">Card title</h4>
-                    </div>
-                </div>
+        </div>
 
-                <div class="card bg-dark text-white" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter">
-                    <img class="card-img" src="img/4.jpg" alt="Card image">
-                    <div class="card-img-overlay text-center" style="background-color: #397bb330">
-                        <i class="fas fa-bolt fa-7x text-light"></i>
-                        <h4 class="card-title position-absolute bottom">Card title</h4>
-                    </div>
-                </div>
-
-                <div class="card bg-dark text-white" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter">
-                    <img class="card-img" src="img/4.jpg" alt="Card image">
-                    <div class="card-img-overlay text-center" style="background-color: #397bb330">
-                        <i class="fas fa-bolt fa-7x text-light"></i>
-                        <h4 class="card-title position-absolute bottom">Card title</h4>
-                    </div>
-                </div>
-
-                <div class="card bg-dark text-white" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter">
-                    <img class="card-img" src="img/4.jpg" alt="Card image">
-                    <div class="card-img-overlay text-center" style="background-color: #397bb330">
-                        <i class="fas fa-bolt fa-7x text-light"></i>
-                        <h4 class="card-title position-absolute bottom">Card title</h4>
-                    </div>
-                </div>
-
-            </div>
-
-
+        <div class="row justify-content-center mt-5 mb-3">
+            <a href="{{ route('service.index') }}" class="btn btn-primary">Посмотреть еще услуги...</a>
         </div>
     </section>
 
