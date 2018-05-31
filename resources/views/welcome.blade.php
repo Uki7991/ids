@@ -390,8 +390,8 @@
             responsive:{
                 0:{
                     items:1,
-                    nav:true,
-                    dots: true
+                    nav:false,
+                    dots: false
                 },
                 600:{
                     items:2,
