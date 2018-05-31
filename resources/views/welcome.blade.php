@@ -50,7 +50,7 @@
                             <img class="card-img" src="/images/large/{{ $service->image }}" alt="Card image">
                             <div class="card-img-overlay text-center" style="background-color: #397bb35c">
                                 {{--<i class="fas fa-bolt fa-7x text-light"></i>--}}
-                                <img src="/images/small/{{ $service->icon }}" alt="">
+                                <img src="/images/small/{{ $service->icon }}" class="img-fluid" alt="">
                                 <h4 class="card-title position-absolute bottom">{{ $service->name }}</h4>
                             </div>
                         </div>
