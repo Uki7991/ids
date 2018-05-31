@@ -11,8 +11,8 @@
         <div class="backdrop-post"></div>
         <div class="container">
             <div class="row py-5 align-items-end justify-content-center">
-                <img src="/images/large/{{ $service->icon }}" alt="">
-                <div class="h1 my-5 text-light text-center">{{ $service->name }}</div>
+                <img src="/images/large/{{ $service->icon }}" class="col-4 col-xl-1 col-md-2 col-lg-3 img-fluid" alt="">
+                <div class="col-12 h1 my-5 text-light text-center">{{ $service->name }}</div>
 
             </div>
         </div>
