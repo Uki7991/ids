@@ -129,7 +129,7 @@
                     </div>
                     <div class="row justify-content-center">
                         <ul class="nav flex-column">
-                            <li class="nav-item row align-items-center justify-content-center">
+                            <li class="nav-item align-items-center justify-content-center">
                                 <a class="nav-link text-light" href="mailto:ids.com@gmail.com"><u>ids.com@gmail.com</u></a>
                             </li>
                             <div class="d-flex">
