@@ -28,7 +28,7 @@
 
                 @foreach($services as $service)
 
-                    <div class="col-4 my-2">
+                    <div class="col-12 col-sm-6 col-md-3 col-xl-4 my-2">
                         <div class="card bg-dark text-white">
                             <a href="/service/{{ $service->id }}" class="text-dark">
 
