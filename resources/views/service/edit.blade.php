@@ -49,7 +49,7 @@
                     <label for="service_on-main">On main?</label>
                     <input id="service_on-main" name="on_main" type="checkbox" class="form-control"
                            @if($service->on_main) checked @endif
-                           @if(!($countOnMain < 2 || $service->on_main)) disabled @endif
+                           @if(!($countOnMain < 6 || $service->on_main)) disabled @endif
                     >
                 </div>
                 <button type="submit" class="btn btn-success">Update</button>
