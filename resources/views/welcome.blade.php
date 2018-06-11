@@ -8,7 +8,6 @@
         <div class="jumbotron d-none d-lg-block jumbotron-fluid m-0 w-35 w-lg-75 w-xl-100 jumbotron-new bg-primary-transparent-20 border border-light text-light">
             <div class="backdrop-card"></div>
             <div class="container" style="position: relative; z-index: 2;">
-                <h1 class="display-4 text-center">Implant Dental Service</h1>
                 <p class="lead text-uppercase text-center">Красивая улыбка – визитная карточка успешного и уверенного в себе человека!</p>
             </div>
         </div>

@@ -23,7 +23,7 @@
   position: absolute;
   z-index: 1;
   background-color: transparent;
-  top: 35%;
+  top: 15%;
   right: 10%;
 }
 
@@ -394,13 +394,13 @@ section, footer {
     z-index: 1;
 }
 
-@media (min-width:576px) {
+@media (max-width:400px) {
     .carousel.slide {
         height: 25vh;
     }
 }
 
-@media (min-width:768px) {
+@media (max-width:500px) {
     .carousel.slide {
         height: 50vh;
     }
