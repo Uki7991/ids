@@ -140,39 +140,7 @@
         </div>
     </section>
 
-    <section id="blog" class="container pb-5">
-        <div class="row justify-content-center py-5">
-            <h2 class="h1">Блог</h2>
-        </div>
-        <div class="row">
-            @foreach($posts as $post)
-
-                <div class="col-12 mb-3 mb-md-0 col-md-6">
-                    <a href="/post/{{ $post->id }}" class="card-spec" ontouchstart="this.classList.toggle('hover');">
-                        <div class="container">
-                            <div class="front" style="background-image: url(img/4.jpg)">
-                                <div class="inner">
-                                    <p>Forbes</p>
-                                    <span>{{ $post->title }}</span>
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div class="inner">
-                                    <p class="text-light">{!! $post->post_desc !!}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            @endforeach
-        </div>
-        <div class="row justify-content-center mt-5 mb-3">
-            <a href="{{ route('post.index') }}" class="btn btn-primary">Посмотреть еще новости...</a>
-        </div>
-    </section>
-
-    <section class="d-none d-xl-block position-relative" style="background-image: url('img/1.jpg'); background-attachment: fixed; z-index: 2;">
+    <section class="d-none d-xl-block position-relative" id="cirle_benefit-section" style="background-image: url('img/1.jpg'); background-attachment: fixed; z-index: 2;">
         <div style="content: ' '; width: 100%; height: 300px; position: absolute; left: 0px; background-color: #00000085;"></div>
         <div class="container text-light">
             <div class="row">
@@ -287,6 +255,38 @@
 
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="blog" class="container pb-5">
+        <div class="row justify-content-center py-5">
+            <h2 class="h1" id="blog-title">Вам будет интересно...</h2>
+        </div>
+        <div class="row">
+            @foreach($posts as $post)
+
+                <div class="col-12 mb-3 mb-md-0 col-md-6">
+                    <a href="/post/{{ $post->id }}" class="card-spec" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background-image: url(img/4.jpg)">
+                                <div class="inner">
+                                    <p>Forbes</p>
+                                    <span>{{ $post->title }}</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p class="text-light">{!! $post->post_desc !!}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            @endforeach
+        </div>
+        <div class="row justify-content-center mt-5 mb-3">
+            <a href="{{ route('post.index') }}" class="btn btn-primary">Посмотреть еще новости...</a>
         </div>
     </section>
 

@@ -24,7 +24,7 @@ $(document).ready(function() {
         percent: 0, // percent starts from
     });
     $(window).scroll(function() {
-    	if ($(window).scrollTop() > $('.card-spec').offset().top - 50 && $(window).scrollTop() < $('.card-spec').offset().top - 25) {
+    	if ($(window).scrollTop() > $('#cirle_benefit-section').offset().top - 250 && $(window).scrollTop() < $('#cirle_benefit-section').offset().top - 245) {
     		$(".my-progress-bar1").circularProgress('animate', 100, 5000);
             $(".my-progress-bar2").circularProgress('animate', 100, 5000);
             $(".my-progress-bar3").circularProgress('animate', 100, 5000);
