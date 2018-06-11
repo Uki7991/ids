@@ -77,10 +77,10 @@
                     @endif
                     <ul class="nav flex-column mr-0 mr-lg-5">
                         <li class="nav-item row align-items-center justify-content-center">
-                            <a class="nav-link text-light" href="mailto:ids.com@gmail.com"><u>ids.com@gmail.com</u></a>
+                            <a class="nav-link text-light" href="mailto:ids.com@gmail.com">ids.com@gmail.com</a>
                         </li>
                         <li class="nav-item row align-items-center justify-content-center">
-                            <a class="nav-link text-light" href="tel: +996 (312) 899 802"><u>+996 (312) 899 - 802</u></a>
+                            <a class="nav-link text-light" href="tel: +996 (312) 899 802">+996 (312) 899 - 802</a>
                         </li>
                     </ul>
                 </div>
@@ -130,22 +130,22 @@
                     <div class="row justify-content-center">
                         <ul class="nav flex-column">
                             <li class="nav-item align-items-center justify-content-center">
-                                <a class="nav-link text-light" href="mailto:ids.com@gmail.com"><u>ids.com@gmail.com</u></a>
+                                <a class="nav-link text-light" href="mailto:ids.com@gmail.com">ids.com@gmail.com</a>
                             </li>
                             <div class="d-flex">
                                 <li class="nav-item mx-1 row align-items-center justify-content-center">
-                                    <a class="nav-link text-light" href="tel: +996 (312) 899 802"><u>+996 (312) 899 - 802</u></a>
+                                    <a class="nav-link text-light" href="tel: +996 (312) 899 802">+996 (312) 899 - 802</a>
                                 </li>
                                 <li class="nav-item mx-1 row align-items-center justify-content-center">
-                                    <a class="nav-link text-light" href="tel: +996 (707) 912 651"><u>+996 (707) 912 - 651</u></a>
+                                    <a class="nav-link text-light" href="tel: +996 (707) 912 651">+996 (707) 912 - 651</a>
                                 </li>
                             </div>
                             <div class="d-flex">
                                 <li class="nav-item mx-1 row align-items-center justify-content-center">
-                                    <a class="nav-link text-light" href="tel: +996 (554) 899 801"><u>+996 (554) 899 - 801</u></a>
+                                    <a class="nav-link text-light" href="tel: +996 (554) 899 801">+996 (554) 899 - 801</a>
                                 </li>
                                 <li class="nav-item mx-1 row align-items-center justify-content-center">
-                                    <a class="nav-link text-light" href="tel: +996 (550) 912 651"><u>+996 (550) 912 - 651</u></a>
+                                    <a class="nav-link text-light" href="tel: +996 (550) 912 651">+996 (550) 912 - 651</a>
                                 </li>
                             </div>
                         </ul>
