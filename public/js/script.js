@@ -1,35 +1,8 @@
 $(document).ready(function() {
-	$(".my-progress-bar1").circularProgress({
-        line_width: 5,
-        color: "#ccc",
-        starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
-        percent: 0, // percent starts from
-    });
-    $(".my-progress-bar2").circularProgress({
-        line_width: 5,
-        color: "#ccc",
-        starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
-        percent: 0, // percent starts from
-    });
-    $(".my-progress-bar3").circularProgress({
-        line_width: 5,
-        color: "#ccc",
-        starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
-        percent: 0, // percent starts from
-    });
-    $(".my-progress-bar4").circularProgress({
-        line_width: 5,
-        color: "#ccc",
-        starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
-        percent: 0, // percent starts from
-    });
-    $(window).scroll(function() {
-    	if ($(window).scrollTop() > $('#cirle_benefit-section').offset().top - 250 && $(window).scrollTop() < $('#cirle_benefit-section').offset().top - 245) {
-    		$(".my-progress-bar1").circularProgress('animate', 100, 5000);
-            $(".my-progress-bar2").circularProgress('animate', 100, 5000);
-            $(".my-progress-bar3").circularProgress('animate', 100, 5000);
-            $(".my-progress-bar4").circularProgress('animate', 100, 5000);
 
+    $(window).scroll(function() {
+    	if ($(window).scrollTop() > ($('#cirle_benefit-section').offset().top - 450) && $(window).scrollTop() < ($('#cirle_benefit-section').offset().top - 435)) {
+                console.log('success');
                 var $el1 = $("#el-1"),
                     value1 = 1200;
                 

@@ -111,22 +111,22 @@
             <div class="row align-items-center">
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-12 col-md-6 p-3 min-benefit-height" style="background-color: #28ABCA;">
+                        <div class="col-12 col-md-6 p-3 min-benefit-height first-color-sanacia">
                             <p class="h2 mt-3 text-uppercase text-light">специалисты</p>
                             <p class="text-light">В клинике работают высококвалифицированные специалисты, имеющие международные
                                 сертификаты. Команда стоматологов вкладывает в свое искусство, помимо таланта, душу и сердце.
                                 Это - профессионалы, постоянно повышающие свою квалификацию.</p>
                         </div>
-                        <div class="col-12 col-md-6 p-3 min-benefit-height" style="background-color: #0698BE;">
+                        <div class="col-12 col-md-6 p-3 min-benefit-height second-color-sanacia">
                             <p class="h2 mt-3 text-uppercase text-light">Безопасность</p>
                             <p class="text-light">Безопасность: строжайшие регламенты стерилизации инструментов.</p>
                         </div>
-                        <div class="col-12 col-md-6 p-3 min-benefit-height" style="background-color: #00759A;">
+                        <div class="col-12 col-md-6 p-3 min-benefit-height third-color-sanacia">
                             <p class="h2 mt-3 text-uppercase text-light">Качество</p>
                             <p class="text-light">Качество и безопасность стоматологической помощи на международными уровне.
                                 Стоматологическая клиника "IDS" работает по программе "Анти-СПИД" и "Анти-ГЕПАТИТ".</p>
                         </div>
-                        <div class="col-12 col-md-6 p-3 min-benefit-height" style="background-color: #0083A6;">
+                        <div class="col-12 col-md-6 p-3 min-benefit-height forth-color-sanacia">
                             <p class="h2 mt-3 text-uppercase text-light">Философия</p>
                             <p class="text-light">Философия комплексного лечения позволяет добиваться долгосрочных результатов на
                                 высоком профессиональном уровне. У нас представлены все стоматологические дисциплины: врачи общей
@@ -140,21 +140,43 @@
         </div>
     </section>
 
-    <section class="d-none d-xl-block position-relative" id="cirle_benefit-section" style="background-image: url('img/1.jpg'); background-attachment: fixed; z-index: 2;">
-        <div style="content: ' '; width: 100%; height: 300px; position: absolute; left: 0px; background-color: #00000085;"></div>
-        <div class="container text-light">
-            <div class="row">
-                <div class="col-3">
-                    <div class="my-progress-bar1"><span id="el"><p id="el-1" class="text-light">0</p> Успешных операций</span></div>
-                </div>
-                <div class="col-3">
-                    <div class="my-progress-bar2"><span id="el"><p id="el-2" class="text-light">0</p> Специалистов</span></div>
-                </div>
-                <div class="col-3">
-                    <div class="my-progress-bar3"><span id="el"><p id="el-3" class="text-light">0</p> Партнеров и Спонсоров</span></div>
-                </div>
-                <div class="col-3">
-                    <div class="my-progress-bar4"><span id="el"><p id="el-4" class="text-light">0</p> Специалистов</span></div>
+    <section class="d-none py-5 d-xl-block" id="cirle_benefit-section" style="background-image: url('img/1.jpg'); background-attachment: fixed; z-index: 2;">
+        <div class="backdrop"></div>
+        <div style="height: 250px;">
+            <div class="container text-light h-100">
+                <div class="row h-100">
+                    <div class="col-3">
+                        <div class="circle-benefits text-center">
+                            <div>
+                                <p id="el-1" class="text-light col-12 h1" style="font-size: 2em;">0</p>
+                                <p class="col-auto">Успешных операций</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="circle-benefits text-center">
+                            <div>
+                                <p id="el-2" class="text-light col-12 h1" style="font-size: 2em;">0</p>
+                                <p class="col-auto">Специалистов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="circle-benefits text-center">
+                            <div>
+                                <p id="el-3" class="text-light col-12 h1" style="font-size: 2em;">0</p>
+                                <p class="col-auto">Партнеров и Спонсоров</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="circle-benefits text-center">
+                            <div>
+                                <p id="el-4" class="text-light col-12 h1" style="font-size: 2em;">0</p>
+                                <p class="col-auto">Специалистов</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

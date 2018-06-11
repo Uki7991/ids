@@ -191,10 +191,12 @@
             $(window).scroll(function() {
                 scroll = $(window).scrollTop();
                 if (scroll > 200) {
+                    $('nav.navbar').css('font-size', '.9rem');
                     $('nav.navbar').removeClass('bg-transparent');
                     $('nav.navbar').addClass('bg-dramatic');
                 }
                 else {
+                    $('nav.navbar').css('font-size', '1.2rem');
                     $('nav.navbar').addClass('bg-transparent');
                     $('nav.navbar').removeClass('bg-dramatic');
                 }
