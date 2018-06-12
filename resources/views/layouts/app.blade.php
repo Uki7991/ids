@@ -101,19 +101,19 @@
                 <div class="col-12 col-md-auto">
                     <ul class="nav flex-column">
                         <li class="nav-item active">
-                            <a class="nav-link text-light small p-1" href="/">Главная</a>
+                            <a class="nav-link text-light p-1" href="/">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light small p-1" href="#">О нас</a>
+                            <a class="nav-link text-light p-1" href="#">О нас</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light small p-1" href="#uslugi">Услуги</a>
+                            <a class="nav-link text-light p-1" href="#uslugi">Услуги</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light small p-1" href="{{ Request::is('/') ? '/#blog' : '/post' }}">Блог</a>
+                            <a class="nav-link text-light p-1" href="{{ Request::is('/') ? '/#blog' : '/post' }}">Блог</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light small p-1" href="#">Контакты</a>
+                            <a class="nav-link text-light p-1" href="#">Контакты</a>
                         </li>
                     </ul>
                 </div>

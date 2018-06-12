@@ -68,7 +68,7 @@
         <div class="card-director">
             <div class="container py-5">
                 <div class="row mb-4 justify-content-center">
-                    <h3 class="text-center col-12 mb-0">Мурзалиев Амантур Джолдошбекович</h3>
+                    <h2 class="text-center h1 col-12 mb-0">Мурзалиев Амантур Джолдошбекович</h2>
                     <span class="text-dramatic">Ведущий специалист по имплантологии в Кыргызстане,
                             Генеральный директор стоматологической клиники «IDS», Кандидат медицинских наук</span>
                 </div>
@@ -96,17 +96,17 @@
                             </p>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-4 mb-3 text-center h-100">
-                                <div class="border col-12 height-200 row align-items-center border-info border-5 py-5">
+                            <div class="col-lg-4 col-6 mb-3 text-center h-100">
+                                <div class="border rounded-bottom-right rounded-top-left col-12 height-200 row align-items-center border-info border-5 py-5">
                                     <p class="text-primary col-12">
                                         <span class="h1">32</span>
-                                        <span class="text-uppercase"> год</span>
+                                        <span class="text-uppercase"> года</span>
                                     </p>
                                     <p class="h4 col-12">Стаж работы</p>
                                 </div>
                             </div>
-                            <div class="col-4 mb-3 text-center h-100">
-                                <div class="border col-12 height-200 row align-items-center border-info border-5 py-5">
+                            <div class="col-lg-4 col-6 mb-3 text-center h-100">
+                                <div class="border rounded-bottom-right rounded-top-left col-12 height-200 row align-items-center border-info border-5 py-5">
                                     <p class="text-primary col-12">
                                         <span class="h1">20</span>
                                         <span class="text-uppercase"> лет</span>
@@ -114,8 +114,8 @@
                                     <p class="h4 col-12">Дентальной имплантацией</p>
                                 </div>
                             </div>
-                            <div class="col-4 mb-3 text-center h-100">
-                                <div class="border col-12 height-200 row align-items-center border-info border-5 py-5">
+                            <div class="col-lg-4 col-6 mb-3 text-center h-100">
+                                <div class="border rounded-bottom-right rounded-top-left col-12 height-200 row align-items-center border-info border-5 py-5">
                                     <p class="text-primary col-12">
                                         <span class="h1">20</span>
                                         <span class="text-uppercase"></span>
@@ -123,8 +123,8 @@
                                     <p class="h4 col-12">Научных работ</p>
                                 </div>
                             </div>
-                            <div class="col-4 mb-3 text-center h-100">
-                                <div class="border col-12 height-200 row align-items-center border-info border-5 py-5">
+                            <div class="col-lg-4 col-6 mb-3 text-center h-100">
+                                <div class="border rounded-bottom-right rounded-top-left col-12 height-200 row align-items-center border-info border-5 py-5">
                                     <p class="text-primary col-12">
                                         <span class="h1">15</span>
                                         <span class="text-uppercase"></span>
@@ -132,8 +132,8 @@
                                     <p class="h4 col-12">Патентов и предложений</p>
                                 </div>
                             </div>
-                            <div class="col-4 mb-3 text-center h-100">
-                                <div class="border col-12 height-200 row align-items-center border-info border-5 py-5">
+                            <div class="col-lg-4 col-6 mb-3 text-center h-100">
+                                <div class="border rounded-bottom-right rounded-top-left col-12 height-200 row align-items-center border-info border-5 py-5">
                                     <p class="text-primary col-12">
                                         <span class="h1">99,9</span>
                                         <span class="text-uppercase">%</span>
@@ -185,7 +185,7 @@
         </div>
     </section>
 
-    <section class="d-none py-5 d-xl-block" id="cirle_benefit-section" style="background-image: url('img/1.jpg'); background-attachment: fixed; z-index: 2;">
+    <section class="d-none py-5 d-lg-block" id="cirle_benefit-section" style="background-image: url('img/1.jpg'); background-attachment: fixed; z-index: 2;">
         <div class="backdrop"></div>
         <div style="height: 250px;">
             <div class="container text-light h-100">
@@ -262,6 +262,7 @@
                 </div>
             </div>
         </div>
+        @include('comment.create')
     </section>
 
     <section>
