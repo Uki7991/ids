@@ -60,7 +60,7 @@
         </div>
 
         <div class="row justify-content-center mt-5 mb-3">
-            <a href="{{ route('service.index') }}" class="btn btn-primary">Посмотреть еще услуги...</a>
+            <a href="{{ route('service.index') }}" class="btn btn-primary rounded-bottom-right rounded-top-left border-light border-5">Посмотреть еще услуги...</a>
         </div>
     </section>
 
@@ -77,24 +77,6 @@
                         <img class="img-fluid mx-auto" src="img/DSC_1846-min.jpg" alt="Card image cap">
                     </div>
                     <div class="col-lg-8 col-12">
-
-                        <div class="mt-5 d-none">
-                            <p class="">
-                                Доцент кафедры стоматологии и челюстно-лицевой хирургии КГМИП  и ПК
-                            </p>
-                            <p class="">
-                                Врач-стоматолог, ортопед-имплантолог, хирург-имплантолог
-                            </p>
-                            <p class="">
-                                Стаж работы 31 год
-                            </p>
-                            <p class="">
-                                Дентальной имплантацией занимается 20 лет
-                            </p>
-                            <p class="">
-                                Было написано – 20 научных работ, рационализаторских предложений – 14 и 1 патент на щипцы
-                            </p>
-                        </div>
                         <div class="row justify-content-center">
                             <div class="col-lg-4 col-6 mb-3 text-center h-100">
                                 <div class="border rounded-bottom-right rounded-top-left col-12 height-200 row align-items-center border-info border-5 py-5">
@@ -258,7 +240,7 @@
                 </div>
 
                 <div class="row justify-content-center mt-3">
-                    <a href="/comment" class="btn btn-primary">Еще отзывы</a>
+                    <a href="/comment" class="btn btn-primary rounded-bottom-right rounded-top-left border-light border-5">Еще отзывы</a>
                 </div>
             </div>
         </div>
@@ -354,7 +336,7 @@
             @endforeach
         </div>
         <div class="row justify-content-center mt-5 mb-3">
-            <a href="{{ route('post.index') }}" class="btn btn-primary">Посмотреть еще новости...</a>
+            <a href="{{ route('post.index') }}" class="btn btn-primary rounded-bottom-right rounded-top-left border-light border-5">Посмотреть еще новости...</a>
         </div>
     </section>
 
