@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class PostController extends Controller
 {
@@ -57,7 +58,23 @@ class PostController extends Controller
 
         $post = new Post();
         $post->title = $request->title;
-        $post->image = $request->image;
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+
+            $fileName = uniqid('post_image_') . '.jpg';
+
+            Image::make($file)
+                ->resize(1000, 1000 , function ($constraint) {
+                    $constraint->aspectRatio();
+                })
+                ->save(public_path() . '/images/large/' . $fileName)
+                ->resize(null, 400, function ($constraint) {
+                    $constraint->aspectRatio();
+                })
+                ->save(public_path() . '/images/small/' . $fileName, 70);
+
+            $post->image = $fileName;
+        }
         $post->post_desc = $request->post_desc;
         $post->post_content = $request->post_content;
 
@@ -128,8 +145,25 @@ class PostController extends Controller
             $flag = true;
         }
 
-        if ($request->image) {
-            $post->image = $request->image;
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+            if (is_file(public_path() . '/images/large/' . $post->image)) {
+                unlink(public_path() . '/images/large/' . $post->image);
+                unlink(public_path() . '/images/small/' . $post->image);
+            }
+            $fileName = uniqid('post_image_') . '.jpg';
+
+            Image::make($file)
+                ->resize(1000, 1000 , function ($constraint) {
+                    $constraint->aspectRatio();
+                })
+                ->save(public_path() . '/images/large/' . $fileName)
+                ->resize(null, 400, function ($constraint) {
+                    $constraint->aspectRatio();
+                })
+                ->save(public_path() . '/images/small/' . $fileName, 70);
+
+            $post->image = $fileName;
             $flag = true;
         }
 

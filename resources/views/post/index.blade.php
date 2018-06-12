@@ -35,7 +35,7 @@
                         <div class="card">
                             <a href="/post/{{ $post->id }}" class="text-dark">
 
-                                <img class="card-img-top" src="/upload/4.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="/images/small/{{ $post->image }}" alt="Card image cap">
                                 <div class="card-body text-center">
                                     <h3 class="card-title">{{ $post->title }}</h3>
                                     {!! $post->post_desc !!}

@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-    <div class="py-5 position-relative post-show">
+    <div class="py-5 position-relative post-show" style="background-image: url(/images/large/{{ $post->image }})">
         <div class="backdrop-post"></div>
         <div class="container">
             <div class="row py-5 align-items-end justify-content-center">

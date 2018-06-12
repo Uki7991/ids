@@ -64,11 +64,14 @@ class ServiceController extends Controller
             $fileName = uniqid('service_') . '.jpg';
 
             Image::make($file)
+                ->resize(1000, 1000, function ($constraint) {
+                    $constraint->aspectRatio();
+                })
                 ->save(public_path() . '/images/large/' . $fileName)
                 ->resize(null, 400, function ($constraint) {
                     $constraint->aspectRatio();
                 })
-                ->save(public_path() . '/images/small/' . $fileName);
+                ->save(public_path() . '/images/small/' . $fileName, 80);
 
             $service->image = $fileName;
         }
@@ -78,11 +81,11 @@ class ServiceController extends Controller
             $fileName = uniqid('service_icon_') . '.' . $file->getClientOriginalExtension();
 
             Image::make($file)
-                ->save(public_path() . '/images/large/' . $fileName)
+                ->save(public_path() . '/images/large/' . $fileName, 70)
                 ->resize(null, 128, function ($constraint) {
                     $constraint->aspectRatio();
                 })
-                ->save(public_path() . '/images/small/' . $fileName);
+                ->save(public_path() . '/images/small/' . $fileName, 70);
 
             $service->icon = $fileName;
         }
@@ -161,11 +164,14 @@ class ServiceController extends Controller
             $fileName = uniqid('service_') . '.jpg';
 
             Image::make($file)
+                ->resize(1000, 1000, function ($constraint) {
+                    $constraint->aspectRatio();
+                })
                 ->save(public_path() . '/images/large/' . $fileName)
                 ->resize(null, 400, function ($constraint) {
                     $constraint->aspectRatio();
                 })
-                ->save(public_path() . '/images/small/' . $fileName);
+                ->save(public_path() . '/images/small/' . $fileName, 80);
 
             $service->image = $fileName;
         }
@@ -179,13 +185,11 @@ class ServiceController extends Controller
             $fileName = uniqid('service_icon_') . '.' . $file->getClientOriginalExtension();
 
             Image::make($file)
-                ->save(public_path() . '/images/large/' . $fileName);
-
-            Image::make($file)
+                ->save(public_path() . '/images/large/' . $fileName, 70)
                 ->resize(null, 128, function ($constraint) {
                     $constraint->aspectRatio();
                 })
-                ->save(public_path() . '/images/small/' . $fileName);
+                ->save(public_path() . '/images/small/' . $fileName, 70);
 
             $service->icon = $fileName;
         }

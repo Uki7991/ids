@@ -49,7 +49,7 @@
 .min-benefit-height{min-height:200px;}
 .max-benefit-height{max-height:400px;}
 .backdrop-post{position:absolute;background-color:rgba(0, 0, 0, 0.6);width:100%;height:100%;top:0;left:0;}
-.post-show{background-image:url(/upload/4.jpg);background-size:cover;background-position:center center;background-repeat:no-repeat;}
+.post-show{background-size:cover;background-position:center center;background-repeat:no-repeat;}
 .card-director:before{content:"";z-index:0;position:absolute;left:0;right:0;height:100%;background:#c3ebff;-webkit-transform:skew(0,5deg);transform:skew(0,5deg);-webkit-filter:blur(25px);filter:blur(25px);}
 section, footer{position:relative;z-index:1;}
 @media (min-width:700px){.carousel.slide{height:100vh;}
