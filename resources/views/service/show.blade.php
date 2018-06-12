@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', $service->name)
+
 @section('title')
 
     {{ $service->name }}

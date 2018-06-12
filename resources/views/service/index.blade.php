@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Все услуги | Услуги')
+
 @section('content')
 
     <div class="py-5 position-relative post-show">

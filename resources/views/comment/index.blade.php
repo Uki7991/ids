@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Вам будет интересно... | Блог')
+
 @section('content')
     <div class="py-5 position-relative post-show">
         <div class="backdrop-post"></div>
