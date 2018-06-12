@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Стоматологическая клиника')
+@section('title', 'Стоматологическая клиника в бишкеке. Профессионалы высшего класса')
 
 @section('content')
 
