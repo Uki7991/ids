@@ -67,20 +67,18 @@
     <section>
         <div class="card-director">
             <div class="container py-5">
+                <div class="row mb-4 justify-content-center">
+                    <h3 class="text-center col-12 mb-0">Мурзалиев Амантур Джолдошбекович</h3>
+                    <span class="text-dramatic">Ведущий специалист по имплантологии в Кыргызстане,
+                            Генеральный директор стоматологической клиники «IDS», Кандидат медицинских наук</span>
+                </div>
                 <div class="row">
                     <div class="col-lg-4 col-12 pl-0">
                         <img class="img-fluid mx-auto" src="img/DSC_1846.jpg" alt="Card image cap">
                     </div>
-                    <div class="col-lg-8 col-12 py-3">
-                        <h3 class="text-center mb-3">Мурзалиев Амантур Джолдошбекович</h3>
-                        <span class="text-dark"> - ведущий специалист по имплантологии в Кыргызстане.</span>
-                        <div class="mt-5">
-                            <p class="">
-                                Генеральный директор стоматологической клиники «IDS»
-                            </p>
-                            <p class="">
-                                Кандидат медицинских наук
-                            </p>
+                    <div class="col-lg-8 col-12">
+
+                        <div class="mt-5 d-none">
                             <p class="">
                                 Доцент кафедры стоматологии и челюстно-лицевой хирургии КГМИП  и ПК
                             </p>
@@ -96,6 +94,53 @@
                             <p class="">
                                 Было написано – 20 научных работ, рационализаторских предложений – 14 и 1 патент на щипцы
                             </p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-4 mb-3 text-center h-100">
+                                <div class="border col-12 height-200 row align-items-center border-info border-5 py-5">
+                                    <p class="text-primary col-12">
+                                        <span class="h1">32</span>
+                                        <span class="text-uppercase"> год</span>
+                                    </p>
+                                    <p class="h4 col-12">Стаж работы</p>
+                                </div>
+                            </div>
+                            <div class="col-4 mb-3 text-center h-100">
+                                <div class="border col-12 height-200 row align-items-center border-info border-5 py-5">
+                                    <p class="text-primary col-12">
+                                        <span class="h1">20</span>
+                                        <span class="text-uppercase"> лет</span>
+                                    </p>
+                                    <p class="h4 col-12">Дентальной имплантацией</p>
+                                </div>
+                            </div>
+                            <div class="col-4 mb-3 text-center h-100">
+                                <div class="border col-12 height-200 row align-items-center border-info border-5 py-5">
+                                    <p class="text-primary col-12">
+                                        <span class="h1">20</span>
+                                        <span class="text-uppercase"></span>
+                                    </p>
+                                    <p class="h4 col-12">Научных работ</p>
+                                </div>
+                            </div>
+                            <div class="col-4 mb-3 text-center h-100">
+                                <div class="border col-12 height-200 row align-items-center border-info border-5 py-5">
+                                    <p class="text-primary col-12">
+                                        <span class="h1">15</span>
+                                        <span class="text-uppercase"></span>
+                                    </p>
+                                    <p class="h4 col-12">Патентов и предложений</p>
+                                </div>
+                            </div>
+                            <div class="col-4 mb-3 text-center h-100">
+                                <div class="border col-12 height-200 row align-items-center border-info border-5 py-5">
+                                    <p class="text-primary col-12">
+                                        <span class="h1">99,9</span>
+                                        <span class="text-uppercase">%</span>
+                                    </p>
+                                    <p class="h4 col-12">Успешных операций</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
