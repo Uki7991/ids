@@ -19,10 +19,10 @@
             </ol>
             <div class="carousel-inner h-100">
                 <div class="carousel-item active">
-                    <img src="img/DSC_1800-min.jpg" class="w-100" alt="...">
+                    <img src="img/DSC_1800-min-min.jpg" class="w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/DSC_1757-min.jpg" class="w-100" alt="...">
+                    <img src="img/DSC_1757-min-min.jpg" class="w-100" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -74,7 +74,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-12 pl-0">
-                        <img class="img-fluid mx-auto" src="img/DSC_1846.jpg" alt="Card image cap">
+                        <img class="img-fluid mx-auto" src="img/DSC_1846-min.jpg" alt="Card image cap">
                     </div>
                     <div class="col-lg-8 col-12">
 
@@ -148,7 +148,7 @@
         </div>
     </section>
 
-    <section id="benefits" class="py-5 d-flex align-items-center" style="background-image: url('img/1.jpg'); background-attachment: fixed; z-index: 2;">
+    <section id="benefits" class="py-5 d-flex align-items-center" style="background-image: url('img/1-min.jpg'); background-attachment: fixed; z-index: 2;">
         <div class="container my-5">
             <div class="row justify-content-center bg-dramatic py-4">
                 <h2 class="text-center h1 text-light">Чем мы отличаемся от всех?</h2>
@@ -185,7 +185,7 @@
         </div>
     </section>
 
-    <section class="d-none py-5 d-lg-block" id="cirle_benefit-section" style="background-image: url('img/1.jpg'); background-attachment: fixed; z-index: 2;">
+    <section class="d-none py-5 d-lg-block" id="cirle_benefit-section" style="background-image: url('img/1-min.jpg'); background-attachment: fixed; z-index: 2;">
         <div class="backdrop"></div>
         <div style="height: 250px;">
             <div class="container text-light h-100">
@@ -274,7 +274,7 @@
                 <div class="owl-carousel owl-theme owl-3">
 
                     <div class="card">
-                        <img class="card-img-top" src="img/DSC_1846.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="img/DSC_1846-min.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title text-center">Мурзалиев Амантур Джолдошбекович</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -282,7 +282,7 @@
                     </div>
 
                     <div class="card">
-                        <img class="card-img-top" src="img/DSC_1846.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="img/DSC_1846-min.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title text-center">Мурзалиев Амантур Джолдошбекович</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -290,7 +290,7 @@
                     </div>
 
                     <div class="card">
-                        <img class="card-img-top" src="img/DSC_1846.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="img/DSC_1846-min.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title text-center">Мурзалиев Амантур Джолдошбекович</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -298,7 +298,7 @@
                     </div>
 
                     <div class="card">
-                        <img class="card-img-top" src="img/DSC_1846.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="img/DSC_1846-min.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title text-center">Мурзалиев Амантур Джолдошбекович</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -306,7 +306,7 @@
                     </div>
 
                     <div class="card">
-                        <img class="card-img-top" src="img/DSC_1846.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="img/DSC_1846-min.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title text-center">Мурзалиев Амантур Джолдошбекович</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -314,7 +314,7 @@
                     </div>
 
                     <div class="card">
-                        <img class="card-img-top" src="img/DSC_1846.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="img/DSC_1846-min.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title text-center">Мурзалиев Амантур Джолдошбекович</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -336,7 +336,7 @@
                 <div class="col-12 mb-3 mb-md-0 col-md-6">
                     <a href="/post/{{ $post->id }}" class="card-spec" ontouchstart="this.classList.toggle('hover');">
                         <div class="container">
-                            <div class="front" style="background-image: url(img/4.jpg)">
+                            <div class="front" style="background-image: url(img/4-min.jpg)">
                                 <div class="inner">
                                     <p>Forbes</p>
                                     <span>{{ $post->title }}</span>
