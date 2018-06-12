@@ -394,19 +394,7 @@ section, footer {
     z-index: 1;
 }
 
-@media (max-width:400px) {
-    .carousel.slide {
-        height: 25vh;
-    }
-}
-
-@media (max-width:500px) {
-    .carousel.slide {
-        height: 50vh;
-    }
-}
-
-@media (min-width: 1300px) {
+@media (min-width: 700px) {
     .carousel.slide {
         height: 100vh;
     }

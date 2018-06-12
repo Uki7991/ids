@@ -69,16 +69,16 @@
             <div class="container py-5">
                 <div class="row mb-4 justify-content-center">
                     <h2 class="text-center h1 col-12 mb-0">Мурзалиев Амантур Джолдошбекович</h2>
-                    <span class="text-dramatic">Ведущий специалист по имплантологии в Кыргызстане,
+                    <span class="text-dramatic text-center">Ведущий специалист по имплантологии в Кыргызстане,
                             Генеральный директор стоматологической клиники «IDS», Кандидат медицинских наук</span>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-12 pl-0">
-                        <img class="img-fluid mx-auto" src="img/DSC_1846-min.jpg" alt="Card image cap">
+                        <img class="img-fluid mx-auto mb-3" src="img/DSC_1846-min.jpg" alt="Card image cap">
                     </div>
                     <div class="col-lg-8 col-12">
                         <div class="row justify-content-center">
-                            <div class="col-lg-4 col-6 mb-3 text-center h-100">
+                            <div class="col-lg-4 col-12 col-md-6 mb-3 text-center h-100">
                                 <div class="border rounded-bottom-right rounded-top-left col-12 height-200 row align-items-center border-info border-5 py-5">
                                     <p class="text-primary col-12">
                                         <span class="h1">32</span>
@@ -87,16 +87,16 @@
                                     <p class="h4 col-12">Стаж работы</p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-6 mb-3 text-center h-100">
+                            <div class="col-lg-4 col-12 col-md-6 mb-3 text-center h-100">
                                 <div class="border rounded-bottom-right rounded-top-left col-12 height-200 row align-items-center border-info border-5 py-5">
                                     <p class="text-primary col-12">
                                         <span class="h1">20</span>
                                         <span class="text-uppercase"> лет</span>
                                     </p>
-                                    <p class="h4 col-12">Дентальной имплантацией</p>
+                                    <p class="h4 col-12">Дентальная имплантация</p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-6 mb-3 text-center h-100">
+                            <div class="col-lg-4 col-12 col-md-6 mb-3 text-center h-100">
                                 <div class="border rounded-bottom-right rounded-top-left col-12 height-200 row align-items-center border-info border-5 py-5">
                                     <p class="text-primary col-12">
                                         <span class="h1">20</span>
@@ -105,7 +105,7 @@
                                     <p class="h4 col-12">Научных работ</p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-6 mb-3 text-center h-100">
+                            <div class="col-lg-4 col-12 col-md-6 mb-3 text-center h-100">
                                 <div class="border rounded-bottom-right rounded-top-left col-12 height-200 row align-items-center border-info border-5 py-5">
                                     <p class="text-primary col-12">
                                         <span class="h1">15</span>
@@ -114,7 +114,7 @@
                                     <p class="h4 col-12">Патентов и предложений</p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-6 mb-3 text-center h-100">
+                            <div class="col-lg-4 col-12 col-md-6 mb-3 text-center h-100">
                                 <div class="border rounded-bottom-right rounded-top-left col-12 height-200 row align-items-center border-info border-5 py-5">
                                     <p class="text-primary col-12">
                                         <span class="h1">99,9</span>
@@ -310,7 +310,7 @@
 
     <section id="blog" class="container pb-5">
         <div class="row justify-content-center py-5">
-            <h2 class="h1" id="blog-title">Вам будет интересно...</h2>
+            <h2 class="h1 text-center" id="blog-title">Вам будет интересно...</h2>
         </div>
         <div class="row">
             @foreach($posts as $post)
