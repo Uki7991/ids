@@ -62,9 +62,10 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="/service">Services</a>
-                                <a class="dropdown-item" href="/post">Blog</a>
-                                <a class="dropdown-item" href="/comment">Comments</a>
+                                <a class="dropdown-item" href="/service">Услуги</a>
+                                <a class="dropdown-item" href="/post">Блог</a>
+                                <a class="dropdown-item" href="/comment">Комментарии</a>
+                                <a class="dropdown-item" href="/worker">Сотрудники</a>
 
                                 <div class="dropdown-divider"></div>
 
@@ -79,7 +80,7 @@
                     @endif
                     <ul class="nav flex-column mr-0 mr-lg-5">
                         <li class="nav-item row align-items-center justify-content-center">
-                            <a class="nav-link text-light" href="mailto:ids.com@gmail.com">ids-2016@mail.ru</a>
+                            <a class="nav-link text-light" href="mailto:ids-2016@mail.ru">ids-2016@mail.ru</a>
                         </li>
                         <li class="nav-item row align-items-center justify-content-center">
                             <a class="nav-link text-light" href="tel: +996 (554) 899 801">+996 (554) 899 - 801</a>
@@ -132,7 +133,7 @@
                     <div class="row justify-content-center">
                         <ul class="nav flex-column">
                             <li class="nav-item align-items-center justify-content-center">
-                                <a class="nav-link text-light" href="mailto:ids.com@gmail.com">E-mail: ids-2016@mail.ru</a>
+                                <a class="nav-link text-light" href="mailto:ids-2016@mail.ru">E-mail: ids-2016@mail.ru</a>
                             </li>
                             <div class="d-flex justify-content-center">
                                 <li class="nav-item mx-1 row align-items-center justify-content-center">

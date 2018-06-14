@@ -28,6 +28,8 @@ Route::group(['middleware' => ['admin']], function () {
     Route::resource('comment', 'CommentController');
 
     Route::resource('service', 'ServiceController');
+
+    Route::resource('worker', 'WorkerController');
 });
 
 Route::resource('post', 'PostController')->only([
