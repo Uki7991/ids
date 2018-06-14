@@ -6,8 +6,8 @@
             <div class="card">
                 <img class="card-img-top" src="/images/large/{{ $worker->image }}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title text-center">{{ $worker->name }}</h5>
-                    <p class="card-text">{{ $worker->description }}</p>
+                    <h5 class="card-title text-center" style="max-height: 50px;min-height: 50px;">{{ $worker->name }}</h5>
+                    <p class="card-text" style="max-height: 100px;min-height: 100px;overflow: hidden;text-overflow: ellipsis;">{{ $worker->description }}</p>
                 </div>
             </div>
             @endforeach
@@ -20,8 +20,8 @@
         <div class="card">
             <img class="card-img-top" src="/images/large/{{ $worker->image }}" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title text-center">{{ $worker->name }}</h5>
-                <p class="card-text">{{ $worker->description }}</p>
+                <h5 class="card-title text-center" style="max-height: 50px;min-height: 50px;">{{ $worker->name }}</h5>
+                <p class="card-text" style="max-height: 100px;min-height: 100px;overflow: hidden;text-overflow: ellipsis;">{{ $worker->description }}</p>
             </div>
         </div>
     </div>

@@ -256,7 +256,7 @@
             <div class="row justify-content-center mb-4">
                 <h2 class="h1">Наша команда</h2>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 @include('worker.list')
             </div>
         </div>
