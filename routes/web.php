@@ -30,6 +30,8 @@ Route::group(['middleware' => ['admin']], function () {
     Route::resource('service', 'ServiceController');
 
     Route::resource('worker', 'WorkerController');
+
+    Route::resource('setting', 'SettingController');
 });
 
 Route::resource('post', 'PostController')->only([

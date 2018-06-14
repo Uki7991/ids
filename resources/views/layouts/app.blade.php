@@ -35,7 +35,13 @@
                 <button class="navbar-toggler text-light border-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars fa-lg"></i>
                 </button>
-                <a class="navbar-brand ml-5 mx-auto text-center text-light" href="/">Implant Dental Service</a>
+                <a class="navbar-brand ml-5 mx-auto text-center text-light" href="/">
+                    @if($setting->logo)
+                        <img src="/img/{{ $setting->logo }}" alt="">
+                    @else
+                        {{ $setting->name }}
+                    @endif
+                </a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto text-center">
                         <li class="nav-item active">
@@ -66,6 +72,7 @@
                                 <a class="dropdown-item" href="/post">Блог</a>
                                 <a class="dropdown-item" href="/comment">Комментарии</a>
                                 <a class="dropdown-item" href="/worker">Сотрудники</a>
+                                <a class="dropdown-item" href="/setting/{{ $setting->id }}/edit">Настройки</a>
 
                                 <div class="dropdown-divider"></div>
 
@@ -79,11 +86,13 @@
 
                     @endif
                     <ul class="nav flex-column mr-0 mr-lg-5">
+                        @if($setting->email)
+                            <li class="nav-item row align-items-center justify-content-center">
+                                <a class="nav-link text-light" href="mailto:{{ $setting->email }}">{{ $setting->email }}</a>
+                            </li>
+                        @endif
                         <li class="nav-item row align-items-center justify-content-center">
-                            <a class="nav-link text-light" href="mailto:ids-2016@mail.ru">ids-2016@mail.ru</a>
-                        </li>
-                        <li class="nav-item row align-items-center justify-content-center">
-                            <a class="nav-link text-light" href="tel: +996 (554) 899 801">+996 (554) 899 - 801</a>
+                            <a class="nav-link text-light" href="tel: {{ $setting->phone1 }}">{{ $setting->phone1 }}</a>
                         </li>
                     </ul>
                 </div>
@@ -100,7 +109,13 @@
 
         <div class="container">
             <div class="row py-5 justify-content-between justify-content-center text-center">
-                <div class="col-12 col-md-auto text-light h4">Implant Dental Service</div>
+                <div class="col-12 col-md-auto text-light h4">
+                    @if($setting->logo)
+                        <img src="/img/{{ $setting->logo }}" alt="">
+                    @else
+                        {{ $setting->name }}
+                    @endif
+                </div>
                 <div class="col-12 col-md-auto">
                     <ul class="nav flex-column">
                         <li class="nav-item active">
@@ -124,29 +139,46 @@
                     <div class="row justify-content-center">
                         <h3 class="text-light">Контакты</h3>
                     </div>
-                    <div class="row justify-content-center">
-                        <a href="https://www.facebook.com/idsclinic1/" target="_blank" class="text-light mr-3 p-2 text-center contacts-link"><i class="fab fa-lg fa-facebook"></i> @ids_clinic</a>
-                    </div>
-                    <div class="row justify-content-center">
-                        <a href="https://www.instagram.com/ids_clinic/" target="_blank" class="text-light mr-3 p-2 text-center contacts-link"><i class="fab fa-lg fa-instagram"></i> @ids_clinic</a>
-                    </div>
+                    @if($setting->facebook)
+                        <div class="row justify-content-center">
+                            <a href="{{ $setting->facebook }}" target="_blank" class="text-light mr-3 p-2 text-center contacts-link"><i class="fab fa-lg fa-facebook"></i> @ids_clinic</a>
+                        </div>
+                    @endif
+                    @if($setting->instagram)
+                        <div class="row justify-content-center">
+                            <a href="{{ $setting->instagram }}" target="_blank" class="text-light mr-3 p-2 text-center contacts-link"><i class="fab fa-lg fa-instagram"></i> @ids_clinic</a>
+                        </div>
+                    @endif
                     <div class="row justify-content-center">
                         <ul class="nav flex-column">
-                            <li class="nav-item align-items-center justify-content-center">
-                                <a class="nav-link text-light" href="mailto:ids-2016@mail.ru">E-mail: ids-2016@mail.ru</a>
-                            </li>
-                            <div class="d-flex justify-content-center">
-                                <li class="nav-item mx-1 row align-items-center justify-content-center">
-                                    <a class="nav-link text-light" href="tel: +996 (707) 912 651">+996 (707) 912 - 651</a>
+                            @if($setting->email)
+                                <li class="nav-item align-items-center justify-content-center">
+                                    <a class="nav-link text-light" href="mailto:{{ $setting->email }}">E-mail: {{ $setting->email }}</a>
                                 </li>
+                            @endif
+                            <div class="d-flex justify-content-center">
+                                @if($setting->phone1)
+                                    <li class="nav-item mx-1 row align-items-center justify-content-center">
+                                        <a class="nav-link text-light" href="tel: {{ $setting->phone1 }}">{{ $setting->phone1 }}</a>
+                                    </li>
+                                @endif
+                                @if($setting->phone2)
+                                    <li class="nav-item mx-1 row align-items-center justify-content-center">
+                                        <a class="nav-link text-light" href="tel: {{ $setting->phone2 }}">{{ $setting->phone2 }}</a>
+                                    </li>
+                                @endif
                             </div>
                             <div class="d-flex justify-content-center">
-                                <li class="nav-item mx-1 row align-items-center justify-content-center">
-                                    <a class="nav-link text-light" href="tel: +996 (554) 899 801">+996 (554) 899 - 801</a>
-                                </li>
-                                <li class="nav-item mx-1 row align-items-center justify-content-center">
-                                    <a class="nav-link text-light" href="tel: +996 (550) 912 651">+996 (550) 912 - 651</a>
-                                </li>
+                                @if($setting->phone3)
+                                    <li class="nav-item mx-1 row align-items-center justify-content-center">
+                                        <a class="nav-link text-light" href="tel: {{ $setting->phone3 }}">{{ $setting->phone3 }}</a>
+                                    </li>
+                                @endif
+                                @if($setting->phone4)
+                                    <li class="nav-item mx-1 row align-items-center justify-content-center">
+                                        <a class="nav-link text-light" href="tel: {{ $setting->phone4 }}">{{ $setting->phone4 }}</a>
+                                    </li>
+                                @endif
                             </div>
                         </ul>
                     </div>

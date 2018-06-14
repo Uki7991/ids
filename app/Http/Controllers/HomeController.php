@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Comment;
 use App\Service;
+use App\Setting;
 use App\Worker;
 use Illuminate\Http\Request;
 use App\Post;
@@ -29,11 +30,14 @@ class HomeController extends Controller
         $workers = Worker::all()
             ->where('is_active', '=', true);
 
+        $setting = Setting::find(1);
+
         return view('welcome', [
             'posts' => $postsOnMain,
             'comments' => $commentsOnMain,
             'services' => $servicesOnMain,
             'workers' => $workers,
+            'setting' => $setting,
         ]);
     }
 }
