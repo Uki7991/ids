@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Comment;
 use App\Service;
 use App\Setting;
+use App\Slide;
 use App\Worker;
 use Illuminate\Http\Request;
 use App\Post;
@@ -32,12 +33,16 @@ class HomeController extends Controller
 
         $setting = Setting::find(1);
 
+        $slides = Slide::all()
+            ->sortBy('position');
+
         return view('welcome', [
             'posts' => $postsOnMain,
             'comments' => $commentsOnMain,
             'services' => $servicesOnMain,
             'workers' => $workers,
             'setting' => $setting,
+            'slides' => $slides,
         ]);
     }
 }

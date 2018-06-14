@@ -68,6 +68,7 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="/slide">Слайдер</a>
                                 <a class="dropdown-item" href="/service">Услуги</a>
                                 <a class="dropdown-item" href="/post">Блог</a>
                                 <a class="dropdown-item" href="/comment">Комментарии</a>

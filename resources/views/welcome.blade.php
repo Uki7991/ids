@@ -18,12 +18,17 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner h-100">
-                <div class="carousel-item active">
-                    <img src="img/DSC_1800-min-min.jpg" class="w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/DSC_1757-min-min.jpg" class="w-100" alt="...">
-                </div>
+                @foreach($slides as $slide)
+                    @if($loop->first)
+                        <div class="carousel-item active">
+                            <img src="/images/large/{{ $slide->image }}" class="w-100" alt="...">
+                        </div>
+                    @else
+                        <div class="carousel-item">
+                            <img src="/images/large/{{ $slide->image }}" class="w-100" alt="...">
+                        </div>
+                    @endif
+                @endforeach
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>

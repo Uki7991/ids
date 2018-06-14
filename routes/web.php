@@ -32,6 +32,8 @@ Route::group(['middleware' => ['admin']], function () {
     Route::resource('worker', 'WorkerController');
 
     Route::resource('setting', 'SettingController');
+
+    Route::resource('slide', 'SlideController');
 });
 
 Route::resource('post', 'PostController')->only([
