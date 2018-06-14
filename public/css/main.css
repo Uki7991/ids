@@ -75,3 +75,4 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{font-family:'El Messiri', s
 .height-200{height:200px;}
 .rounded-top-left{border-top-left-radius:25px;}
 .rounded-bottom-right{border-bottom-right-radius:25px;}
+.card-service{box-shadow: none;transition: .5s;min-height: 225px;max-height: 225px;overflow: hidden;background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}

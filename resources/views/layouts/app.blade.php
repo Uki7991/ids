@@ -79,10 +79,10 @@
                     @endif
                     <ul class="nav flex-column mr-0 mr-lg-5">
                         <li class="nav-item row align-items-center justify-content-center">
-                            <a class="nav-link text-light" href="mailto:ids.com@gmail.com">ids.com@gmail.com</a>
+                            <a class="nav-link text-light" href="mailto:ids.com@gmail.com">ids-2016@mail.ru</a>
                         </li>
                         <li class="nav-item row align-items-center justify-content-center">
-                            <a class="nav-link text-light" href="tel: +996 (312) 899 802">+996 (312) 899 - 802</a>
+                            <a class="nav-link text-light" href="tel: +996 (554) 899 801">+996 (554) 899 - 801</a>
                         </li>
                     </ul>
                 </div>
@@ -124,25 +124,22 @@
                         <h3 class="text-light">Контакты</h3>
                     </div>
                     <div class="row justify-content-center">
-                        <a href="" target="_blank" class="text-light mr-3 p-2 text-center contacts-link"><i class="fab fa-lg fa-facebook"></i> fb.com/implantdentalservice</a>
+                        <a href="https://www.facebook.com/idsclinic1/" target="_blank" class="text-light mr-3 p-2 text-center contacts-link"><i class="fab fa-lg fa-facebook"></i> @ids_clinic</a>
                     </div>
                     <div class="row justify-content-center">
-                        <a href="" target="_blank" class="text-light mr-3 p-2 text-center contacts-link"><i class="fab fa-lg fa-instagram"></i> instagram.com/implantdentalservice</a>
+                        <a href="https://www.instagram.com/ids_clinic/" target="_blank" class="text-light mr-3 p-2 text-center contacts-link"><i class="fab fa-lg fa-instagram"></i> @ids_clinic</a>
                     </div>
                     <div class="row justify-content-center">
                         <ul class="nav flex-column">
                             <li class="nav-item align-items-center justify-content-center">
-                                <a class="nav-link text-light" href="mailto:ids.com@gmail.com">ids.com@gmail.com</a>
+                                <a class="nav-link text-light" href="mailto:ids.com@gmail.com">E-mail: ids-2016@mail.ru</a>
                             </li>
-                            <div class="d-flex">
-                                <li class="nav-item mx-1 row align-items-center justify-content-center">
-                                    <a class="nav-link text-light" href="tel: +996 (312) 899 802">+996 (312) 899 - 802</a>
-                                </li>
+                            <div class="d-flex justify-content-center">
                                 <li class="nav-item mx-1 row align-items-center justify-content-center">
                                     <a class="nav-link text-light" href="tel: +996 (707) 912 651">+996 (707) 912 - 651</a>
                                 </li>
                             </div>
-                            <div class="d-flex">
+                            <div class="d-flex justify-content-center">
                                 <li class="nav-item mx-1 row align-items-center justify-content-center">
                                     <a class="nav-link text-light" href="tel: +996 (554) 899 801">+996 (554) 899 - 801</a>
                                 </li>

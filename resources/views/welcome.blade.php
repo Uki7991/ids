@@ -45,8 +45,7 @@
                 @foreach($services as $service)
 
                     <div class="col-12 col-sm-6 col-md-3 col-xl-4 my-2">
-                        <div class="card bg-dark text-white">
-                            <img class="card-img" src="/images/small/{{ $service->image }}" alt="Card image">
+                        <div class="card bg-dark text-white card-service" style="background-image: url(images/small/{{ $service->image }});">
                             <div class="card-img-overlay text-center" style="background-color: #397bb35c">
                                 {{--<i class="fas fa-bolt fa-7x text-light"></i>--}}
                                 <img src="/images/small/{{ $service->icon }}" class="img-fluid" alt="">
