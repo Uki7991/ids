@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Comment;
 use App\Service;
+use App\Worker;
 use Illuminate\Http\Request;
 use App\Post;
 
@@ -25,10 +26,14 @@ class HomeController extends Controller
             ->where('on_main', '=', true)
             ->sortByDesc('created_at');
 
+        $workers = Worker::all()
+            ->where('is_active', '=', true);
+
         return view('welcome', [
             'posts' => $postsOnMain,
             'comments' => $commentsOnMain,
             'services' => $servicesOnMain,
+            'workers' => $workers,
         ]);
     }
 }

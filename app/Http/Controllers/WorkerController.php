@@ -42,6 +42,10 @@ class WorkerController extends Controller
     {
         $worker = new Worker($request->all());
 
+        if ($request->get('is_active')) {
+            $worker->is_active = true;
+        }
+
         if ($request->hasFile('image')) {
             $file = $request->file('image');
 
@@ -58,7 +62,7 @@ class WorkerController extends Controller
 
         $worker->save();
 
-        return redirect('/worker', '200');
+        return redirect('/worker');
     }
 
     /**
@@ -83,8 +87,6 @@ class WorkerController extends Controller
      */
     public function update(Request $request, Worker $worker)
     {
-        $worker->update($request->request->all());
-
         if ($request->hasFile('image')) {
             $file = $request->file('image');
 
@@ -101,11 +103,18 @@ class WorkerController extends Controller
                 ->save(public_path('images/large/').$fileName);
 
             $worker->image = $fileName;
+            $request->request->add(['image' => $fileName]);
         }
+
+        $request->request->add(['image' => $worker->image]);
+
+        $worker->fill($request->request->all());
+
+        $request->get('is_active') ? $worker->is_active = true : $worker->is_active = false;
 
         $worker->save();
 
-        return redirect('/worker', 200);
+        return redirect('/worker');
     }
 
     /**

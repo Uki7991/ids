@@ -18,6 +18,7 @@ class CreateWorkersTable extends Migration
             $table->string('name');
             $table->string('image');
             $table->text('description');
+            $table->boolean('is_active')->default(false);
             $table->timestamps();
         });
     }
