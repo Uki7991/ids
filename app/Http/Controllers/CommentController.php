@@ -86,7 +86,13 @@ class CommentController extends Controller
      */
     public function update(Request $request, Comment $comment)
     {
-        $comment = Comment::update($request->all());
+        $comment->fill($request->all());
+
+        if ($request->is_active === 'on') {
+            $comment->is_active = true;
+        }
+
+        $comment->save();
 
         return redirect('/comment');
     }

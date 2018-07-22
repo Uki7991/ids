@@ -30,7 +30,7 @@
 <body>
     <!-- Header -->
     <header class="fixed-top header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="font-size: 1.2rem;">
             <div class="container">
                 <button class="navbar-toggler text-light border-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars fa-lg"></i>
@@ -68,6 +68,7 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="/director">Директор</a>
                                 <a class="dropdown-item" href="/slide">Слайдер</a>
                                 <a class="dropdown-item" href="/service">Услуги</a>
                                 <a class="dropdown-item" href="/post">Блог</a>
@@ -186,9 +187,9 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center small text-muted">
-                <a href="http://mount.kg" target="_blank" class="text-danger p-2 bg-light">Made with&nbsp;<span class="text-danger">&hearts;</span> by&nbsp;Mount</a>
-            </div>
+            {{--<div class="row justify-content-center small text-muted">--}}
+                {{--<a href="http://mount.kg" target="_blank" class="text-danger p-2 bg-light">Made with&nbsp;<span class="text-danger">&hearts;</span> by&nbsp;Mount</a>--}}
+            {{--</div>--}}
         </div>
     </footer>
     <!-- End Footer -->
@@ -221,6 +222,7 @@
     <script>
         var scroll;
         if ($(window).width() > 1000) {
+            $('nav.navbar').css('font-size', '1.2rem');
             $(window).scroll(function() {
                 scroll = $(window).scrollTop();
                 if (scroll > 200) {

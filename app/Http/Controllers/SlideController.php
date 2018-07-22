@@ -39,11 +39,11 @@ class SlideController extends Controller
             $fileName = uniqid('slide_').md5(uniqid()).'.jpg';
 
             Image::make($file)
-                ->save(public_path('images/large/').$fileName)
+                ->save(public_path('images/large/').$fileName, 60)
                 ->resize(300, 300, function ($constraint) {
                     $constraint->aspectRatio();
                 })
-                ->save(public_path('images/small/').$fileName);
+                ->save(public_path('images/small/').$fileName, 60);
 
             $slide->image = $fileName;
         }
@@ -72,11 +72,11 @@ class SlideController extends Controller
             $fileName = uniqid('slide_').md5(uniqid()).'.jpg';
 
             Image::make($file)
-                ->save(public_path('images/large/').$fileName)
+                ->save(public_path('images/large/').$fileName, 60)
                 ->resize(300, 300, function ($constraint) {
                     $constraint->aspectRatio();
                 })
-                ->save(public_path('images/small/').$fileName);
+                ->save(public_path('images/small/').$fileName, 60);
 
             $slide->image = $fileName;
         }

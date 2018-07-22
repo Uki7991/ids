@@ -52,7 +52,7 @@
                     <label for="is-active" class="col-md-4 col-form-label text-md-right">Активный</label>
 
                     <div class="col-md-6">
-                        <input type="checkbox" name="is_active" id="is-active">
+                        <input type="checkbox" name="is_active" id="is-active" {{ $comment->is_active ? 'checked' : '' }}>
 
                         @if ($errors->has('is_active'))
                             <span class="invalid-feedback">
