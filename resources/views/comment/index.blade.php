@@ -39,10 +39,6 @@
                                     <input type="checkbox" {{ $comment->is_active ? 'checked' : '' }} disabled>
                                     <span>Active</span>
                                 </div>
-                                <div>
-                                    <input type="checkbox" {{ $comment->on_main ? 'checked' : '' }} disabled>
-                                    <span>On main</span>
-                                </div>
                             </div>
                             <div class="card-body text-center">
                                 <a href="/comment/{{ $comment->id }}/edit" class="card-link text-warning">Редатировать</a>

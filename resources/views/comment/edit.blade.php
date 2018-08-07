@@ -24,7 +24,7 @@
                     <label for="user_info" class="col-sm-4 col-form-label text-md-right">Фамилия Имя</label>
 
                     <div class="col-md-6">
-                        <input id="user_info" type="text" class="form-control" disabled name="user_info" value="{{ old('user_info') }}" required>
+                        <input id="user_info" type="text" class="form-control" name="user_info" value="{{ $comment->user_info }}" required>
 
                         @if ($errors->has('user_info'))
                             <span class="invalid-feedback">
@@ -38,7 +38,7 @@
                     <label for="comment" class="col-md-4 col-form-label text-md-right">Ваш комментарий</label>
 
                     <div class="col-md-6">
-                        <textarea id="comment" class="form-control" disabled name="comment" rows="10" required>{{ $comment->comment }}</textarea>
+                        <textarea id="comment" class="form-control" name="comment" rows="10" required>{{ $comment->comment }}</textarea>
 
                         @if ($errors->has('comment'))
                             <span class="invalid-feedback">
@@ -65,7 +65,7 @@
                 <div class="form-group row mb-0">
                     <div class="col-md-8 offset-md-4">
                         <button type="submit" class="btn btn-primary">
-                            Оставить комментарий
+                            Изменить комментарий
                         </button>
                     </div>
                 </div>
