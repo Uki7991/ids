@@ -46,7 +46,11 @@
                             </div>
                             <div class="card-body text-center">
                                 <a href="/comment/{{ $comment->id }}/edit" class="card-link text-warning">Редатировать</a>
-                                <a href="" class="card-link text-danger">Удалить</a>
+                                <a href="{{ route('comment.destroy', $comment) }}" onclick="event.preventDefault();document.getElementById('comment-{{ $comment->id }}').submit();" class="card-link text-danger">Удалить</a>
+                                <form method="post" action="{{ route('comment.destroy', $comment) }}" id="comment-{{ $comment->id }}" class="d-none">
+                                    @method('DELETE')
+                                    @csrf
+                                </form>
                             </div>
 
                         @endif
