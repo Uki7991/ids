@@ -50,10 +50,10 @@
                             <a href="/worker/{{ $worker->id }}/edit" class="card-link text-warning">Редактировать</a>
                             <a class="card-link text-danger" href="/worker/{{ $worker->id }}"
                                onclick="event.preventDefault();
-                                                     document.getElementById('post-delete').submit();">Удалить
+                                                     document.getElementById('post-delete-{{ $worker->id }}').submit();">Удалить
                             </a>
 
-                            <form id="post-delete" action="/worker/{{ $worker->id }}" method="POST" style="display: none;">
+                            <form id="post-delete-{{ $worker->id }}" action="/worker/{{ $worker->id }}" method="POST" style="display: none;">
                                 @method('DELETE')
                                 @csrf
                             </form>
