@@ -78,7 +78,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-12 pl-0">
-                        <img class="img-fluid mx-auto mb-3" src="img/DSC_1846-min.jpg" alt="Card image cap">
+                        <img class="img-fluid mx-auto mb-3" src="img/image1.jpeg" alt="Card image cap">
                     </div>
                     <div class="col-lg-8 col-12">
                         <div class="row justify-content-center">
