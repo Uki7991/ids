@@ -180,7 +180,7 @@
                         <div class="circle-benefits text-center">
                             <div>
                                 <p id="el-1" class="text-light col-12 h1" style="font-size: 2em;">0</p>
-                                <p class="col-auto">Успешных операций</p>
+                                <p class="col-auto">Довольных пациентов</p>
                             </div>
                         </div>
                     </div>
@@ -188,7 +188,7 @@
                         <div class="circle-benefits text-center">
                             <div>
                                 <p id="el-2" class="text-light col-12 h1" style="font-size: 2em;">0</p>
-                                <p class="col-auto">Специалистов</p>
+                                <p class="col-auto">Успешных операций</p>
                             </div>
                         </div>
                     </div>
@@ -196,7 +196,7 @@
                         <div class="circle-benefits text-center">
                             <div>
                                 <p id="el-3" class="text-light col-12 h1" style="font-size: 2em;">0</p>
-                                <p class="col-auto">Партнеров и Спонсоров</p>
+                                <p class="col-auto">Общий опыт</p>
                             </div>
                         </div>
                     </div>
