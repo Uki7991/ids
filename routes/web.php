@@ -40,6 +40,8 @@ Route::group(['middleware' => ['admin']], function () {
     ]);
 });
 
+Route::get('/information', 'SettingController@information')->name('info');
+
 Route::resource('post', 'PostController')->only([
     'index', 'show'
 ]);

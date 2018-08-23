@@ -269,7 +269,7 @@
         <div class="row">
             @foreach($posts as $post)
 
-                <div class="col-12 mb-3 mb-md-0 col-md-6">
+                <div class="col-12 mb-3 col-md-6">
                     <a href="/post/{{ $post->id }}" class="card-spec" ontouchstart="this.classList.toggle('hover');">
                         <div class="container">
                             <div class="front" style="background-image: url(images/small/{{ $post->image }})">

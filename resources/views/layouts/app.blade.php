@@ -48,7 +48,7 @@
                             <a class="nav-link text-light" href="/">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">О нас</a>
+                            <a class="nav-link text-light" href="{{ route('info') }}">О нас</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="/#uslugi">Услуги</a>
@@ -57,7 +57,7 @@
                             <a class="nav-link text-light" href="{{ Request::is('/') ? '/#blog' : '/post' }}">Блог</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Контакты</a>
+                            <a class="nav-link text-light" href="#contacts">Контакты</a>
                         </li>
                     </ul>
                     @if(Auth::user() && Auth::user()->admin)
@@ -124,7 +124,7 @@
                             <a class="nav-link text-light p-1" href="/">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light p-1" href="#">О нас</a>
+                            <a class="nav-link text-light p-1" href="{{ route('info') }}">О нас</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light p-1" href="#uslugi">Услуги</a>
@@ -137,7 +137,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-auto mt-4 mt-md-0">
+                <div id="contacts" class="col-12 col-md-auto mt-4 mt-md-0">
                     <div class="row justify-content-center">
                         <h3 class="text-light">Контакты</h3>
                     </div>
@@ -149,6 +149,16 @@
                     @if($setting->instagram)
                         <div class="row justify-content-center">
                             <a href="{{ $setting->instagram }}" target="_blank" class="text-light mr-3 p-2 text-center contacts-link"><i class="fab fa-lg fa-instagram"></i> @ids_clinic</a>
+                        </div>
+                    @endif
+                    @if($setting->telegram)
+                        <div class="row justify-content-center">
+                            <a href="{{ $setting->telegram }}" target="_blank" class="text-light mr-3 p-2 text-center contacts-link"><i class="fab fa-lg fa-telegram"></i> @ids_clinic</a>
+                        </div>
+                    @endif
+                    @if($setting->whatsapp)
+                        <div class="row justify-content-center">
+                            <a href="{{ $setting->whatsapp }}" target="_blank" class="text-light mr-3 p-2 text-center contacts-link"><i class="fab fa-lg fa-whatsapp"></i> @ids_clinic</a>
                         </div>
                     @endif
                     <div class="row justify-content-center">

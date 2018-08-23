@@ -58,4 +58,11 @@ class SettingController extends Controller
 
         return redirect()->back();
     }
+
+    public function information()
+    {
+        return view('setting.info', [
+            'information' => Setting::find(1)->information,
+        ]);
+    }
 }
