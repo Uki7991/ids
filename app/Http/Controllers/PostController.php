@@ -88,7 +88,7 @@ class PostController extends Controller
             $post->on_main = false;
         }
 
-        if ($postsOnMainCount == 2) {
+        if ($postsOnMainCount == 4) {
             $post->on_main = false;
         }
 

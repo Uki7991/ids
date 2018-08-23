@@ -45,7 +45,7 @@
                     <label for="post_on-main">On main?</label>
                     <input id="post_on-main" name="on_main" type="checkbox" class="form-control"
                         @if($post->on_main) checked @endif
-                        @if(!($countOnMain < 2 || $post->on_main)) disabled @endif
+                        @if(!($countOnMain < 4 || $post->on_main)) disabled @endif
                     >
                 </div>
                 <button type="submit" class="btn btn-success">Update</button>
