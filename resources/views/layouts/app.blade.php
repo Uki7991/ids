@@ -132,7 +132,7 @@
                             <a class="nav-link text-light p-1" href="{{ Request::is('/') ? '/#blog' : '/post' }}">Блог</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light p-1" href="#">Контакты</a>
+                            <a class="nav-link text-light p-1" href="#contacts">Контакты</a>
                         </li>
                     </ul>
                 </div>
