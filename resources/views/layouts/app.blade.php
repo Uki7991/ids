@@ -68,7 +68,6 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="/director">Директор</a>
                                 <a class="dropdown-item" href="/slide">Слайдер</a>
                                 <a class="dropdown-item" href="/service">Услуги</a>
                                 <a class="dropdown-item" href="/post">Блог</a>
