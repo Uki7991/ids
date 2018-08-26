@@ -69,7 +69,7 @@
                 </div>
                 <div class="form-group">
                     <label for="setting_info">Информация "о нас"</label>
-                    <input id="setting_info" value="{!! $setting->information !!}" name="information" type="text" class="form-control">
+                    <input id="setting_info" value='{!! $setting->information !!}' name="information" type="text" class="form-control">
                 </div>
                 <button type="submit" class="btn btn-success">Сохранить</button>
             </form>
