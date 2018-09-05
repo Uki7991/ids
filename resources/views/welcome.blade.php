@@ -294,7 +294,7 @@
     </section>
 
     <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2068.547948738345!2d74.57941399869907!3d42.84395032379986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9c4beaa090b%3A0x676d0b00ddb74fbe!2zMTk0INGD0LsuINCQ0YXRg9C90LHQsNC10LLQsCwg0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1523212263981" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d682.6052864418598!2d74.56682651409831!3d42.84288413071617!2m2!1f0!2f0.7246778771862009!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x389ec9b8fb785fcb%3A0x270a2104b3d41740!2z0KHRgtC-0LzQsNGC0L7Qu9C-0LPQuNGH0LXRgdC60LDRjyDQutC70LjQvdC40LrQsCAiSW1wbGFudCBEZW50YWwgU2VydmljZSI!5e1!3m2!1sru!2skg!4v1536128763724" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
 
 @endsection
