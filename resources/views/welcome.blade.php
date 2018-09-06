@@ -152,11 +152,11 @@
                         </div>
                         <div class="col-12 col-md-6 p-3 min-benefit-height second-color-sanacia">
                             <p class="h2 mt-3 text-uppercase text-light">Безопасность</p>
-                            <p class="text-light">Безопасность: строжайшие регламенты стерилизации инструментов.</p>
+                            <p class="text-light">"IDS" заботится о безопасности всех без исключений пациентов. 1. Перчатки врача и медсестры,  маски, пелерины, подголовники на креслах и многое другое никогда не  используется дважды. 2. Мы позаботились о дезинфекции места пациента, рабочего места врача, и воздуха вокруг каждого пациента. 3. Автоклавы для  стерилизации самого высокого класса, ультразвуковые мойки, аппарат для очистки инструментов. 4. Безусловно мы проводим производственный контроль. За все время работы у  нас не было зафиксировано ни одного нарушения санитарных правил. Безопасность оказываемых услуг превыше всего!</p>
                         </div>
                         <div class="col-12 col-md-6 p-3 min-benefit-height third-color-sanacia">
                             <p class="h2 mt-3 text-uppercase text-light">Качество</p>
-                            <p class="text-light">Качество и безопасность стоматологической помощи на международными уровне.
+                            <p class="text-light">Лечение зубов в Бишкеке можно провести во многих клиниках. Мы предлагаем Вам обратиться в одну из лучших клиник Бишкека “IDS clinic” Для того, чтобы осуществить качественное лечение зубов, клиника обеспечит тщательный осмотр и планировку всех необходимых этапов. Implant Dental Service – это стоматология, лечение зубов в которой пройдет максимально быстро и качественно, а результат останется с Вами на долгие годы. Качество и безопасность стоматологической помощи на международными уровне.
                                 Стоматологическая клиника "IDS" работает по программе "Анти-СПИД" и "Анти-ГЕПАТИТ".</p>
                         </div>
                         <div class="col-12 col-md-6 p-3 min-benefit-height forth-color-sanacia">
@@ -181,7 +181,7 @@
                     <div class="col-3">
                         <div class="circle-benefits text-center">
                             <div>
-                                <p id="el-1" class="text-light col-12 h1" style="font-size: 2em;">0</p>
+                                <p id="el-1" class="text-light col-12 h1" style="font-size: 2em;">10000</p>
                                 <p class="col-auto">Довольных пациентов</p>
                             </div>
                         </div>
@@ -189,7 +189,7 @@
                     <div class="col-3">
                         <div class="circle-benefits text-center">
                             <div>
-                                <p id="el-2" class="text-light col-12 h1" style="font-size: 2em;">0</p>
+                                <p id="el-2" class="text-light col-12 h1" style="font-size: 2em;">1200</p>
                                 <p class="col-auto">Успешных операций</p>
                             </div>
                         </div>
@@ -197,7 +197,7 @@
                     <div class="col-3">
                         <div class="circle-benefits text-center">
                             <div>
-                                <p id="el-3" class="text-light col-12 h1" style="font-size: 2em;">0</p>
+                                <p id="el-3" class="text-light col-12 h1" style="font-size: 2em;">77</p>
                                 <p class="col-auto">Общий опыт</p>
                             </div>
                         </div>
@@ -205,7 +205,7 @@
                     <div class="col-3">
                         <div class="circle-benefits text-center">
                             <div>
-                                <p id="el-4" class="text-light col-12 h1" style="font-size: 2em;">0</p>
+                                <p id="el-4" class="text-light col-12 h1" style="font-size: 2em;">10</p>
                                 <p class="col-auto">Специалистов</p>
                             </div>
                         </div>
@@ -304,7 +304,7 @@
 @section('javascripts')
 
     <script src="{{ asset('js/plugins/plugin.js') }}"></script>
-    <script src="{{ asset('js/script.js') }}"></script>
+    <!-- <script src="{{ asset('js/script.js') }}"></script> -->
 
     <script src="{{ asset('js/plugins/smoothscroll.js') }}"></script>
     <script>
