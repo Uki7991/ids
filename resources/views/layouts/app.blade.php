@@ -29,8 +29,8 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="fixed-top header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="font-size: 1.2rem;">
+    <header class="sticky-top header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dramatic" style="font-size: 1.2rem;">
             <div class="container">
                 <button class="navbar-toggler text-light border-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars fa-lg"></i>
@@ -87,14 +87,16 @@
 
                     @endif
                     <ul class="nav flex-column mr-0 mr-lg-5">
-                        @if($setting->email)
+                        @if($setting->phone1)
                             <li class="nav-item row align-items-center justify-content-center">
-                                <a class="nav-link text-light" href="mailto:{{ $setting->email }}">{{ $setting->email }}</a>
+                                <a class="nav-link text-light" href="tel:{{ $setting->phone1 }}">{{ $setting->phone1 }}</a>
                             </li>
                         @endif
-                        <li class="nav-item row align-items-center justify-content-center">
-                            <a class="nav-link text-light" href="tel: {{ $setting->phone1 }}">{{ $setting->phone1 }}</a>
-                        </li>
+                        @if($setting->phone2)
+                            <li class="nav-item row align-items-center justify-content-center">
+                                <a class="nav-link text-light" href="tel:{{ $setting->phone2 }}">{{ $setting->phone2 }}</a>
+                            </li>
+                        @endif
                     </ul>
                 </div>
             </div>
@@ -236,19 +238,11 @@
                 scroll = $(window).scrollTop();
                 if (scroll > 200) {
                     $('nav.navbar').css('font-size', '.9rem');
-                    $('nav.navbar').removeClass('bg-transparent');
-                    $('nav.navbar').addClass('bg-dramatic');
                 }
                 else {
                     $('nav.navbar').css('font-size', '1.2rem');
-                    $('nav.navbar').addClass('bg-transparent');
-                    $('nav.navbar').removeClass('bg-dramatic');
                 }
             });
-        }
-        else {
-            $('nav.navbar').removeClass('bg-transparent');
-            $('nav.navbar').addClass('bg-dramatic');
         }
     </script>
     @yield('javascripts')

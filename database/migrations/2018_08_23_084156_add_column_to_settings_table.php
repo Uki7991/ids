@@ -14,7 +14,7 @@ class AddColumnToSettingsTable extends Migration
     public function up()
     {
         Schema::table('settings', function (Blueprint $table) {
-            $table->text('information');
+            $table->text('information')->nullable();
         });
     }
 
