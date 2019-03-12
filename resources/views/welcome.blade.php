@@ -8,7 +8,7 @@
         <div class="jumbotron d-none d-lg-block jumbotron-fluid m-0 w-35 w-lg-75 w-xl-100 jumbotron-new bg-primary-transparent-20 border border-light text-light">
             <div class="backdrop-card"></div>
             <div class="container" style="position: relative; z-index: 2;">
-                <p class="lead text-uppercase text-center">Красивая улыбка – визитная карточка успешного и уверенного в себе человека!</p>
+                <p class="lead text-uppercase text-center">Наша цель - Ваше здоровье и доверие!</p>
             </div>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="">
@@ -87,8 +87,8 @@
                             <div class="col-lg-4 col-12 col-md-6 mb-3 text-center h-100">
                                 <div class="border rounded-bottom-right rounded-top-left col-12 height-200 row align-items-center border-info border-5 py-5">
                                     <p class="text-primary col-12">
-                                        <span class="h1">32</span>
-                                        <span class="text-uppercase"> года</span>
+                                        <span class="h1">35</span>
+                                        <span class="text-uppercase"> лет</span>
                                     </p>
                                     <p class="h4 col-12">Стаж работы</p>
                                 </div>
